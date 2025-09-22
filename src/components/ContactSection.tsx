@@ -1,0 +1,103 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { QRCodeComponent } from "@/components/QRCode";
+
+export const ContactSection = () => {
+  const { translations, language } = useLanguage();
+
+  const currentUrl = window.location.href;
+
+  const contactInfo = [
+    {
+      icon: "📧",
+      label: translations.contact.email,
+      value: "mydla.merak@email.cz",
+      href: "mailto:mydla.merak@email.cz"
+    },
+    {
+      icon: "💳",
+      label: translations.contact.account,
+      value: "4359439093 / 0800",
+      href: null
+    },
+    {
+      icon: "📦",
+      label: translations.contact.delivery,
+      value: "",
+      href: null
+    },
+    {
+      icon: "📍",
+      label: translations.contact.location,
+      value: "",
+      href: null
+    },
+  ];
+
+  return (
+    <section className="py-20 gradient-section">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-6">
+            {translations.contact.title}
+          </h2>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
+          {/* Contact Information */}
+          <div className="space-y-6">
+            {contactInfo.map((item, index) => (
+              <div 
+                key={index}
+                className="flex items-start space-x-4 p-6 bg-card rounded-2xl shadow-soft hover:shadow-elegant transition-smooth"
+              >
+                <div className="text-2xl">{item.icon}</div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">{item.label}</p>
+                  {item.href ? (
+                    <a 
+                      href={item.href}
+                      className="text-primary hover:text-primary-glow transition-smooth"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p className="text-foreground/80">{item.value}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+            
+            <div className="pt-6">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka mýdel Merak"}
+                className="w-full"
+              >
+                {translations.hero.cta}
+              </Button>
+            </div>
+          </div>
+          
+          {/* QR Code */}
+          <div className="flex flex-col items-center">
+            <div className="bg-white p-8 rounded-3xl shadow-elegant">
+              <QRCodeComponent 
+                value={currentUrl}
+                size={200}
+                className="rounded-2xl"
+              />
+            </div>
+            <p className="text-center text-foreground/80 mt-4 max-w-xs">
+              {language === 'cs' 
+                ? 'Naskenujte QR kód pro rychlý přístup k webové stránce'
+                : 'Scan QR code for quick access to website'
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
