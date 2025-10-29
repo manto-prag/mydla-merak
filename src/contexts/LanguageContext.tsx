@@ -106,10 +106,10 @@ const translations: Record<Language, Translation> = {
       title: "MÝDLA MERAK",
       subtitle: "Přírodní dekorativní mýdla z olivového oleje, kozího mléka a medu",
       description: "Ručně vyráběná s láskou v Praze • Co kus to originál",
-      cta: "Objevit kolekci",
+      cta: "Objednat",
       disclaimer: "Podle legislativy označena jako dekorativní mýdla",
       trustBadge: "Vyrobeno s láskou v Praze od roku 2020",
-      freeDelivery: "Doručení zdarma",
+      freeDelivery: "Doručení zdarma nad 30Ks",
       rating: "hodnocení",
       natural: "přírodní",
       handmade: "Ručně vyráběno"
@@ -160,7 +160,7 @@ const translations: Record<Language, Translation> = {
     products: {
       title: "Naše kolekce",
       description: "Objevte jedinečné ručně vyráběná mýdla s láskou",
-      orderNow: "Informace",
+      orderNow: "Objednat",
       newsletterTitle: "Získejte 10% slevu na první objednávku!",
       newsletterDesc: "Přihlaste se k odběru novinek a buďte první, kdo se dozví o nových kolekcích",
       emailPlaceholder: "Váš e-mail",
@@ -211,10 +211,10 @@ const translations: Record<Language, Translation> = {
       title: "MERAK SOAPS",
       subtitle: "Natural decorative soaps from olive oil, goat milk and honey",
       description: "Handcrafted with love in Prague • Each one unique",
-      cta: "Explore Collection",
+      cta: "Order",
       disclaimer: "Classified as decorative soaps according to legislation",
       trustBadge: "Made with love in Prague since 2020",
-      freeDelivery: "Free delivery",
+      freeDelivery: "Free delivery over 30 pcs",
       rating: "rating",
       natural: "natural",
       handmade: "Handcrafted"
@@ -265,7 +265,7 @@ const translations: Record<Language, Translation> = {
     products: {
       title: "Our Collection",
       description: "Discover unique handcrafted soaps made with love",
-      orderNow: "Information",
+      orderNow: "Order",
       newsletterTitle: "Get 10% off your first order!",
       newsletterDesc: "Subscribe to our newsletter and be the first to know about new collections",
       emailPlaceholder: "Your email",
