@@ -2,9 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heartSoapsPolka from "@/assets/heart-soaps-polka.jpg";
 import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
-import merakPackaging from "@/assets/merak-branded-packaging.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
-import luxuryGiftSet from "@/assets/luxury-gift-set.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 
 export const GallerySection = () => {
@@ -63,11 +61,6 @@ export const GallerySection = () => {
       description: language === 'cs' ? "Unikátní zelené mýdlo s motivem nosorožce" : "Unique green soap with rhino motif"
     },
     {
-      src: merakPackaging,
-      alt: language === 'cs' ? "MERAK mýdla v elegantním balení" : "MERAK soaps in elegant packaging",
-      description: language === 'cs' ? "Luxusní balení s MERAK brandingem" : "Luxury packaging with MERAK branding"
-    },
-    {
       src: soapMakingProcess,
       alt: language === 'cs' ? "Proces výroby přírodních mýdel" : "Natural soap making process",
       description: language === 'cs' ? "Ruční výroba s přírodními ingrediencemi" : "Handcrafting with natural ingredients"
@@ -76,11 +69,6 @@ export const GallerySection = () => {
       src: "/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.png",
       alt: language === 'cs' ? "Růžová mýdla s květinovými plátky a přírodními dekoracemi" : "Pink soaps with flower petals and natural decorations",
       description: language === 'cs' ? "Luxusní mýdla zdobená sušenými květy a bylinkami" : "Luxury soaps decorated with dried flowers and herbs"
-    },
-    {
-      src: luxuryGiftSet,
-      alt: language === 'cs' ? "Luxusní dárková sada mýdel" : "Luxury soap gift set",
-      description: language === 'cs' ? "Elegantní prezentace pro speciální příležitosti" : "Elegant presentation for special occasions"
     },
     {
       src: "/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.png",

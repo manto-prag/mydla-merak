@@ -18,7 +18,7 @@ export const ProductSection = () => {
   const products: Product[] = [
     {
       id: 'swirl-artistry',
-      name: language === 'cs' ? 'Umělecký vír' : 'Artistic Swirl',
+      name: language === 'cs' ? 'Vlny' : 'Waves',
       price: 120,
       image: '/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png',
       description: language === 'cs' ? 'Modro-žluté vírové mýdlo s přírodními ingrediencemi' : 'Blue and yellow swirl soap with natural ingredients',
