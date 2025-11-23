@@ -12,13 +12,13 @@ export const ContactSection = () => {
     {
       icon: "📧",
       label: translations.contact.email,
-      value: "mydla.merak@email.cz",
+      value: "",
       href: "mailto:mydla.merak@email.cz"
     },
     {
       icon: "🏦",
       label: translations.contact.account,
-      value: "6007850013 / 0800",
+      value: "",
       href: null
     },
     {
