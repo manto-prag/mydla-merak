@@ -56,9 +56,6 @@ export const AboutSection = () => {
             
             {/* Ingredients */}
             <div className="flex flex-wrap gap-3 mb-8">
-              <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
-                <span className="text-primary font-medium">🌿 {language === 'cs' ? 'Olivový olej' : 'Olive oil'}</span>
-              </div>
               <div className="bg-accent/20 px-4 py-2 rounded-full border border-accent/30">
                 <span className="text-accent-foreground font-medium">🐐 {language === 'cs' ? 'Kozí mléko' : 'Goat milk'}</span>
               </div>

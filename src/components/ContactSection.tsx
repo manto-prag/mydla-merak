@@ -1,6 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { QRCodeComponent } from "@/components/QRCode";
+import paymentQRCode from "@/assets/payment-qr-code.jpg";
 
 export const ContactSection = () => {
   const { translations, language } = useLanguage();
@@ -8,18 +9,6 @@ export const ContactSection = () => {
   const currentUrl = window.location.href;
 
   const contactInfo = [
-    {
-      icon: "📧",
-      label: translations.contact.email,
-      value: "mydla.merak@email.cz",
-      href: "mailto:mydla.merak@email.cz"
-    },
-    {
-      icon: "💳",
-      label: translations.contact.account,
-      value: "4359439093 / 0800",
-      href: null
-    },
     {
       icon: "📦",
       label: translations.contact.delivery,
@@ -80,21 +69,39 @@ export const ContactSection = () => {
             </div>
           </div>
           
-          {/* QR Code */}
-          <div className="flex flex-col items-center">
-            <div className="bg-white p-8 rounded-3xl shadow-elegant">
-              <QRCodeComponent 
-                value={currentUrl}
-                size={200}
-                className="rounded-2xl"
-              />
+          {/* QR Codes */}
+          <div className="space-y-6">
+            <div className="flex flex-col items-center">
+              <div className="bg-white p-8 rounded-3xl shadow-elegant">
+                <QRCodeComponent 
+                  value={currentUrl}
+                  size={200}
+                  className="rounded-2xl"
+                />
+              </div>
+              <p className="text-center text-foreground/80 mt-4 max-w-xs">
+                {language === 'cs' 
+                  ? 'Naskenujte QR kód pro rychlý přístup k webové stránce'
+                  : 'Scan QR code for quick access to website'
+                }
+              </p>
             </div>
-            <p className="text-center text-foreground/80 mt-4 max-w-xs">
-              {language === 'cs' 
-                ? 'Naskenujte QR kód pro rychlý přístup k webové stránce'
-                : 'Scan QR code for quick access to website'
-              }
-            </p>
+            
+            <div className="flex flex-col items-center">
+              <div className="bg-white p-8 rounded-3xl shadow-elegant">
+                <img 
+                  src={paymentQRCode}
+                  alt={language === 'cs' ? 'QR kód pro platbu' : 'QR code for payment'}
+                  className="w-[200px] h-[200px] rounded-2xl object-cover"
+                />
+              </div>
+              <p className="text-center text-foreground/80 mt-4 max-w-xs">
+                {language === 'cs' 
+                  ? 'Naskenujte QR kód pro okamžitou platbu'
+                  : 'Scan QR code for instant payment'
+                }
+              </p>
+            </div>
           </div>
         </div>
       </div>
