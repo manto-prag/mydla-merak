@@ -104,7 +104,7 @@ const translations: Record<Language, Translation> = {
   cs: {
     hero: {
       title: "MÝDLA MERAK",
-      subtitle: "Přírodní dekorativní mýdla z olivového oleje, kozího mléka a medu",
+      subtitle: "Přírodní dekorativní mýdla z růžové vody, kozího mléka a medu",
       description: "Ručně vyráběná s láskou v Praze • Co kus to originál",
       cta: "Objednat",
       disclaimer: "Podle legislativy označena jako dekorativní mýdla",
@@ -209,7 +209,7 @@ const translations: Record<Language, Translation> = {
   en: {
     hero: {
       title: "MERAK SOAPS",
-      subtitle: "Natural decorative soaps from olive oil, goat milk and honey",
+      subtitle: "Natural decorative soaps from rose water, goat milk and honey",
       description: "Handcrafted with love in Prague • Each one unique",
       cta: "Order",
       disclaimer: "Classified as decorative soaps according to legislation",
