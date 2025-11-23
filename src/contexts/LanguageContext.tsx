@@ -119,7 +119,7 @@ const translations: Record<Language, Translation> = {
       description: "Každé mýdlo Merak vzniká ručně v Praze z těch nejčistších surovin: olivový olej, kozí mléko, med a růžová voda. Bez chemie, bez kompromisů – jen příroda, která pečuje.",
       brandStoryTitle: "Příběh značky MERAK",
       brandStorySubtitle: "Od vášně k řemeslu",
-      brandStory: "Značka MERAK vznikla z lásky k přírodní kosmetice a touhy vytvářet něco jedinečného. Každé mýdlo je ručně vyráběno s pečlivostí a pozorností k detailům. Používáme pouze ty nejkvalitnější přírodní ingredience - olivový olej, kozí mléko, med a růžovou vodu.",
+      brandStory: "Značka MERAK vznikla z lásky k přírodní kosmetice a touhy vytvářet něco jedinečného. Každé mýdlo je ručně vyráběno s pečlivostí a pozorností k detailům. Všechny suroviny pochází od místních dodavatelů. Používáme pouze ty nejkvalitnější přírodní ingredience - kozí mléko, med a růžovou vodu.",
       brandNote: "Naša mýdla jsou nejen krásná na pohled, ale také voní a vytváří atmosféru v interiéru.",
       naturalBenefit: "100% přírodní",
       naturalDesc: "Pouze nejčistší ingredience",
@@ -146,14 +146,14 @@ const translations: Record<Language, Translation> = {
       title: "Jak objednat",
       step1: "Napište mi e-mail na mydla.merak@email.cz",
       step2: "Uveďte počet kusů a výdejní místo Zásilkovny",
-      step3: "Platba na účet 4359439093 / 0800",
+      step3: "Platba na účet 6007850013 / 0800",
       step4: "Vaše mýdlo přijde v recyklované krabičce",
       samples: "Nejste si jistí, které mýdlo je to pravé? Vyzkoušejte vzorky za 30 Kč"
     },
     contact: {
       title: "Spojte se se mnou",
       email: "E-mail: mydla.merak@email.cz",
-      account: "Účet pro platbu: 4359439093 / 0800",
+      account: "Účet pro platbu: 6007850013 / 0800",
       delivery: "Doručování přes Zásilkovnu",
       location: "Praha, Česká republika"
     },
@@ -224,7 +224,7 @@ const translations: Record<Language, Translation> = {
       description: "Each Merak soap is handcrafted in Prague using only the purest ingredients: olive oil, goat milk, honey, and rose water. No chemicals, no compromises – just nature taking care.",
       brandStoryTitle: "The MERAK Brand Story",
       brandStorySubtitle: "From passion to craft",
-      brandStory: "The MERAK brand was born from a love of natural cosmetics and the desire to create something unique. Each soap is handmade with care and attention to detail. We use only the finest natural ingredients - olive oil, goat milk, honey and rose water.",
+      brandStory: "The MERAK brand was born from a love of natural cosmetics and the desire to create something unique. Each soap is handmade with care and attention to detail. All ingredients are from local suppliers. We use only the finest natural ingredients - goat milk, honey and rose water.",
       brandNote: "Our soaps are not only beautiful to look at, but also fragrant and create atmosphere in your interior.",
       naturalBenefit: "100% natural",
       naturalDesc: "Only the purest ingredients",
@@ -251,14 +251,14 @@ const translations: Record<Language, Translation> = {
       title: "How to order",
       step1: "Send me an email at mydla.merak@email.cz",
       step2: "Specify quantity and pickup location at Zásilkovna",
-      step3: "Payment to bank account 4359439093 / 0800",
+      step3: "Payment to bank account 6007850013 / 0800",
       step4: "Your soap arrives in recycled packaging",
       samples: "Not sure which soap is right for you? Try samples for 30 CZK"
     },
     contact: {
       title: "Get in touch",
       email: "Email: mydla.merak@email.cz",
-      account: "Payment account: 4359439093 / 0800",
+      account: "Payment account: 6007850013 / 0800",
       delivery: "Delivery via Zásilkovna",
       location: "Prague, Czech Republic"
     },
