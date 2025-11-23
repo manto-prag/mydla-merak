@@ -10,6 +10,18 @@ export const ContactSection = () => {
 
   const contactInfo = [
     {
+      icon: "📧",
+      label: translations.contact.email,
+      value: "mydla.merak@email.cz",
+      href: "mailto:mydla.merak@email.cz"
+    },
+    {
+      icon: "🏦",
+      label: translations.contact.account,
+      value: "6007850013 / 0800",
+      href: null
+    },
+    {
       icon: "📦",
       label: translations.contact.delivery,
       value: "",
