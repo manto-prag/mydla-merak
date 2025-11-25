@@ -10,7 +10,7 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { OrderSection } from "@/components/OrderSection";
 import { FAQSection } from "@/components/FAQSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
-import { ContactSection } from "@/components/ContactSection";
+import { QRCodesSection } from "@/components/QRCodesSection";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 const Index = () => {
@@ -30,23 +30,20 @@ const Index = () => {
           <OrderSection />
           <FAQSection />
           <TestimonialSection />
-          <ContactSection />
+          <QRCodesSection />
         </main>
         
-        {/* Enhanced Footer */}
+        {/* Footer */}
         <footer className="py-12 gradient-accent text-primary-foreground">
           <div className="container mx-auto px-6 text-center">
-            <div className="mb-4">
-              <h3 className="font-heading text-2xl font-bold mb-2">Mýdla Merak</h3>
-              <p className="text-primary-foreground/80">Přírodní mýdla vyráběná s láskou v Praze</p>
-            </div>
-            <div className="flex justify-center space-x-8 text-sm mb-6">
-              <span>📧 mydla.merak@email.cz</span>
-              <span>🏦 4359439093 / 0800</span>
-              <span>📦 Doručení přes Zásilkovnu</span>
-            </div>
-            <p className="text-sm text-primary-foreground/70">
-              © 2024 Mýdla Merak • Vyrobeno s láskou v Praze
+            <p className="text-sm text-primary-foreground/90 mb-2">
+              Mýdla MERAK
+            </p>
+            <p className="text-sm text-primary-foreground/80 mb-1">
+              Adresa: Argentinská 194/12 Praha 7, 17000
+            </p>
+            <p className="text-sm text-primary-foreground/80">
+              IČO: 17645018
             </p>
           </div>
         </footer>
