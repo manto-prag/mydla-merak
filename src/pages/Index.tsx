@@ -43,7 +43,7 @@ const Index = () => {
               Adresa: Argentinská 194/12 Praha 7, 17000
             </p>
             <p className="text-sm text-primary-foreground/80">
-              IČO: 17645018
+              ICO: 17645018
             </p>
           </div>
         </footer>
