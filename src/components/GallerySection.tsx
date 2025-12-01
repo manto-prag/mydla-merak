@@ -5,6 +5,7 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
+import christmasStarPink from "@/assets/christmas-star-pink.png";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -15,6 +16,11 @@ export const GallerySection = () => {
       src: coffeeBeanSoap,
       alt: language === 'cs' ? "Kávové mýdlo ve tvaru kávového zrna" : "Coffee soap shaped as coffee bean",
       description: language === 'cs' ? "Pro milovníky kávy - mýdlo ve tvaru kávového zrna s přírodními ingrediencemi" : "For coffee lovers - coffee bean shaped soap with natural ingredients"
+    },
+    {
+      src: christmasStarPink,
+      alt: language === 'cs' ? "Růžová vánoční hvězda s ornamentálním vzorem" : "Pink Christmas star with ornamental pattern",
+      description: language === 'cs' ? "Vánoční hvězda v jemně růžové barvě s detailním ornamentem" : "Christmas star in soft pink with detailed ornament"
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",

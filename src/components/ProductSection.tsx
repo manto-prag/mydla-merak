@@ -1,6 +1,17 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import dentalSoap from "@/assets/dental-soap.png";
+import christmasTreeSoap from "@/assets/christmas-tree-soap.png";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
+import christmasAngelSoaps from "@/assets/christmas-angel-soaps.png";
+import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.png";
+import christmasTreeGreenSimple from "@/assets/christmas-tree-green-simple.png";
+import christmasAngelPink from "@/assets/christmas-angel-pink.png";
+import christmasCherubAngels from "@/assets/christmas-cherub-angels.png";
+import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.png";
+import christmasTreeEmbedded from "@/assets/christmas-tree-embedded.png";
+import christmasTreeDeerSnowflakes from "@/assets/christmas-tree-deer-snowflakes.png";
 
 interface Product {
   id: string;
@@ -111,6 +122,94 @@ export const ProductSection = () => {
       image: '/lovable-uploads/168539e3-0182-418b-b4dc-1496bcec65fc.png',
       description: language === 'cs' ? 'Jemné květinové tvary v růžových tónech' : 'Delicate flower shapes in pink tones',
       category: 'individual'
+    },
+    {
+      id: 'dental-professionals',
+      name: language === 'cs' ? 'Pro zubní profesionály' : 'For Dental Professionals',
+      price: 180,
+      image: dentalSoap,
+      description: language === 'cs' ? 'Speciální kolekce pro zubní lékaře, dentální hygienistky a sestry - mýdlo ve tvaru chrupu' : 'Special collection for dentists, dental hygienists and dental nurses - jaw-shaped soap',
+      category: 'individual'
+    },
+    {
+      id: 'christmas-tree',
+      name: language === 'cs' ? 'Vánoční stromeček' : 'Christmas Tree',
+      price: 145,
+      image: christmasTreeSoap,
+      description: language === 'cs' ? 'Zelené mýdlo ve tvaru vánočního stromečku se zimní krajinou a jelenem' : 'Green Christmas tree soap with winter landscape and deer design',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-reindeers',
+      name: language === 'cs' ? 'Vánoční sobi' : 'Christmas Reindeer Set',
+      price: 320,
+      image: christmasReindeerSoaps,
+      description: language === 'cs' ? 'Sada tří mýdel ve tvaru sobů s červenými mašlemi - dokonalý vánoční dárek' : 'Set of three reindeer-shaped soaps with red bows - perfect Christmas gift',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-angels',
+      name: language === 'cs' ? 'Vánoční andělé' : 'Christmas Angels',
+      price: 280,
+      image: christmasAngelSoaps,
+      description: language === 'cs' ? 'Nádherná sada andělských mýdel v růžové a mint barvě' : 'Beautiful set of angel soaps in pink and mint colors',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-snowflake-green',
+      name: language === 'cs' ? 'Zelená vločka' : 'Green Snowflake',
+      price: 135,
+      image: christmasSnowflakeGreen,
+      description: language === 'cs' ? 'Mýdlo ve tvaru zimní vločky s detailním ornamentem' : 'Winter snowflake soap with detailed ornamental design',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-tree-simple',
+      name: language === 'cs' ? 'Zelený stromeček s ozdobami' : 'Decorated Green Tree',
+      price: 140,
+      image: christmasTreeGreenSimple,
+      description: language === 'cs' ? 'Zelené mýdlo ve tvaru stromečku zdobené bílými perlami' : 'Green tree-shaped soap decorated with white pearls',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-angel-pink',
+      name: language === 'cs' ? 'Růžový anděl se srdcem' : 'Pink Angel with Heart',
+      price: 160,
+      image: christmasAngelPink,
+      description: language === 'cs' ? 'Jemný andílek v růžové barvě se srdíčkem - symbol lásky a ochrany' : 'Delicate pink angel with heart - symbol of love and protection',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-cherub-angels',
+      name: language === 'cs' ? 'Andělské cherubíny' : 'Cherub Angels',
+      price: 290,
+      image: christmasCherubAngels,
+      description: language === 'cs' ? 'Sada dvou mýdel s reliéfem cherubínů - vánoční nebeské dary' : 'Set of two soaps with cherub relief - heavenly Christmas gifts',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-snowflake-ornate',
+      name: language === 'cs' ? 'Ornamentální vločka' : 'Ornamental Snowflake',
+      price: 145,
+      image: christmasSnowflakeOrnate,
+      description: language === 'cs' ? 'Zelená vločka s bílým luxusním ornamentem a třpytkami' : 'Green snowflake with white luxury ornament and glitter',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-tree-embedded',
+      name: language === 'cs' ? 'Vánoční stromeček v mýdle' : 'Christmas Tree Embedded Soap',
+      price: 260,
+      image: christmasTreeEmbedded,
+      description: language === 'cs' ? 'Sada dvou mýdel s reliéfním vánočním stromkem - zelená a růžová varianta' : 'Set of two soaps with embossed Christmas tree - green and pink variant',
+      category: 'seasonal'
+    },
+    {
+      id: 'christmas-tree-deer',
+      name: language === 'cs' ? 'Stromeček se sobem a vločkami' : 'Tree with Deer and Snowflakes',
+      price: 155,
+      image: christmasTreeDeerSnowflakes,
+      description: language === 'cs' ? 'Zelené mýdlo ve tvaru stromečku s bílým reliéfem soba a vloček' : 'Green tree-shaped soap with white deer and snowflake relief',
+      category: 'seasonal'
     }
   ];
 
