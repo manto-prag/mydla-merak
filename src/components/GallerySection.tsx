@@ -8,7 +8,7 @@ import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.png";
 import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.png";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate;
+import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
