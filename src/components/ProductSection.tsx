@@ -1,17 +1,17 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import dentalSoap from "@/assets/dental-soap.png";
-import christmasTreeSoap from "@/assets/christmas-tree-soap.png";
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.png";
-import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.png";
-import christmasTreeGreenSimple from "@/assets/christmas-tree-green-simple.png";
-import christmasAngelPink from "@/assets/christmas-angel-pink.png";
-import christmasCherubAngels from "@/assets/christmas-cherub-angels.png";
-import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.png";
-import christmasTreeEmbedded from "@/assets/christmas-tree-embedded.png";
-import christmasTreeDeerSnowflakes from "@/assets/christmas-tree-deer-snowflakes.png";
+import dentalSoap from "@/assets/dental-soap.jpg";
+import christmasTreeSoap from "@/assets/christmas-tree-soap.jpg";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
+import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
+import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.jpg";
+import christmasTreeGreenSimple from "@/assets/christmas-tree-green-simple.jpg";
+import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
+import christmasCherubAngels from "@/assets/christmas-cherub-angels.jpg";
+import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.jpg";
+import christmasTreeEmbedded from "@/assets/christmas-tree-embedded.jpg";
+import christmasTreeDeerSnowflakes from "@/assets/christmas-tree-deer-snowflakes.jpg";
 
 interface Product {
   id: string;
