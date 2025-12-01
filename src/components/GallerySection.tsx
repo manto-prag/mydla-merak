@@ -4,12 +4,18 @@ import heartSoapsPolka from "@/assets/heart-soaps-polka.jpg";
 import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
+import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
+    {
+      src: coffeeBeanSoap,
+      alt: language === 'cs' ? "Kávové mýdlo ve tvaru kávového zrna" : "Coffee soap shaped as coffee bean",
+      description: language === 'cs' ? "Pro milovníky kávy - mýdlo ve tvaru kávového zrna s přírodními ingrediencemi" : "For coffee lovers - coffee bean shaped soap with natural ingredients"
+    },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
       alt: language === 'cs' ? "Modro-žluté vírové mýdlo s přírodními ingrediencemi" : "Blue and yellow swirl soap with natural ingredients",
