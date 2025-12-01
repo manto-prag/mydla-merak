@@ -5,7 +5,7 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
-import christmasStarPink from "@/assets/christmas-star-pink.png";
+import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
