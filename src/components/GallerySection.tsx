@@ -9,6 +9,7 @@ import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.png";
 import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.png";
 import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate";
+import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -39,6 +40,11 @@ export const GallerySection = () => {
       src: christmasSnowflakeElaborate,
       alt: language === 'cs' ? "Zelená vánoční vločka s barokním ornamentem" : "Green Christmas snowflake with baroque ornament",
       description: language === 'cs' ? "Vánoční vločka s výraznými barokními okraji a jemným středem" : "Christmas snowflake with distinctive baroque edges and delicate center"
+    },
+    {
+      src: christmasSantaClaus,
+      alt: language === 'cs' ? "Santa Claus mýdlo" : "Santa Claus soap",
+      description: language === 'cs' ? "Roztomilý Santa Claus v červeném obleku" : "Cute Santa Claus in red suit"
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
