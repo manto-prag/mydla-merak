@@ -6,9 +6,9 @@ import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
-import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.png";
-import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.png";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate";
+import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.jpg";
+import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.jpg";
+import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
 import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 
 export const GallerySection = () => {
