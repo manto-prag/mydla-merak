@@ -8,7 +8,7 @@ import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.jpg";
 import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.jpg";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
+import christmasSnowflakeBaroque from "@/assets/christmas-snowflake-baroque-pink.jpg";
 import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 
 export const GallerySection = () => {
@@ -37,8 +37,8 @@ export const GallerySection = () => {
       description: language === 'cs' ? "Elegantní vločka se složitým bílým květinovým vzorem uprostřed" : "Elegant snowflake with intricate white floral pattern in the center"
     },
     {
-      src: christmasSnowflakeElaborate,
-      alt: language === 'cs' ? "Zelená vánoční vločka s barokním ornamentem" : "Green Christmas snowflake with baroque ornament",
+      src: christmasSnowflakeBaroque,
+      alt: language === 'cs' ? "Barokní růžová vločka" : "Baroque Pink Snowflake",
       description: language === 'cs' ? "Vánoční vločka s výraznými barokními okraji a jemným středem" : "Christmas snowflake with distinctive baroque edges and delicate center"
     },
     {
