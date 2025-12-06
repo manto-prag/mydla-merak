@@ -5,11 +5,6 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
-import christmasStarPink from "@/assets/christmas-star-pink.jpg";
-import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.jpg";
-import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.jpg";
-import christmasSnowflakeBaroque from "@/assets/christmas-snowflake-baroque-pink.jpg";
-import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -20,31 +15,6 @@ export const GallerySection = () => {
       src: coffeeBeanSoap,
       alt: language === 'cs' ? "Kávové mýdlo ve tvaru kávového zrna" : "Coffee soap shaped as coffee bean",
       description: language === 'cs' ? "Pro milovníky kávy - mýdlo ve tvaru kávového zrna s přírodními ingrediencemi" : "For coffee lovers - coffee bean shaped soap with natural ingredients"
-    },
-    {
-      src: christmasStarPink,
-      alt: language === 'cs' ? "Růžová vánoční hvězda s ornamentálním vzorem" : "Pink Christmas star with ornamental pattern",
-      description: language === 'cs' ? "Vánoční hvězda v jemně růžové barvě s detailním ornamentem" : "Christmas star in soft pink with detailed ornament"
-    },
-    {
-      src: christmasSnowflakeGreen,
-      alt: language === 'cs' ? "Zelená vánoční vločka s detailním ornamentem" : "Green Christmas snowflake with detailed ornament",
-      description: language === 'cs' ? "Vánoční vločka v zářivě zelené barvě s jemným vzorem" : "Christmas snowflake in bright green with delicate pattern"
-    },
-    {
-      src: christmasSnowflakeOrnate,
-      alt: language === 'cs' ? "Zelená vánoční vločka s květinovým středem" : "Green Christmas snowflake with floral center",
-      description: language === 'cs' ? "Elegantní vločka se složitým bílým květinovým vzorem uprostřed" : "Elegant snowflake with intricate white floral pattern in the center"
-    },
-    {
-      src: christmasSnowflakeBaroque,
-      alt: language === 'cs' ? "Barokní růžová vločka" : "Baroque Pink Snowflake",
-      description: language === 'cs' ? "Vánoční vločka s výraznými barokními okraji a jemným středem" : "Christmas snowflake with distinctive baroque edges and delicate center"
-    },
-    {
-      src: christmasSantaClaus,
-      alt: language === 'cs' ? "Santa Claus mýdlo" : "Santa Claus soap",
-      description: language === 'cs' ? "Roztomilý Santa Claus v červeném obleku" : "Cute Santa Claus in red suit"
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
