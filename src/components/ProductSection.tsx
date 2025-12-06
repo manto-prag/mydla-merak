@@ -1,17 +1,8 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import dentalSoap from "@/assets/dental-soap.jpg";
-import christmasTreeSoap from "@/assets/christmas-tree-soap.jpg";
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
-import christmasSnowflakeGreen from "@/assets/christmas-snowflake-green.jpg";
-import christmasTreeGreenSimple from "@/assets/christmas-tree-green-simple.jpg";
-import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
-import christmasCherubAngels from "@/assets/christmas-cherub-angels.jpg";
-import christmasSnowflakeOrnate from "@/assets/christmas-snowflake-ornate.jpg";
-import christmasTreeEmbedded from "@/assets/christmas-tree-embedded.jpg";
-import christmasTreeDeerSnowflakes from "@/assets/christmas-tree-deer-snowflakes.jpg";
+import dentalSoap from "@/assets/dental-soap.png";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
 
 interface Product {
   id: string;
@@ -32,7 +23,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Vlny' : 'Waves',
       price: 120,
       image: '/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png',
-      description: language === 'cs' ? 'Modro-žluté vírové mýdlo s přírodními ingrediencemi' : 'Blue and yellow swirl soap with natural ingredients',
+      description: language === 'cs' ? 'Hypnotizující vírový vzor v živých tyrkysových a slunečně žlutých tónech - každý kousek je originální umělecké dílo, které transformuje vaši koupelnu v galerii' : 'Hypnotizing swirl pattern in vibrant turquoise and sunny yellow tones - each piece is original artwork transforming your bathroom into a gallery',
       category: 'individual'
     },
     {
@@ -40,7 +31,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Olivová větvička' : 'Olive Branch',
       price: 110,
       image: '/lovable-uploads/5f52e273-e3a4-44a6-80fd-13feac003cc3.png',
-      description: language === 'cs' ? 'Elegantní ovální mýdlo s olivovou větvičkou' : 'Elegant oval soap with olive branch design',
+      description: language === 'cs' ? 'Sofistikovaná elegance v podobě krémového mýdla s jemným reliéfem olivové větvičky - symbol míru a prosperity pro váš domov' : 'Sophisticated elegance in cream soap with delicate olive branch relief - symbol of peace and prosperity for your home',
       category: 'individual'
     },
     {
@@ -48,15 +39,15 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Ornamentální luxus' : 'Ornamental Luxury',
       price: 150,
       image: '/lovable-uploads/d12edb48-38b0-441a-91ba-a85548bcd09a.png',
-      description: language === 'cs' ? 'Medové mýdlo s detailním růžovým ornamentem' : 'Honey soap with detailed pink ornament',
+      description: language === 'cs' ? 'Královsky propracovaný ornament na medově zlatém podkladu - toto mistrovské dílo přináší do vašeho interiéru auru luxusu a rafinovanosti' : 'Royally intricate ornament on honey-gold background - this masterpiece brings aura of luxury and refinement to your interior',
       category: 'individual'
     },
     {
       id: 'rose-honey',
-      name: language === 'cs' ? 'Růžové mýdlo s medem' : 'Rose Honey Soap',
+      name: language === 'cs' ? 'Růžový květ' : 'Rose Bloom',
       price: 120,
       image: '/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.png',
-      description: language === 'cs' ? 'Luxusní mýdlo s růžovou vodou a medem' : 'Luxury soap with rose water and honey',
+      description: language === 'cs' ? 'Luxusní kolekce ozdobená sušenými květy a voňavou levandulí - každý kousek je unikátní umělecké dílo přinášející krásu přírody do vašeho domova' : 'Luxury collection adorned with dried flowers and fragrant lavender - each piece is unique artwork bringing nature beauty to your home',
       category: 'individual'
     },
     {
@@ -64,7 +55,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Vírová kolekce' : 'Swirl Collection',
       price: 380,
       image: '/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png',
-      description: language === 'cs' ? 'Set 5 barevných mýdel s vírovými vzory' : 'Set of 5 colorful soaps with swirl patterns',
+      description: language === 'cs' ? 'Pět unikátních mistrovských děl s fascinujícími vírovými vzory - kompletní kolekce pro skutečné znalce oceňující originalitu a krásu v každém detailu' : 'Five unique masterpieces with fascinating swirl patterns - complete collection for true connoisseurs appreciating originality and beauty in every detail',
       category: 'gift-set'
     },
     {
@@ -72,7 +63,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Levandulový set' : 'Lavender Set',
       price: 350,
       image: '/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.png',
-      description: language === 'cs' ? 'Set 3 levandulových mýdel pro relaxaci' : 'Set of 3 lavender soaps for relaxation',
+      description: language === 'cs' ? 'Harmonická kolekce v uklidňujících modro-fialových tónech levandule - přineste si domů klid a relaxaci provensálských polí' : 'Harmonious collection in soothing blue-purple lavender tones - bring home calm and relaxation of Provençal fields',
       category: 'gift-set'
     },
     {
@@ -80,31 +71,39 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Kolekce čtyřlístek' : 'Clover Collection',
       price: 280,
       image: '/lovable-uploads/e51a7bd7-e07c-40e9-bf10-615691902e94.png',
-      description: language === 'cs' ? 'Barevná kolekce se symbolem štěstí' : 'Colorful collection with lucky symbol',
+      description: language === 'cs' ? 'Přineste štěstí do svého života s krásnými čtyřlístky v zelené, růžové a bílé - dokonalý dárek pro ty, kterým přejete jen to nejlepší' : 'Bring luck to your life with beautiful four-leaf clovers in green, pink and white - perfect gift for those you wish only the best',
+      category: 'gift-set'
+    },
+    {
+      id: 'daisy-collection',
+      name: language === 'cs' ? 'Kolekce kopretiny' : 'Daisy Collection',
+      price: 320,
+      image: daisySoapsYellowPink,
+      description: language === 'cs' ? 'Slunečně žluté a něžně růžové kopretiny plné života a radosti - tyto nádherné květy přinesou jarní atmosféru do vaší koupelny po celý rok' : 'Sunny yellow and delicate pink daisies full of life and joy - these gorgeous flowers bring spring atmosphere to your bathroom all year round',
       category: 'gift-set'
     },
     {
       id: 'unique-green-rhino',
-      name: language === 'cs' ? 'Jedinečné zelené mýdlo s motivem nosorožce' : 'Unique green soap with rhino motif',
+      name: language === 'cs' ? 'Nosorožec' : 'Rhino',
       price: 150,
       image: '/lovable-uploads/013a0911-ca75-4c22-8dfe-ab6e01d8dfc1.png',
-      description: language === 'cs' ? 'Výjimečné zelené mýdlo s designem nosorožce' : 'Exceptional green soap with rhino design',
+      description: language === 'cs' ? 'Unikátní zelené mýdlo s majestátním nosorožcem - pro milovníky přírody a exotických zvířat, kteří chtějí něco skutečně výjimečného' : 'Unique green soap with majestic rhino - for nature lovers and exotic animal enthusiasts who want something truly exceptional',
       category: 'individual'
     },
     {
       id: 'elegant-pink-hibiscus',
-      name: language === 'cs' ? 'Elegantní růžové mýdlo s květy hibiscu' : 'Elegant pink soap with hibiscus flowers',
+      name: language === 'cs' ? 'Tropický květ' : 'Tropical Bloom',
       price: 130,
       image: '/lovable-uploads/022c6570-2e64-4175-9c81-eadf0f13716b.png',
-      description: language === 'cs' ? 'Jemné růžové mýdlo s tropickými květy hibiscu' : 'Delicate pink soap with tropical hibiscus flowers',
+      description: language === 'cs' ? 'Tropická elegance zachycená v růžovém mýdle s nádherně propracovanými ibiškovými květy - vneste do svého domova exotiku a vášeň dálných ostrovů' : 'Tropical elegance captured in pink soap with beautifully crafted hibiscus flowers - bring exotic passion of distant islands to your home',
       category: 'seasonal'
     },
     {
       id: 'spring-roses',
-      name: language === 'cs' ? 'Jarní růže - limitovaná edice' : 'Spring Roses - Limited Edition',
+      name: language === 'cs' ? 'Jarní růže' : 'Spring Roses',
       price: 150,
       image: '/lovable-uploads/e836594d-8d7c-4fca-ad4b-5c63449d4d24.png',
-      description: language === 'cs' ? 'Sezónní kolekce s růžovými plátky' : 'Seasonal collection with rose petals',
+      description: language === 'cs' ? 'Nádherné růžové mýdlo zdobené skutečnými poupátky růží - symbol věčné lásky a romantiky, ideální dárek pro výjimečné okamžiky' : 'Gorgeous pink soap adorned with real rose buds - symbol of eternal love and romance, ideal gift for special moments',
       category: 'seasonal'
     },
     {
@@ -112,7 +111,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Kopretinové kouzlo' : 'Daisy Charm',
       price: 125,
       image: '/lovable-uploads/f0d749cf-d742-427c-b839-2cec27ab2e45.png',
-      description: language === 'cs' ? 'Růžové mýdlo zdobené bílými kopretinami' : 'Pink soap decorated with white daisies',
+      description: language === 'cs' ? 'Něžné růžové mýdlo ozdobené čerstvě rozkvetlými kopretinami - přineste si domů kousek rozkvetlé louky a nechte se unášet jarní romantikou' : 'Delicate pink soap adorned with freshly bloomed daisies - bring home piece of blooming meadow and let yourself be carried by spring romance',
       category: 'seasonal'
     },
     {
@@ -120,7 +119,7 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Květinová kolekce' : 'Flower Collection',
       price: 130,
       image: '/lovable-uploads/168539e3-0182-418b-b4dc-1496bcec65fc.png',
-      description: language === 'cs' ? 'Jemné květinové tvary v růžových tónech' : 'Delicate flower shapes in pink tones',
+      description: language === 'cs' ? 'Dokonalá dahlia s propracovanými lístky v odstínech růžové - každý detail je výsledkem hodin pečlivé práce a lásky k řemeslu' : 'Perfect dahlia with detailed petals in pink shades - every detail is result of hours of careful work and love for the craft',
       category: 'individual'
     },
     {
@@ -128,89 +127,9 @@ export const ProductSection = () => {
       name: language === 'cs' ? 'Pro zubní profesionály' : 'For Dental Professionals',
       price: 180,
       image: dentalSoap,
-      description: language === 'cs' ? 'Speciální kolekce pro zubní lékaře, dentální hygienistky a sestry - mýdlo ve tvaru chrupu' : 'Special collection for dentists, dental hygienists and dental nurses - jaw-shaped soap',
+      description: language === 'cs' ? 'Originální dárek pro zubaře a dentální hygienistky - překvapte kolegy vtipnou dekorací, která zaručeně vyvolá úsměv na každé tváři' : 'Original gift for dentists and dental hygienists - surprise colleagues with fun decoration guaranteed to bring smile to every face',
       category: 'individual'
     },
-    {
-      id: 'christmas-tree',
-      name: language === 'cs' ? 'Vánoční stromeček' : 'Christmas Tree',
-      price: 145,
-      image: christmasTreeSoap,
-      description: language === 'cs' ? 'Zelené mýdlo ve tvaru vánočního stromečku se zimní krajinou a jelenem' : 'Green Christmas tree soap with winter landscape and deer design',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-reindeers',
-      name: language === 'cs' ? 'Vánoční sobi' : 'Christmas Reindeer Set',
-      price: 320,
-      image: christmasReindeerSoaps,
-      description: language === 'cs' ? 'Sada tří mýdel ve tvaru sobů s červenými mašlemi - dokonalý vánoční dárek' : 'Set of three reindeer-shaped soaps with red bows - perfect Christmas gift',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-angels',
-      name: language === 'cs' ? 'Vánoční andělé' : 'Christmas Angels',
-      price: 280,
-      image: christmasAngelSoaps,
-      description: language === 'cs' ? 'Nádherná sada andělských mýdel v růžové a mint barvě' : 'Beautiful set of angel soaps in pink and mint colors',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-snowflake-green',
-      name: language === 'cs' ? 'Zelená vločka' : 'Green Snowflake',
-      price: 135,
-      image: christmasSnowflakeGreen,
-      description: language === 'cs' ? 'Mýdlo ve tvaru zimní vločky s detailním ornamentem' : 'Winter snowflake soap with detailed ornamental design',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-tree-simple',
-      name: language === 'cs' ? 'Zelený stromeček s ozdobami' : 'Decorated Green Tree',
-      price: 140,
-      image: christmasTreeGreenSimple,
-      description: language === 'cs' ? 'Zelené mýdlo ve tvaru stromečku zdobené bílými perlami' : 'Green tree-shaped soap decorated with white pearls',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-angel-pink',
-      name: language === 'cs' ? 'Růžový anděl se srdcem' : 'Pink Angel with Heart',
-      price: 160,
-      image: christmasAngelPink,
-      description: language === 'cs' ? 'Jemný andílek v růžové barvě se srdíčkem - symbol lásky a ochrany' : 'Delicate pink angel with heart - symbol of love and protection',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-cherub-angels',
-      name: language === 'cs' ? 'Andělské cherubíny' : 'Cherub Angels',
-      price: 290,
-      image: christmasCherubAngels,
-      description: language === 'cs' ? 'Sada dvou mýdel s reliéfem cherubínů - vánoční nebeské dary' : 'Set of two soaps with cherub relief - heavenly Christmas gifts',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-snowflake-ornate',
-      name: language === 'cs' ? 'Ornamentální vločka' : 'Ornamental Snowflake',
-      price: 145,
-      image: christmasSnowflakeOrnate,
-      description: language === 'cs' ? 'Zelená vločka s bílým luxusním ornamentem a třpytkami' : 'Green snowflake with white luxury ornament and glitter',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-tree-embedded',
-      name: language === 'cs' ? 'Vánoční stromeček v mýdle' : 'Christmas Tree Embedded Soap',
-      price: 260,
-      image: christmasTreeEmbedded,
-      description: language === 'cs' ? 'Sada dvou mýdel s reliéfním vánočním stromkem - zelená a růžová varianta' : 'Set of two soaps with embossed Christmas tree - green and pink variant',
-      category: 'seasonal'
-    },
-    {
-      id: 'christmas-tree-deer',
-      name: language === 'cs' ? 'Stromeček se sobem a vločkami' : 'Tree with Deer and Snowflakes',
-      price: 155,
-      image: christmasTreeDeerSnowflakes,
-      description: language === 'cs' ? 'Zelené mýdlo ve tvaru stromečku s bílým reliéfem soba a vloček' : 'Green tree-shaped soap with white deer and snowflake relief',
-      category: 'seasonal'
-    }
   ];
 
   const categories = [
