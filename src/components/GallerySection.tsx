@@ -5,6 +5,10 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
+import greenpinkroses from "@/assets/Green and rose small flowers.jpg";
+import greenpinkfl from "@/assets/Small green and pink flowers.jpg";
+import butterfly from "@/assets/Butterfly.jpg";
+import angelsWings from "@/assets/Angels wings.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -15,6 +19,26 @@ export const GallerySection = () => {
       src: coffeeBeanSoap,
       alt: language === 'cs' ? "Kávové mýdlo ve tvaru kávového zrna" : "Coffee soap shaped as coffee bean",
       description: language === 'cs' ? "Pro milovníky kávy - mýdlo ve tvaru kávového zrna s přírodními ingrediencemi" : "For coffee lovers - coffee bean shaped soap with natural ingredients"
+    },
+    {
+      src: greenpinkroses,
+      alt: language === 'cs' ? "Mýdlo ve tvaru zelené a růžov" : "Green and pink rose–shaped",
+      description: language === 'cs' ? "Mýdlo ve tvaru zelené a růžové růžičky okouzlí svou jemnou barvou a svěží vůní" : "This handmade green and pink rose–shaped soap charms with its soft color and fresh scent"
+    },
+    {
+      src: butterfly,
+      alt: language === 'cs' ? "Zdobené" : "butterfly",
+      description: language === 'cs' ? "Ručně vyráběné mýdlo zdobené jemným motivem motýlka působí lehce, hravě a elegantně" : "A delicate butterfly design feels light, playful, and elegant"
+    },
+    {
+      src: greenpinkfl,
+      alt: language === 'cs' ? "květinovým vzorem" : "a floral designn",
+      description: language === 'cs' ? "Přírodně a elegantně s květinovým vzorem — ideální do dárkových sad i jako dekorativní prvek v koupelně" : "Naturally elegant with a floral design — perfect for gift sets or as a decorative element in the bathroom"
+    },
+    {
+      src: angelsWings,
+      alt: language === 'cs' ? "Andělská křídla" : "Angel wings",
+      description: language === 'cs' ? "Andělská křídla nabízena v několika krásných barvách. Každý kousek působí čistě, něžně a elegantně — ideální do dárkových sad, svátečních balíčků nebo jako dekorativní prvek do koupelny" : "Angel wings, available in a variety of beautiful colors. Each piece adds a touch of softness, purity, and elegance — perfect for gift sets, festive collections, or as a gentle decorative detail in any bathroom"
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
