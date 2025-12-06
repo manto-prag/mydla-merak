@@ -3,6 +3,7 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductSection } from "@/components/ProductSection";
+import { ChristmasSection } from "@/components/ChristmasSection";
 import { GiftSection } from "@/components/GiftSection";
 import { GallerySection } from "@/components/GallerySection";
 import { VideoSection } from "@/components/VideoSection";
@@ -22,6 +23,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
+          <ChristmasSection />
           <ProductSection />
           <GiftSection />
           <GallerySection />
@@ -43,7 +45,7 @@ const Index = () => {
               Adresa: Argentinská 194/12 Praha 7, 17000
             </p>
             <p className="text-sm text-primary-foreground/80">
-              ICO: 17645018
+              IČO: 17645018
             </p>
           </div>
         </footer>
