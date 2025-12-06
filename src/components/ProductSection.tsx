@@ -1,8 +1,8 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import dentalSoap from "@/assets/dental-soap.png";
-import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
+import dentalSoap from "@/assets/dental-soap.jpg";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.jpg";
 
 interface Product {
   id: string;
