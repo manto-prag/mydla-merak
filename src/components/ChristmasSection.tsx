@@ -1,28 +1,21 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.png";
-import christmasAngelPink from "@/assets/christmas-angel-pink.png";
-import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.png";
-import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.png";
-import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.png";
-import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.png";
-import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.png";
-import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.png";
-import christmasTreeGreenOrnaments from "@/assets/christmas-tree-green-ornaments.png";
-import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.png";
-import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-holly-green.png";
-import christmasSantaSkiing from "@/assets/christmas-santa-skiing.png";
-import christmasStarPink from "@/assets/christmas-star-pink.png";
-import christmasBlueSnowflake from "@/assets/christmas-blue-snowflake.png";
-import christmasWhiteSnowflakePearl from "@/assets/christmas-white-snowflake-pearl.png";
-import christmasGreenSnowflakeStar from "@/assets/christmas-green-snowflake-star.png";
-import christmasPinkTreePearls from "@/assets/christmas-pink-tree-pearls.png";
-import christmasSantaClaus from "@/assets/christmas-santa-claus.png";
-import christmasGreenTreesPair from "@/assets/christmas-green-trees-pair.png";
-import christmasWhiteStarOrnaments from "@/assets/christmas-white-star-ornaments.png";
-import christmasPinkStarTree from "@/assets/christmas-pink-star-tree.png";
-import christmasPinkSnowflakeDetailed from "@/assets/christmas-pink-snowflake-detailed.png";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
+import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
+import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
+import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
+import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
+import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
+import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
+import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.jpg";
+import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
+import christmasTreeGreenOrnaments from "@/assets/christmas-tree-green-ornaments.jpg";
+import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-ornate.jpg";
+import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg";
+import christmasStarPink from "@/assets/christmas-star-pink.jpg";
+import christmasRedSnowflakePearl from "@/assets/christmas-red-snowflake-pearl.jpg";
+import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
+import christmasBabyAngels from "@/assets/christmas-baby-angels.jpg";
 
 interface ChristmasProduct {
   id: string;
@@ -78,14 +71,6 @@ export const ChristmasSection = () => {
       description: language === 'cs' ? 'Majestátní zelená vločka s motivem cesmínových listů - tradiční vánoční symbol štěstí a ochrany, který přinese do vašeho domova požehnání svátků' : 'Majestic green snowflake with holly leaf motif - traditional Christmas symbol of luck and protection bringing holiday blessings to your home'
     },
     {
-      id: 'christmas-santa-skiing',
-      name: language === 'cs' ? 'Santa na lyžích' : 'Skiing Santa',
-      originalPrice: 185,
-      discountedPrice: 167,
-      image: christmasSantaSkiing,
-      description: language === 'cs' ? 'Veselý Santa Claus sjíždějící alpské svahy s batohem plným dárků - dynamická scéna plná radosti a dobrodružství, která rozveselí každé vánoční ráno' : 'Jolly Santa Claus skiing down alpine slopes with backpack full of gifts - dynamic scene full of joy and adventure that brightens every Christmas morning'
-    },
-    {
       id: 'christmas-star-pink',
       name: language === 'cs' ? 'Růžová vánoční hvězda' : 'Pink Christmas Star',
       originalPrice: 145,
@@ -94,36 +79,12 @@ export const ChristmasSection = () => {
       description: language === 'cs' ? 'Zářivá vánoční hvězda v jemně růžové barvě s propracovaným ornamentem - přineste do svého domova kouzlo Vánoc a okouzlete každého návštěvníka' : 'Radiant Christmas star in soft pink with intricate ornament - bring Christmas magic to your home and enchant every visitor'
     },
     {
-      id: 'christmas-blue-snowflake',
-      name: language === 'cs' ? 'Žlutá vánoční vločka' : 'Yellow Christmas Snowflake',
-      originalPrice: 155,
-      discountedPrice: 140,
-      image: christmasBlueSnowflake,
-      description: language === 'cs' ? 'Zářivě žlutá vločka evokující teplo vánočních svíček - její jemný vzor a hřejivá elegance přináší do vašeho domova útulnou atmosféru' : 'Radiant yellow snowflake evoking warmth of Christmas candles - its delicate pattern and warm elegance brings cozy atmosphere to your home'
-    },
-    {
       id: 'christmas-white-snowflake-pearl',
       name: language === 'cs' ? 'Červená vánoční hvězda' : 'Red Christmas Star',
       originalPrice: 165,
       discountedPrice: 149,
-      image: christmasWhiteSnowflakePearl,
+      image: christmasRedSnowflakePearl,
       description: language === 'cs' ? 'Zářivě červená vánoční hvězda symbolizující teplo a radost svátků - dokonalá dekorace, která rozzáří váš domov vánoční atmosférou' : 'Radiant red Christmas star symbolizing warmth and joy of holidays - perfect decoration that brightens your home with Christmas atmosphere'
-    },
-    {
-      id: 'christmas-green-snowflake-star',
-      name: language === 'cs' ? 'Zelená vločka s hvězdou' : 'Green Snowflake with Star',
-      originalPrice: 155,
-      discountedPrice: 140,
-      image: christmasGreenSnowflakeStar,
-      description: language === 'cs' ? 'Elegantní zelená vločka s hvězdicovým vzorem - jedinečná kombinace dvou zimních symbolů v jednom nádherném kousku' : 'Elegant green snowflake with star pattern - unique combination of two winter symbols in one beautiful piece'
-    },
-    {
-      id: 'christmas-pink-tree-pearls',
-      name: language === 'cs' ? 'Růžový stromeček s perlami' : 'Pink Tree with Pearls',
-      originalPrice: 175,
-      discountedPrice: 158,
-      image: christmasPinkTreePearls,
-      description: language === 'cs' ? 'Jemně růžový stromeček ozdobený bílými perličkami - elegantní vánoční dekorace plná romantiky a něžné krásy' : 'Soft pink tree decorated with white pearls - elegant Christmas decoration full of romance and gentle beauty'
     },
     {
       id: 'christmas-santa-claus',
@@ -134,36 +95,12 @@ export const ChristmasSection = () => {
       description: language === 'cs' ? 'Okouzlující Santa Claus v tradičním červeném obleku - přineste domů radost Vánoc s tímto roztomilým pomocníkem, který rozzáří každý interiér' : 'Charming Santa Claus in traditional red suit - bring home Christmas joy with this adorable helper that brightens every interior'
     },
     {
-      id: 'christmas-green-trees-pair',
-      name: language === 'cs' ? 'Dvojice zelených stromečků' : 'Green Trees Pair',
-      originalPrice: 290,
-      discountedPrice: 261,
-      image: christmasGreenTreesPair,
-      description: language === 'cs' ? 'Okouzlující dvojice zelených stromečků zdobených vánočními ozdobami - perfektní pár, který přinese vánoční atmosféru do každého prostoru' : 'Charming pair of green trees decorated with Christmas ornaments - perfect duo bringing Christmas atmosphere to every space'
-    },
-    {
-      id: 'christmas-white-star-ornaments',
-      name: language === 'cs' ? 'Bílá hvězda s ozdobami' : 'White Star with Ornaments',
-      originalPrice: 155,
-      discountedPrice: 140,
-      image: christmasWhiteStarOrnaments,
-      description: language === 'cs' ? 'Zářivá bílá vánoční hvězda zdobená červenými a zelenými ozdobami - tradiční vánoční symbol v elegantním provedení' : 'Radiant white Christmas star decorated with red and green ornaments - traditional Christmas symbol in elegant design'
-    },
-    {
-      id: 'christmas-pink-star-tree',
-      name: language === 'cs' ? 'Růžová vánoční hvězda' : 'Pink Christmas Star',
-      originalPrice: 165,
-      discountedPrice: 149,
-      image: christmasPinkStarTree,
-      description: language === 'cs' ? 'Okouzlující růžová vánoční hvězda s propracovanými detaily - nádherná dekorace, která vnese do vašeho interiéru romantickou vánoční atmosféru' : 'Enchanting pink Christmas star with intricate details - gorgeous decoration bringing romantic Christmas atmosphere to your interior'
-    },
-    {
-      id: 'christmas-pink-snowflake-detailed',
-      name: language === 'cs' ? 'Detailní růžová vločka' : 'Detailed Pink Snowflake',
-      originalPrice: 165,
-      discountedPrice: 149,
-      image: christmasPinkSnowflakeDetailed,
-      description: language === 'cs' ? 'Propracovaná růžová vločka s jemnými detaily a elegantním vzorem - mistrovské dílo zimní krásy pro váš domov' : 'Intricate pink snowflake with fine details and elegant pattern - masterpiece of winter beauty for your home'
+      id: 'christmas-baby angels',
+      name: language === 'cs' ? 'Vánoční andělé' : 'Christmas Baby Angels',
+      originalPrice: 310,
+      discountedPrice: 280,
+      image: christmasBabyAngels,
+      description: language === 'cs' ? 'Nádherná andělská sada' : 'Beautiful Baby angels - different set of colours'
     },
     {
       id: 'christmas-snowflake-pink',
