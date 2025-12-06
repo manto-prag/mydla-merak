@@ -8,7 +8,6 @@ import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 import greenpinkroses from "@/assets/Green and rose small flowers.jpg";
 import greenpinkfl from "@/assets/Small green and pink flowers.jpg";
 import butterfly from "@/assets/Butterfly.jpg";
-import angelsWings from "@/assets/Angels wings.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -34,11 +33,6 @@ export const GallerySection = () => {
       src: greenpinkfl,
       alt: language === 'cs' ? "květinovým vzorem" : "a floral designn",
       description: language === 'cs' ? "Přírodně a elegantně s květinovým vzorem — ideální do dárkových sad i jako dekorativní prvek v koupelně" : "Naturally elegant with a floral design — perfect for gift sets or as a decorative element in the bathroom"
-    },
-    {
-      src: angelsWings,
-      alt: language === 'cs' ? "Andělská křídla" : "Angel wings",
-      description: language === 'cs' ? "Andělská křídla nabízena v několika krásných barvách. Každý kousek působí čistě, něžně a elegantně — ideální do dárkových sad, svátečních balíčků nebo jako dekorativní prvek do koupelny" : "Angel wings, available in a variety of beautiful colors. Each piece adds a touch of softness, purity, and elegance — perfect for gift sets, festive collections, or as a gentle decorative detail in any bathroom"
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
