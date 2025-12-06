@@ -16,6 +16,8 @@ import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasRedSnowflakePearl from "@/assets/christmas-red-snowflake-pearl.jpg";
 import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 import christmasBabyAngels from "@/assets/christmas-baby-angels.jpg";
+import christmassnow from "@/assets/Full White snowflake.jpg";
+import christmasAngelswings from "@/assets/Angels wings.jpg";
 
 interface ChristmasProduct {
   id: string;
@@ -85,6 +87,22 @@ export const ChristmasSection = () => {
       discountedPrice: 149,
       image: christmasRedSnowflakePearl,
       description: language === 'cs' ? 'Zářivě červená vánoční hvězda symbolizující teplo a radost svátků - dokonalá dekorace, která rozzáří váš domov vánoční atmosférou' : 'Radiant red Christmas star symbolizing warmth and joy of holidays - perfect decoration that brightens your home with Christmas atmosphere'
+    },
+    {
+      id: 'christmas-angels-wings',
+      name: language === 'cs' ? 'Andělská křídla' : 'Angel Wings',
+      originalPrice: 165,
+      discountedPrice: 149,
+      image: christmasAngelswings,
+      description: language === 'cs' ? 'Andělská křídla nabízena v několika krásných barvách. Každý kousek působí čistě, něžně a elegantně — ideální do dárkových sad, svátečních balíčků nebo jako dekorativní prvek do koupelny' : 'Angel wings, available in a variety of beautiful colors. Each piece adds a touch of softness, purity, and elegance — perfect for gift sets, festive collections, or as a gentle decorative detail in any bathroom'
+    },
+    {
+      id: 'christmas-white-snowflake',
+      name: language === 'cs' ? 'Bílé sněhové vločky' : 'white snowflake',
+      originalPrice: 165,
+      discountedPrice: 149,
+      image: christmassnow,
+      description: language === 'cs' ? 'Mýdlo ve tvaru bílé sněhové vločky přináší jemnou zimní atmosféru a elegantní vzhled' : 'Soap shaped like a white snowflake brings a touch of winter elegance'
     },
     {
       id: 'christmas-santa-claus',
