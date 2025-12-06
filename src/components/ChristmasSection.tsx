@@ -98,7 +98,7 @@ export const ChristmasSection = () => {
     },
     {
       id: 'christmas-white-snowflake',
-      name: language === 'cs' ? 'Bílé sněhové vločky' : 'white snowflake',
+      name: language === 'cs' ? 'Bílá sněhová vločka' : 'White snowflake',
       originalPrice: 165,
       discountedPrice: 149,
       image: christmassnow,
