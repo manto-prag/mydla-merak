@@ -18,6 +18,10 @@ import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 import christmasBabyAngels from "@/assets/christmas-baby-angels.jpg";
 import christmassnow from "@/assets/Full White snowflake.jpg";
 import christmasAngelswings from "@/assets/Angels wings.jpg";
+import christmasBells from "@/assets/Bells.jpg";
+import christmasgreensnow from "@/assets/Green snowflake.jpg";
+import christmaswgsnow from "@/assets/White-green snowflake.jpg";
+
 
 interface ChristmasProduct {
   id: string;
@@ -159,6 +163,30 @@ export const ChristmasSection = () => {
       discountedPrice: 320,
       image: christmasReindeerSoaps,
       description: language === 'cs' ? 'Roztomilá sada sobů s mašlemi v tradičních vánočních barvách - dokonalý vánoční dárek, který potěší srdce malých i velkých' : 'Adorable reindeer set with bows in traditional Christmas colors - perfect Christmas gift that delights hearts of young and old'
+    },
+    {
+      id: 'christmas-bells',
+      name: language === 'cs' ? 'růžové zvonečky' : 'Bells',
+      originalPrice: 165,
+      discountedPrice: 149,
+      image: christmasBells,
+      description: language === 'cs' ? 'Vánoční mýdlo zdobí jemné růžové zvonečky a listy cesmíny na světle zeleném podkladu. Vnáší do koupelny či dárkové sady útulnou a sváteční atmosféru' : 'Christmas soap features delicate pink bells and holly leaves on a soft green base. It brings a festive, cozy touch to any holiday gift set or bathroom décor'
+    },
+    {
+      id: 'christmas-white-green',
+      name: language === 'cs' ? 'Bílo-zelené vločka s reliéfem' : 'White-green snowflake',
+      originalPrice: 165,
+      discountedPrice: 149,
+      image: christmaswgsnow,
+      description: language === 'cs' ? 'Toto bílo-zelené mýdlo ve tvaru sněhové vločky vytváří pocit svěží zimy díky svému jemnému, „mrazivému“ designu.' : 'This white-green snowflake soap captures a crisp winter feel with its delicate frosted design'
+    },
+    {
+      id: 'christmas-green-snowflake',
+      name: language === 'cs' ? 'Zelené vločka s reliéfem' : 'Green snowflake',
+      originalPrice: 165,
+      discountedPrice: 149,
+      image: christmasgreensnow,
+      description: language === 'cs' ? 'Toto zelené mýdlo ve tvaru vločky dodá svěží a slavnostní nádech díky své jasné barvě a čistému vzhledu. Je ideální jako vánoční dárek nebo krásná dekorace do koupelny' : 'This green snowflake-shaped soap brings a fresh, festive touch with its bright color and clean, natural look. It’s perfect as a holiday gift or a charming addition to any bathroom décor'
     },
     {
       id: 'christmas-angels',
