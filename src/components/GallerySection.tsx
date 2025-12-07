@@ -12,6 +12,10 @@ import dentalSoap from "@/assets/dental-soap.jpg";
 import greenpinkroses from "@/assets/Green and rose small flowers.jpg";
 import greenpinkfl from "@/assets/Small green and pink flowers.jpg";
 import butterfly from "@/assets/Butterfly.jpg";
+import hearts from "@/assets/hearts.jpg";
+import handmade100 from "@/assets/100handmade.jpg";
+import exfoliating from "@/assets/exfoliating.jpg";
+import roseflower from "@/assets/rose flower.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
@@ -216,11 +220,35 @@ export const GallerySection = () => {
       category: 'individual'
     },
     {
+      src: hearts,
+      alt: language === 'cs' ? "Srdíčkové " : "Hearts",
+      description: language === 'cs' ? "MERAK srdíčkové mýdlo. Ideální dárek z lásky nebo malé potěšení pro sebe" : "MERAK heart-shaped soap. The perfect gift of love or a small treat for yourself",
+      category: 'individual'
+    },
+    {
+      src: handmade100,
+      alt: language === 'cs' ? "100% ruční výroba" : "100% hand made",
+      description: language === 'cs' ? "100% ruční výroba. Jemné, přírodní a vytvořené s péčí. Malý luxus pro každý den" : "100% hand made. Gentle, natural, and crafted with care. A little touch of everyday luxury",
+      category: 'individual'
+    },
+    {
+      src: exfoliating,
+      alt: language === 'cs' ? "Kulaté peelingové mýdlo" : "Exfoliating soap",
+      description: language === 'cs' ? "Kulaté peelingové mýdlo" : "Round exfoliating soap",
+      category: 'individual'
+    },
+    {
+      src: roseflower,
+      alt: language === 'cs' ? "Růžové věčné květy" : "Rose Flower",
+      description: language === 'cs' ? "Růžové věčné květy v dárkové krabičce — jemný symbol lásky, která trvá navždy. Ideální k výročí, romantickému překvapení nebo pro každý výjimečný okamžik" : "Pink eternal flowers in a gift box — a delicate symbol of love that lasts forever. Perfect for anniversaries, romantic surprises, or any moment you want to make unforgettable",
+      category: 'individual'
+    },
+    {
       src: naturalIngredients,
       alt: language === 'cs' ? "Přírodní ingredience" : "Natural ingredients",
       description: language === 'cs' ? "Pouze to nejlepší z přírody! Olivový olej, kozí mléko, med a růžové plátky - přírodní luxus." : "Only the best from nature! Olive oil, goat milk, honey and rose petals - natural luxury.",
       category: 'individual'
-    }
+    }   
   ];
 
   const filteredImages = selectedCategory === 'all' 
