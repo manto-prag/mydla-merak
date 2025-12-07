@@ -35,6 +35,13 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
     },
     {
+      src: butterfly,
+      alt: language === 'cs' ? "Zdobené" : "butterfly",
+      description: language === 'cs' ? "Ručně vyráběné mýdlo zdobené jemným motivem motýlka působí lehce, hravě a elegantně" : "A delicate butterfly design feels light, playful, and elegant",
+      category: 'individual',
+      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
+    },
+    {
       src: dentalSoap,
       alt: language === 'cs' ? "Mýdlo ve tvaru zubu" : "Tooth shaped soap",
       description: language === 'cs' ? "Originální dárek pro zubaře a dentální hygienistky! Unikátní zub s úsměvem rozveselí každou ordinaci." : "Original gift for dentists and dental hygienists! Unique smiling tooth brightens every dental office.",
@@ -120,6 +127,19 @@ export const GallerySection = () => {
       src: daisySoapsYellowPink,
       alt: language === 'cs' ? "Kopretiny žluté a růžové" : "Daisies yellow and pink",
       description: language === 'cs' ? "Jarní pohádka! Slunečné kopretiny ve žluté a růžové přinesou radost do každého dne." : "Spring fairy tale! Sunny daisies in yellow and pink bring joy to every day.",
+      category: 'gift-set',
+      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
+    },
+    {
+      src: greenpinkfl,
+      alt: language === 'cs' ? "květinovým vzorem" : "a floral designn",
+      description: language === 'cs' ? "Přírodně a elegantně s květinovým vzorem — ideální do dárkových sad i jako dekorativní prvek v koupelně" : "Naturally elegant with a floral design — perfect for gift sets or as a decorative element in the bathroom",
+      category: 'gift-set',
+    },
+    {
+      src: greenpinkroses,
+      alt: language === 'cs' ? "Mýdlo ve tvaru zelené a růžov" : "Green and pink rose–shaped",
+      description: language === 'cs' ? "Mýdlo ve tvaru zelené a růžové růžičky okouzlí svou jemnou barvou a svěží vůní" : "This handmade green and pink rose–shaped soap charms with its soft color and fresh scent",
       category: 'gift-set',
       badge: language === 'cs' ? 'Oblíbené' : 'Popular'
     },
