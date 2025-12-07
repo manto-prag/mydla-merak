@@ -7,8 +7,11 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
-import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
-import dentalSoap from "@/assets/dental-soap.png";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.jpg";
+import dentalSoap from "@/assets/dental-soap.jpg";
+import greenpinkroses from "@/assets/Green and rose small flowers.jpg";
+import greenpinkfl from "@/assets/Small green and pink flowers.jpg";
+import butterfly from "@/assets/Butterfly.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
