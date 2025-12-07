@@ -1,7 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import dentalSoap from "@/assets/dental-soap.jpg";
 import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.jpg";
 
 interface Product {
@@ -122,14 +121,7 @@ export const ProductSection = () => {
       description: language === 'cs' ? 'Dokonalá dahlia s propracovanými lístky v odstínech růžové - každý detail je výsledkem hodin pečlivé práce a lásky k řemeslu' : 'Perfect dahlia with detailed petals in pink shades - every detail is result of hours of careful work and love for the craft',
       category: 'individual'
     },
-    {
-      id: 'dental-professionals',
-      name: language === 'cs' ? 'Pro zubní profesionály' : 'For Dental Professionals',
-      price: 180,
-      image: dentalSoap,
-      description: language === 'cs' ? 'Originální dárek pro zubaře a dentální hygienistky - překvapte kolegy vtipnou dekorací, která zaručeně vyvolá úsměv na každé tváři' : 'Original gift for dentists and dental hygienists - surprise colleagues with fun decoration guaranteed to bring smile to every face',
-      category: 'individual'
-    },
+
   ];
 
   const categories = [
