@@ -7,7 +7,7 @@ import { ValentinesSection } from "@/components/ValentinesSection";
 /*import { ChristmasSection } from "@/components/ChristmasSection";*/
 import { GiftSection } from "@/components/GiftSection";
 import { GallerySection } from "@/components/GallerySection";
-import { VideoSection } from "@/components/VideoSection";
+/*import { VideoSection } from "@/components/VideoSection"; */
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { OrderSection } from "@/components/OrderSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -28,7 +28,7 @@ const Index = () => {
           <ProductSection />
           <GallerySection />
           <GiftSection />          
-          <VideoSection />
+/*          <VideoSection />   */
           <ReviewsSection />
           <OrderSection />
           <FAQSection />
