@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductSection } from "@/components/ProductSection";
 import { ValentinesSection } from "@/components/ValentinesSection";
-//import { ChristmasSection } from "@/components/ChristmasSection";
+/*import { ChristmasSection } from "@/components/ChristmasSection";*/
 import { GiftSection } from "@/components/GiftSection";
 import { GallerySection } from "@/components/GallerySection";
 import { VideoSection } from "@/components/VideoSection";
