@@ -23,13 +23,13 @@ import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
 import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
 import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
 import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
-import christmasGreenTreesPair from "@/assets/christmas-green-trees-pair.jpg";
-import christmasPinkTreePearls from "@/assets/christmas-pink-tree-pearls.jpg";
+import christmasGreenTreesPair from "@/assets/White-green snowflake.jpg";
+import christmasPinkTreePearls from "@/assets/christmas-yellow-snowflake-pearls.jpg";
 
 // Stars & gifts
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
-import christmasPinkStarTree from "@/assets/christmas-pink-star-tree.jpg";
-import christmasWhiteStarOrnaments from "@/assets/christmas-white-star-ornaments.jpg";
+import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
+import christmasWhiteStarOrnaments from "@/assets/christmas-snowflake-baroque-pink.jpg";
 import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
 
 // Characters
