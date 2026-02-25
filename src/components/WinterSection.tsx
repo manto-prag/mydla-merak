@@ -4,38 +4,38 @@ import { Button } from "@/components/ui/button";
 import { Snowflake, Star, Gift, Sparkles } from "lucide-react";
 
 // Snowflakes
-import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.png";
-import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.png";
-import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-holly-green.png";
-import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.png";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.png";
-import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.png";
-import christmasBlueSnowflake from "@/assets/christmas-blue-snowflake.png";
-import christmasGreenSnowflakeStar from "@/assets/christmas-green-snowflake-star.png";
-import christmasWhiteSnowflakePearl from "@/assets/christmas-white-snowflake-pearl.png";
+import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.jpg";
+import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.jpg";
+import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-holly-green.jpg";
+import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.jpg";
+import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
+import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
+import christmasBlueSnowflake from "@/assets/christmas-blue-snowflake.jpg";
+import christmasGreenSnowflakeStar from "@/assets/christmas-green-snowflake-star.jpg";
+import christmasWhiteSnowflakePearl from "@/assets/christmas-white-snowflake-pearl.jpg";
 
 // Angels
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.png";
-import christmasAngelPink from "@/assets/christmas-angel-pink.png";
+import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
+import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
 
 
 // Winter trees & scenes
-import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.png";
-import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.png";
-import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.png";
-import christmasGreenTreesPair from "@/assets/christmas-green-trees-pair.png";
-import christmasPinkTreePearls from "@/assets/christmas-pink-tree-pearls.png";
+import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
+import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
+import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
+import christmasGreenTreesPair from "@/assets/christmas-green-trees-pair.jpg";
+import christmasPinkTreePearls from "@/assets/christmas-pink-tree-pearls.jpg";
 
 // Stars & gifts
-import christmasStarPink from "@/assets/christmas-star-pink.png";
-import christmasPinkStarTree from "@/assets/christmas-pink-star-tree.png";
-import christmasWhiteStarOrnaments from "@/assets/christmas-white-star-ornaments.png";
-import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.png";
+import christmasStarPink from "@/assets/christmas-star-pink.jpg";
+import christmasPinkStarTree from "@/assets/christmas-pink-star-tree.jpg";
+import christmasWhiteStarOrnaments from "@/assets/christmas-white-star-ornaments.jpg";
+import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
 
 // Characters
-import christmasSantaClaus from "@/assets/christmas-santa-claus.png";
+import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
 
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
 
 interface WinterProduct {
   id: string;
