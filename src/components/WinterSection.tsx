@@ -10,9 +10,9 @@ import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg
 import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.jpg";
 import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
 import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
-import christmasBlueSnowflake from "@/assets/christmas-blue-snowflake.jpg";
-import christmasGreenSnowflakeStar from "@/assets/christmas-green-snowflake-star.jpg";
-import christmasWhiteSnowflakePearl from "@/assets/christmas-white-snowflake-pearl.jpg";
+import christmasBlueSnowflake from "@/assets/christmas-yellow-snowflake.jpg";
+import christmasGreenSnowflakeStar from "@/assets/Bells.jpg";
+import christmasWhiteSnowflakePearl from "@/assets/christmas-red-snowflake-pearl.jpg";
 
 // Angels
 import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
