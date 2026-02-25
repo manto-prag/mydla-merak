@@ -3,7 +3,8 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductSection } from "@/components/ProductSection";
-import { ValentinesSection } from "@/components/ValentinesSection";
+import { WinterSection } from "@/components/WinterSection";
+/*import { ValentinesSection } from "@/components/ValentinesSection";*/
 /*import { ChristmasSection } from "@/components/ChristmasSection";*/
 import { GiftSection } from "@/components/GiftSection";
 import { GallerySection } from "@/components/GallerySection";
