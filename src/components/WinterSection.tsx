@@ -6,7 +6,7 @@ import { Snowflake, Star, Gift, Sparkles } from "lucide-react";
 // Snowflakes
 import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.jpg";
 import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.jpg";
-import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-holly-green.jpg";
+import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg";
 import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.jpg";
 import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
 import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
