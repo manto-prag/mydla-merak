@@ -7,22 +7,39 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
-import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.jpg";
-import dentalSoap from "@/assets/dental-soap.jpg";
-import greenpinkroses from "@/assets/Green and rose small flowers.jpg";
-import greenpinkfl from "@/assets/Small green and pink flowers.jpg";
-import butterfly from "@/assets/Butterfly.jpg";
-import hearts from "@/assets/hearts.jpg";
-import handmade100 from "@/assets/100handmade.jpg";
-import exfoliating from "@/assets/exfoliating.jpg";
-import roseflower from "@/assets/rose flower.jpg";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
+import dentalSoap from "@/assets/dental-soap.png";
+
+// Valentine imports
+import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
+import valentineBouquet2 from "@/assets/valentine-bouquet-2.jpg";
+import valentineHeartPink from "@/assets/valentine-heart-pink.jpg";
+import valentineHeartRedWhite from "@/assets/valentine-heart-red-white.jpg";
+import valentineHeartsCollection from "@/assets/valentine-hearts-collection.jpg";
+import valentineHeartLayered from "@/assets/valentine-heart-layered.jpg";
+import valentineHeartsDiamondPair from "@/assets/valentine-hearts-diamond-pair.jpg";
+import valentineHeartSaltSprinkle from "@/assets/valentine-heart-salt-sprinkle.jpg";
+import valentineDiamondHeartsSalt from "@/assets/valentine-diamond-hearts-salt.jpg";
+import valentineOrnateHeartBox from "@/assets/valentine-ornate-heart-box.jpg";
+import valentineBouquetPinkPeonies from "@/assets/valentine-bouquet-pink-peonies.jpg";
+import valentineBouquetVase from "@/assets/valentine-bouquet-vase.jpg";
+import valentineILovePrague from "@/assets/valentine-i-love-prague.jpg";
+import valentineFlowerHeart from "@/assets/valentine-flower-heart.jpg";
+import valentineBearHeart from "@/assets/valentine-bear-heart.jpg";
+import valentineHeartPetalPink from "@/assets/valentine-heart-petal-pink.jpg";
+import valentineHeartRibbedPink from "@/assets/valentine-heart-ribbed-pink.jpg";
+import valentineHeartWavyPink from "@/assets/valentine-heart-wavy-pink.jpg";
+import valentineHeartScallopedPink from "@/assets/valentine-heart-scalloped-pink.jpg";
+import valentineLuxuryBouquetArrangement from "@/assets/valentine-luxury-bouquet-arrangement.jpg";
+import valentineBearHeartValentine from "@/assets/valentine-bear-heart-valentine.jpg";
 
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'individual' | 'gift-set' | 'seasonal'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'individual' | 'gift-set' | 'seasonal' | 'valentine'>('all');
   
   const categories = [
     { id: 'all', label: language === 'cs' ? 'Vše' : 'All', icon: Sparkles },
+    { id: 'valentine', label: language === 'cs' ? 'Romantická kolekce' : "Romantic Collection", icon: Heart },
     { id: 'individual', label: language === 'cs' ? 'Jednotlivá mýdla' : 'Individual Soaps', icon: Heart },
     { id: 'gift-set', label: language === 'cs' ? 'Dárkové sety' : 'Gift Sets', icon: Gift },
     { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal Collections', icon: ShoppingBag }
@@ -34,161 +51,139 @@ export const GallerySection = () => {
     {
       src: coffeeBeanSoap,
       alt: language === 'cs' ? "Kávové mýdlo ve tvaru zrna" : "Coffee bean shaped soap",
-      description: language === 'cs' ? "Probuďte smysly luxusní vůní čerstvě pražené kávy! Toto realistické kávové zrno je perfektní dárek pro milovníky kávy." : "Awaken your senses with luxury freshly roasted coffee aroma! This realistic coffee bean is the perfect gift for coffee lovers.",
-      category: 'individual',
-      badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
-    },
-    {
-      src: butterfly,
-      alt: language === 'cs' ? "Zdobené" : "butterfly",
-      description: language === 'cs' ? "Ručně vyráběné mýdlo zdobené jemným motivem motýlka působí lehce, hravě a elegantně" : "A delicate butterfly design feels light, playful, and elegant",
-      category: 'individual',
-      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
+      description: language === 'cs' ? "Dokonalý dárek pro milovníky kávy! Realistické zrno, které okouzlí každého." : "The perfect gift for coffee lovers! A realistic bean that charms everyone.",
+      category: 'individual'
     },
     {
       src: dentalSoap,
       alt: language === 'cs' ? "Mýdlo ve tvaru zubu" : "Tooth shaped soap",
-      description: language === 'cs' ? "Originální dárek pro zubaře a dentální hygienistky! Unikátní zub s úsměvem rozveselí každou ordinaci." : "Original gift for dentists and dental hygienists! Unique smiling tooth brightens every dental office.",
+      description: language === 'cs' ? "Hit mezi zubaři! Veselý zoubek, který rozsvítí každou ordinaci." : "A hit among dentists! Cheerful little tooth that lights up any office.",
       category: 'individual',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
       alt: language === 'cs' ? "Mořská hvězdice tyrkysová a žlutá" : "Starfish turquoise and yellow",
-      description: language === 'cs' ? "Přineste moře domů! Roztomilé hvězdice v zářivé tyrkysové a slunečné žluté - ideální letní dekorace." : "Bring the ocean home! Cute starfish in vibrant turquoise and sunny yellow - ideal summer decoration.",
+      description: language === 'cs' ? "Kousek moře u vás doma! Zářivé barvy léta, které nikdy neuvadnou." : "A piece of the ocean at home! Vibrant summer colors that never fade.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/5f52e273-e3a4-44a6-80fd-13feac003cc3.png",
       alt: language === 'cs' ? "Krémové mýdlo s olivovou větvičkou" : "Cream soap with olive branch",
-      description: language === 'cs' ? "Elegance středomoří ve vašem domě. Olivová větvička symbolizuje mír a pohodu - nádherný dárek." : "Mediterranean elegance in your home. Olive branch symbolizes peace and harmony - gorgeous gift.",
+      description: language === 'cs' ? "Středomořská elegance, která uchvátí. Nádherný dárek plný harmonie." : "Mediterranean elegance that captivates. A gorgeous gift full of harmony.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/d12edb48-38b0-441a-91ba-a85548bcd09a.png",
       alt: language === 'cs' ? "Medové mýdlo s královským ornamentem" : "Honey soap with royal ornament",
-      description: language === 'cs' ? "Královská elegance v každém detailu! Zlatý med s propracovaným ornamentem - luxusní dárek pro náročné." : "Royal elegance in every detail! Golden honey with intricate ornament - luxury gift for the discerning.",
+      description: language === 'cs' ? "Královský luxus v každém detailu! Zlatý med a propracovaný ornament – dárek, který ohromí." : "Royal luxury in every detail! Golden honey and intricate ornament – a gift that impresses.",
       category: 'individual',
       badge: language === 'cs' ? 'Luxus' : 'Luxury'
     },
     {
       src: "/lovable-uploads/013a0911-ca75-4c22-8dfe-ab6e01d8dfc1.png",
       alt: language === 'cs' ? "Zelené mýdlo s nosorožcem" : "Green soap with rhino",
-      description: language === 'cs' ? "Pro milovníky exotické přírody! Majestátní nosorožec v zeleni - unikátní kousek pro sběratele." : "For exotic nature lovers! Majestic rhino in green - unique piece for collectors.",
+      description: language === 'cs' ? "Exotika, která zaujme! Majestátní nosorožec – sběratelský unikát." : "Exotic charm! Majestic rhino – a true collector's piece.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/168539e3-0182-418b-b4dc-1496bcec65fc.png",
       alt: language === 'cs' ? "Růžová dahlia" : "Pink dahlia",
-      description: language === 'cs' ? "Mistrovské dílo přírody! Každý lístek této nádherné dahlie je ručně tvarován - okouzlující květinová krása." : "Nature's masterpiece! Every petal of this gorgeous dahlia is hand-shaped - enchanting floral beauty.",
-      category: 'individual',
-      badge: language === 'cs' ? 'Ruční práce' : 'Handmade'
+      description: language === 'cs' ? "Ručně tvarovaná dahlie – každý lístek je malé umělecké dílo." : "Hand-shaped dahlia – every petal is a small work of art.",
+      category: 'individual'
     },
     {
       src: "/lovable-uploads/9484dc8e-b707-4841-a8b2-ab69f427adb3.png",
       alt: language === 'cs' ? "Růžová pivoňka" : "Pink peony",
-      description: language === 'cs' ? "Symbol romantiky a prosperity! Jemná pivoňka v pastelových růžových tónech - perfektní pro milovníky květin." : "Symbol of romance and prosperity! Delicate peony in pastel pink tones - perfect for flower lovers.",
+      description: language === 'cs' ? "Jemná pivoňka v pastelových tónech – romantika, která nikdy nezvadne." : "Delicate peony in pastel tones – romance that never wilts.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/01faf456-2de1-4c49-8e90-0019bf7ffac3.png",
       alt: language === 'cs' ? "Růžová chryzantéma" : "Pink chrysanthemum",
-      description: language === 'cs' ? "Přineste štěstí domů! Chryzantéma je symbolem dlouhého života a radosti - okouzlující pastelová krása." : "Bring happiness home! Chrysanthemum symbolizes long life and joy - enchanting pastel beauty.",
+      description: language === 'cs' ? "Symbol štěstí a radosti! Okouzlující pastelová chryzantéma do každého interiéru." : "Symbol of happiness and joy! Enchanting pastel chrysanthemum for any interior.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/aba33224-4ce2-4776-b8e1-6665cee2c613.png",
       alt: language === 'cs' ? "Třpytivé glamour mýdlo" : "Sparkling glamour soap",
-      description: language === 'cs' ? "Dodejte koupelně nádech luxusu! Třpytivé růžové mýdlo s glamour efektem - pro ty, kdo milují eleganci." : "Add luxury touch to your bathroom! Sparkling pink soap with glamour effect - for those who love elegance.",
+      description: language === 'cs' ? "Třpytivý glamour, který zaručeně upoutá pozornost! Elegance v růžové." : "Sparkling glamour that's guaranteed to turn heads! Elegance in pink.",
       category: 'individual'
     },
     {
       src: greenLayeredSoap,
       alt: language === 'cs' ? "Vrstvené zelené mýdlo s bylinkami" : "Layered green soap with herbs",
-      description: language === 'cs' ? "Svěžest přírody ve vrstvách! Aromatické bylinky v krémových vrstvách - přineste si zahradu domů." : "Nature's freshness in layers! Aromatic herbs in cream layers - bring the garden home.",
+      description: language === 'cs' ? "Svěžest bylinné zahrady v krémových vrstvách – příroda u vás doma." : "Freshness of an herb garden in creamy layers – nature at your home.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/1691336c-8212-4afc-8d75-af6a3c0b123e.png",
       alt: language === 'cs' ? "Bylinné zelené mýdlo" : "Green herbal soap",
-      description: language === 'cs' ? "Harmonie lesa a louky! Bylinková esence v odstínech zelené - pro milovníky přírodní krásy." : "Harmony of forest and meadow! Herbal essence in shades of green - for natural beauty lovers.",
+      description: language === 'cs' ? "Harmonie lesa a louky v jednom kousku – přírodní zelená krása." : "Harmony of forest and meadow in one piece – natural green beauty.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/8f824295-51a2-49b5-9dd5-1d7230217060.png",
       alt: language === 'cs' ? "Tyrkysové vírové mýdlo" : "Turquoise swirl soap",
-      description: language === 'cs' ? "Energie oceánu v dynamickém víru! Tyrkysová a žlutá v hravém spojení - osvěžující kousek." : "Ocean energy in dynamic swirl! Turquoise and yellow in playful fusion - refreshing piece.",
+      description: language === 'cs' ? "Hravý vír barev plný energie! Tyrkys a zlato v jednom originálním kousku." : "Playful swirl of colors full of energy! Turquoise and gold in one original piece.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/022c6570-2e64-4175-9c81-eadf0f13716b.png",
       alt: language === 'cs' ? "Oválné mýdlo s ibiškem" : "Oval soap with hibiscus",
-      description: language === 'cs' ? "Tropická elegance! Propracovaný květ ibišku na elegantním oválu - exotická krása pro váš domov." : "Tropical elegance! Intricate hibiscus flower on elegant oval - exotic beauty for your home.",
+      description: language === 'cs' ? "Tropický ibišek na elegantním oválu – exotická krása, která zaujme." : "Tropical hibiscus on elegant oval – exotic beauty that captivates.",
       category: 'seasonal'
     },
     // Gift sets
     {
       src: daisySoapsYellowPink,
       alt: language === 'cs' ? "Kopretiny žluté a růžové" : "Daisies yellow and pink",
-      description: language === 'cs' ? "Jarní pohádka! Slunečné kopretiny ve žluté a růžové přinesou radost do každého dne." : "Spring fairy tale! Sunny daisies in yellow and pink bring joy to every day.",
-      category: 'gift-set',
-      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
-    },
-    {
-      src: greenpinkfl,
-      alt: language === 'cs' ? "květinovým vzorem" : "a floral designn",
-      description: language === 'cs' ? "Přírodně a elegantně s květinovým vzorem — ideální do dárkových sad i jako dekorativní prvek v koupelně" : "Naturally elegant with a floral design — perfect for gift sets or as a decorative element in the bathroom",
-      category: 'gift-set',
-    },
-    {
-      src: greenpinkroses,
-      alt: language === 'cs' ? "Mýdlo ve tvaru zelené a růžov" : "Green and pink rose–shaped",
-      description: language === 'cs' ? "Mýdlo ve tvaru zelené a růžové růžičky okouzlí svou jemnou barvou a svěží vůní" : "This handmade green and pink rose–shaped soap charms with its soft color and fresh scent",
+      description: language === 'cs' ? "Slunečné kopretiny, které rozzáří každý den! Nejoblíbenější jarní dárek." : "Sunny daisies that brighten every day! The most popular spring gift.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Oblíbené' : 'Popular'
     },
     {
       src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png",
       alt: language === 'cs' ? "Kolekce pěti reliéfních mýdel" : "Collection of five relief soaps",
-      description: language === 'cs' ? "Kompletní sbírka pro znalce! Pět unikátních mýdel s propracovanými vzory - impozantní dárková sada." : "Complete collection for connoisseurs! Five unique soaps with intricate patterns - impressive gift set.",
+      description: language === 'cs' ? "Pět unikátních kousků v jedné sadě – wow efekt zaručen!" : "Five unique pieces in one set – wow effect guaranteed!",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.png",
       alt: language === 'cs' ? "Levandulová kolekce" : "Lavender collection",
-      description: language === 'cs' ? "Uklidňující levandule! Harmonická modro-fialová sada pro relaxaci a pohodu - ideální pro odpočinek." : "Soothing lavender! Harmonious blue-purple set for relaxation and wellbeing - ideal for unwinding.",
+      description: language === 'cs' ? "Levandulová harmonie v modro-fialových tónech – klid a krása v jednom." : "Lavender harmony in blue-purple tones – calm and beauty in one.",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/e51a7bd7-e07c-40e9-bf10-615691902e94.png",
       alt: language === 'cs' ? "Čtyřlístky pro štěstí" : "Four-leaf clovers for luck",
-      description: language === 'cs' ? "Přineste štěstí blízkým! Krásné čtyřlístky v zelené, růžové a bílé - symbol dobré náhody." : "Bring luck to loved ones! Beautiful four-leaf clovers in green, pink and white - symbol of good fortune.",
+      description: language === 'cs' ? "Darujte štěstí! Čtyřlístky, které přinesou radost a úsměv." : "Gift happiness! Four-leaf clovers that bring joy and smiles.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Pro štěstí' : 'Lucky charm'
     },
     {
       src: heartSoapsPolka,
       alt: language === 'cs' ? "Romantická srdíčka v puntíkovaném balení" : "Romantic hearts in polka-dot packaging",
-      description: language === 'cs' ? "Láska v každém detailu! Něžná srdíčka z kozího mléka a medu v roztomilém balení - dokonalý dárek lásky." : "Love in every detail! Delicate hearts from goat milk and honey in adorable packaging - perfect love gift.",
+      description: language === 'cs' ? "Něžná srdíčka v roztomilém balení – dokonalé vyznání lásky." : "Delicate hearts in adorable packaging – the perfect love confession.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Romantické' : 'Romantic'
     },
     {
       src: "/lovable-uploads/ec77542b-cdd2-436e-89d3-7e61c0a71cc8.png",
       alt: language === 'cs' ? "Sladká romantická sada" : "Sweet romantic set",
-      description: language === 'cs' ? "Sladkost romantiky! Medové mýdlo, srdíčka a poupátko růže - vyznání lásky v mýdlové formě." : "Sweetness of romance! Honey soap, hearts and rose bud - declaration of love in soap form.",
+      description: language === 'cs' ? "Med, srdíčka a růže – sladká romantika, kterou musíte mít!" : "Honey, hearts and roses – sweet romance you simply must have!",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/701fba05-b384-4891-b658-5ebbd8060bf0.png",
       alt: language === 'cs' ? "Pastelová kolekce s přírodními motivy" : "Pastel collection with natural motifs",
-      description: language === 'cs' ? "Jemná krása přírody! Nádherná pastelová kolekce inspirovaná přírodou - elegance pro každý domov." : "Gentle beauty of nature! Gorgeous pastel collection inspired by nature - elegance for every home.",
+      description: language === 'cs' ? "Pastelová kolekce plná přírodní elegance – krása do každého domova." : "Pastel collection full of natural elegance – beauty for every home.",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.png",
       alt: language === 'cs' ? "Luxusní kolekce se sušenými květy" : "Luxury collection with dried flowers",
-      description: language === 'cs' ? "Květinová nádhera! Ozdobená sušenými květy a voňavou levandulí - luxusní dárek pro náročné." : "Floral splendor! Adorned with dried flowers and fragrant lavender - luxury gift for the discerning.",
+      description: language === 'cs' ? "Sušené květy a levandule – prémiový dárek, který nadchne každého." : "Dried flowers and lavender – a premium gift that delights everyone.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Premium' : 'Premium'
     },
@@ -196,59 +191,170 @@ export const GallerySection = () => {
     {
       src: "/lovable-uploads/e836594d-8d7c-4fca-ad4b-5c63449d4d24.png",
       alt: language === 'cs' ? "Růžové mýdlo s poupátky růží" : "Pink soap with rose buds",
-      description: language === 'cs' ? "Symbol věčné lásky! Nádherné mýdlo zdobené skutečnými poupátky růží - romantika v každém detailu." : "Symbol of eternal love! Gorgeous soap adorned with real rose buds - romance in every detail.",
+      description: language === 'cs' ? "Zdobené skutečnými poupátky růží – romantika, která okouzlí." : "Adorned with real rose buds – romance that enchants.",
       category: 'seasonal',
       badge: language === 'cs' ? 'Romantické' : 'Romantic'
     },
     {
       src: "/lovable-uploads/f0d749cf-d742-427c-b839-2cec27ab2e45.png",
       alt: language === 'cs' ? "Jarní mýdlo s kopretinami" : "Spring soap with daisies",
-      description: language === 'cs' ? "Jarní probuzení! Něžné růžové mýdlo s rozkvetlými kopretinami - přinese jarní atmosféru celoročně." : "Spring awakening! Delicate pink soap with blooming daisies - brings spring atmosphere year-round.",
+      description: language === 'cs' ? "Rozkvetlé kopretiny na růžovém podkladu – jaro u vás celý rok!" : "Blooming daisies on pink base – spring at your place all year!",
       category: 'seasonal'
     },
     {
       src: "/lovable-uploads/fa8c4584-49bd-4414-89f9-2a2f9a4761a6.png",
       alt: language === 'cs' ? "Relaxační masážní mýdla" : "Relaxation massage soaps",
-      description: language === 'cs' ? "Spa zážitek doma! Speciální mýdla s masážními výstupky pro dokonalou relaxaci - wellness pro vaše smysly." : "Spa experience at home! Special soaps with massage nubs for perfect relaxation - wellness for your senses.",
+      description: language === 'cs' ? "Masážní výstupky pro dokonalou relaxaci – wellness dárek číslo jedna." : "Massage nubs for perfect relaxation – the number one wellness gift.",
       category: 'seasonal'
     },
     // Craft showcase
     {
       src: soapMakingProcess,
       alt: language === 'cs' ? "Ruční výroba mýdel" : "Handmade soap crafting",
-      description: language === 'cs' ? "Řemeslná tradice! Každé mýdlo vzniká s láskou a péčí v našem ateliéru - kvalita, kterou ucítíte." : "Craft tradition! Each soap is created with love and care in our studio - quality you can feel.",
-      category: 'individual'
-    },
-    {
-      src: hearts,
-      alt: language === 'cs' ? "Srdíčkové " : "Hearts",
-      description: language === 'cs' ? "MERAK srdíčkové mýdlo. Ideální dárek z lásky nebo malé potěšení pro sebe" : "MERAK heart-shaped soap. The perfect gift of love or a small treat for yourself",
-      category: 'individual'
-    },
-    {
-      src: handmade100,
-      alt: language === 'cs' ? "100% ruční výroba" : "100% hand made",
-      description: language === 'cs' ? "100% ruční výroba. Jemné, přírodní a vytvořené s péčí. Malý luxus pro každý den" : "100% hand made. Gentle, natural, and crafted with care. A little touch of everyday luxury",
-      category: 'individual'
-    },
-    {
-      src: exfoliating,
-      alt: language === 'cs' ? "Kulaté peelingové mýdlo" : "Exfoliating soap",
-      description: language === 'cs' ? "Kulaté peelingové mýdlo" : "Round exfoliating soap",
-      category: 'individual'
-    },
-    {
-      src: roseflower,
-      alt: language === 'cs' ? "Růžové věčné květy" : "Rose Flower",
-      description: language === 'cs' ? "Růžové věčné květy v dárkové krabičce — jemný symbol lásky, která trvá navždy. Ideální k výročí, romantickému překvapení nebo pro každý výjimečný okamžik" : "Pink eternal flowers in a gift box — a delicate symbol of love that lasts forever. Perfect for anniversaries, romantic surprises, or any moment you want to make unforgettable",
+      description: language === 'cs' ? "Každý kousek vzniká s láskou a péčí – řemeslná kvalita z Prahy." : "Every piece is crafted with love and care – artisan quality from Prague.",
       category: 'individual'
     },
     {
       src: naturalIngredients,
       alt: language === 'cs' ? "Přírodní ingredience" : "Natural ingredients",
-      description: language === 'cs' ? "Pouze to nejlepší z přírody! Olivový olej, kozí mléko, med a růžové plátky - přírodní luxus." : "Only the best from nature! Olive oil, goat milk, honey and rose petals - natural luxury.",
+      description: language === 'cs' ? "Olivový olej, kozí mléko, med a růže – přírodní luxus bez kompromisů." : "Olive oil, goat milk, honey and roses – natural luxury without compromise.",
       category: 'individual'
-    }   
+    },
+    // Valentine's Collection
+    {
+      src: valentineBouquet1,
+      alt: language === 'cs' ? "Mýdlová kytice - Růže a pivoňky" : "Soap Bouquet - Roses & Peonies",
+      description: language === 'cs' ? "Růže a pivoňky v růžových tónech – náš nejprodávanější dárek!" : "Roses and peonies in pink tones – our best-selling gift!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
+    },
+    {
+      src: valentineBouquet2,
+      alt: language === 'cs' ? "Mýdlová kytice se srdíčkem" : "Soap Bouquet with Heart",
+      description: language === 'cs' ? "Kytice se srdíčkem – řekněte to květinami, které vydrží navždy!" : "Bouquet with heart – say it with flowers that last forever!",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartPink,
+      alt: language === 'cs' ? "Růžové srdíčko" : "Pink Heart Soap",
+      description: language === 'cs' ? "Roztomilé srdíčko v košíčku – malý dárek, velká radost!" : "Cute heart in a wrapper – small gift, big joy!",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartRedWhite,
+      alt: language === 'cs' ? "Červeno-bílé srdíčko" : "Red & White Heart",
+      description: language === 'cs' ? "Vášnivá červená a čistá bílá – symbol lásky, který musíte mít." : "Passionate red and pure white – a love symbol you must have.",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartsCollection,
+      alt: language === 'cs' ? "Kolekce diamantových srdcí" : "Diamond Hearts Collection",
+      description: language === 'cs' ? "Sbírka třpytivých srdíček v růžové – dárkový hit!" : "Collection of sparkling pink hearts – a gift hit!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Dárková sada' : 'Gift Set'
+    },
+    {
+      src: valentineHeartLayered,
+      alt: language === 'cs' ? "Vrstvené červené srdce" : "Layered Red Heart",
+      description: language === 'cs' ? "Sytě červené srdce s vrstvením – vášeň a elegance v jednom." : "Rich red layered heart – passion and elegance in one.",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartsDiamondPair,
+      alt: language === 'cs' ? "Pár diamantových srdcí" : "Diamond Hearts Pair",
+      description: language === 'cs' ? "Dvě srdíčka na růžové soli – nerozlučná láska v luxusním provedení." : "Two hearts on pink salt – inseparable love in luxury style.",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Romantické' : 'Romantic'
+    },
+    {
+      src: valentineHeartSaltSprinkle,
+      alt: language === 'cs' ? "Srdce s krystaly soli" : "Heart with Salt Crystals",
+      description: language === 'cs' ? "Červené srdce s třpytivými krystaly soli – okouzlí na první pohled!" : "Red heart with sparkling salt crystals – love at first sight!",
+      category: 'valentine'
+    },
+    {
+      src: valentineDiamondHeartsSalt,
+      alt: language === 'cs' ? "Diamantové srdce se srdíčky" : "Diamond Heart with Hearts",
+      description: language === 'cs' ? "Mramorové srdce se srdíčky na růžové soli – luxusní dekorace." : "Marble heart with hearts on pink salt – luxury decoration.",
+      category: 'valentine'
+    },
+    {
+      src: valentineOrnateHeartBox,
+      alt: language === 'cs' ? "Ornamentální srdce v dárkové krabičce" : "Ornamental Heart Gift Box",
+      description: language === 'cs' ? "Barokní srdce ve zlaté krabičce – prémiový dárek, který ohromí!" : "Baroque heart in golden box – a premium gift that wows!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Premium' : 'Premium'
+    },
+    {
+      src: valentineBouquetPinkPeonies,
+      alt: language === 'cs' ? "Kytice růžových pivoněk" : "Pink Peony Bouquet",
+      description: language === 'cs' ? "Ručně tvarované pivoňky a růže – kytice, co nikdy nezvadne." : "Hand-shaped peonies and roses – a bouquet that never wilts.",
+      category: 'valentine'
+    },
+    {
+      src: valentineBouquetVase,
+      alt: language === 'cs' ? "Kytice v dekorativní váze" : "Bouquet in Decorative Vase",
+      description: language === 'cs' ? "Pivoňky v bílé váze – luxusní dekorace, co vydrží věčně." : "Peonies in white vase – luxury decor that lasts forever.",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Luxus' : 'Luxury'
+    },
+    {
+      src: valentineILovePrague,
+      alt: language === 'cs' ? "Srdce I ♥ Prague" : "I ♥ Prague Heart",
+      description: language === 'cs' ? "I ♥ Prague – nejkrásnější suvenýr z Prahy!" : "I ♥ Prague – the most beautiful souvenir from Prague!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Unikát' : 'Unique'
+    },
+    {
+      src: valentineFlowerHeart,
+      alt: language === 'cs' ? "Květinové srdce" : "Floral Heart",
+      description: language === 'cs' ? "Květinové srdce v růžovo-bílé – jemná krása, která uchvátí." : "Floral heart in pink-white – delicate beauty that captivates.",
+      category: 'valentine'
+    },
+    {
+      src: valentineBearHeart,
+      alt: language === 'cs' ? "Medvídek se srdíčkem" : "Bear with Heart",
+      description: language === 'cs' ? "Medvídek z růžiček se srdíčkem – nejroztomilejší dárek vůbec!" : "Rose bear with heart – the most adorable gift ever!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
+    },
+    {
+      src: valentineHeartPetalPink,
+      alt: language === 'cs' ? "Srdce s květinovými lístky" : "Heart with Floral Petals",
+      description: language === 'cs' ? "Srdce posypané okvětními lístky – romantika v každém detailu." : "Heart sprinkled with petals – romance in every detail.",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartRibbedPink,
+      alt: language === 'cs' ? "Srdce s jemným žebrováním" : "Heart with Ribbed Texture",
+      description: language === 'cs' ? "Elegantní žebrované srdce – minimalistická krása, maximální efekt." : "Elegant ribbed heart – minimalist beauty, maximum effect.",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartWavyPink,
+      alt: language === 'cs' ? "Srdce s vlnitým vzorem" : "Heart with Wavy Pattern",
+      description: language === 'cs' ? "Vlnitý vzor plný pohybu – srdce, které zaujme na první pohled." : "Wavy pattern full of motion – a heart that catches every eye.",
+      category: 'valentine'
+    },
+    {
+      src: valentineHeartScallopedPink,
+      alt: language === 'cs' ? "Srdce s vlnkami" : "Heart with Scalloped Edges",
+      description: language === 'cs' ? "Srdíčko se zdobenými okraji – roztomilý detail, který potěší." : "Heart with scalloped edges – an adorable detail that delights.",
+      category: 'valentine'
+    },
+    {
+      src: valentineLuxuryBouquetArrangement,
+      alt: language === 'cs' ? "Luxusní valentýnská kytice" : "Luxury Valentine's Bouquet",
+      description: language === 'cs' ? "Luxusní kytice růží, pivoněk a srdcí – ten nejlepší dárek!" : "Luxury bouquet of roses, peonies and hearts – the ultimate gift!",
+      category: 'valentine',
+      badge: language === 'cs' ? 'Premium' : 'Premium'
+    },
+    {
+      src: valentineBearHeartValentine,
+      alt: language === 'cs' ? "Medvídek Be My Valentine" : "Be My Valentine Bear",
+      description: language === 'cs' ? "Medvídek z růžiček s kartičkou – darujte lásku stylově!" : "Rose bear with card – give love in style!",
+      category: 'valentine'
+    }
   ];
 
   const filteredImages = selectedCategory === 'all' 
@@ -324,7 +430,7 @@ export const GallerySection = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-smooth group-hover:scale-110"
+                className="w-full h-full object-contain bg-white transition-smooth group-hover:scale-110"
                 loading="lazy"
               />
               
