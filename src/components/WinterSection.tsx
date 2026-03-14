@@ -27,6 +27,7 @@ import christmasGreenTreesPair from "@/assets/White-green snowflake.jpg";
 import christmasPinkTreePearls from "@/assets/christmas-yellow-snowflake-pearls.jpg";
 
 // Stars & gifts
+import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
 import christmasWhiteStarOrnaments from "@/assets/christmas-snowflake-baroque-pink.jpg";
 import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
@@ -207,7 +208,15 @@ export const WinterSection = () => {
 
 
 
-    // Stars & gifts 
+    // Stars & gifts
+    {
+      id: 'winter-star-pink',
+      name: language === 'cs' ? 'Růžová zimní hvězda' : 'Pink Winter Star',
+      price: 145,
+      image: christmasStarPink,
+      description: language === 'cs' ? 'Zářivá hvězda v jemně růžové s ornamentem - rozsvítí každý zimní večer' : 'Radiant star in soft pink with ornament - lights up every winter evening',
+      category: 'star'
+    },
     {
       id: 'winter-star-tree',
       name: language === 'cs' ? 'Andělíčci – pár' : 'Angel Pair',
