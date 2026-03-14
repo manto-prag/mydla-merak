@@ -24,10 +24,8 @@ import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
 import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
 import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
 import christmasGreenTreesPair from "@/assets/White-green snowflake.jpg";
-import christmasPinkTreePearls from "@/assets/christmas-yellow-snowflake-pearls.jpg";
 
 // Stars & gifts
-import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
 import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
 
@@ -195,27 +193,9 @@ export const WinterSection = () => {
       description: language === 'cs' ? 'Elegantní bílá vločka se zeleným vzorem – čistá zimní krása, která zaujme.' : 'Elegant white snowflake with green pattern – pure winter beauty that impresses.',
       category: 'tree'
     },
-    {
-      id: 'winter-pink-tree-pearls',
-      name: language === 'cs' ? 'Zlatá vločka s ornamentem' : 'Golden Snowflake with Ornament',
-      price: 175,
-      image: christmasPinkTreePearls,
-      description: language === 'cs' ? 'Zářivě zlatá vločka s propracovaným ornamentem – luxusní zimní třpyt.' : 'Radiant golden snowflake with intricate ornament – luxury winter sparkle.',
-      badge: language === 'cs' ? 'Luxus' : 'Luxury',
-      category: 'tree'
-    },
-
 
 
     // Stars & gifts
-    {
-      id: 'winter-star-pink',
-      name: language === 'cs' ? 'Růžová zimní hvězda' : 'Pink Winter Star',
-      price: 145,
-      image: christmasStarPink,
-      description: language === 'cs' ? 'Zářivá hvězda v jemně růžové s ornamentem - rozsvítí každý zimní večer' : 'Radiant star in soft pink with ornament - lights up every winter evening',
-      category: 'star'
-    },
     {
       id: 'winter-star-tree',
       name: language === 'cs' ? 'Andělíčci – pár' : 'Angel Pair',
