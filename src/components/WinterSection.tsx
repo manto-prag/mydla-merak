@@ -29,7 +29,6 @@ import christmasPinkTreePearls from "@/assets/christmas-yellow-snowflake-pearls.
 // Stars & gifts
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
 import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
-import christmasWhiteStarOrnaments from "@/assets/christmas-snowflake-baroque-pink.jpg";
 import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
 
 // Characters
@@ -223,14 +222,6 @@ export const WinterSection = () => {
       price: 165,
       image: christmasPinkStarTree,
       description: language === 'cs' ? 'Nádherný pár andělíčků v bílé a růžové – ochránci vašeho domova.' : 'Beautiful angel pair in white and pink – guardians of your home.',
-      category: 'star'
-    },
-    {
-      id: 'winter-star-white-ornaments',
-      name: language === 'cs' ? 'Růžová hvězda s ornamenty' : 'Pink Star with Ornaments',
-      price: 155,
-      image: christmasWhiteStarOrnaments,
-      description: language === 'cs' ? 'Okouzlující růžová hvězda s bílými ornamenty – romantická zimní dekorace.' : 'Enchanting pink star with white ornaments – romantic winter decoration.',
       category: 'star'
     },
     {
