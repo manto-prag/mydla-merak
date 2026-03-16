@@ -29,7 +29,7 @@ export const EasterSection = () => {
       id: 'easter-bunny-white-pearl',
       name: language === 'cs' ? 'Bílý zajíček s perličkou' : 'White Bunny with Pearl',
       price: 185,
-      image: '/src/assets/easter-bunny-white-pearl.jpg',
+      image: '@/assets/easter-bunny-white-pearl.jpg',
       description: language === 'cs' ? 'Čistě bílý zajíček se srdíčkem a zlatou mašlí – něžný dárek pro jarní radost' : 'Pure white bunny with heart and golden bow – a tender gift for spring joy'
     },
     {
