@@ -12,7 +12,7 @@ import bunniespair from "@/assets/easter-bunnies-pink-peach-pair.jpg";
 import bunniestrio from "@/assets/easter-bunnies-trio.jpg";
 import bunnyears from "@/assets/easter-egg-bunny-ears-peach.jpg";
 
-import bunniespairblue from "@/src/assets/easter-bunnies-blue-pink.jpg";
+import bunniespairblue from "@/assets/easter-bunnies-blue-pink.jpg";
 import bunniesgroup from "@/assets/easter-bunnies-pastel-group.jpg";
 import eggsgreen from "@/assets/easter-eggs-green-ornate.jpg";
 import bunnyheart from "@/assets/easter-heart-bunny-blue.jpg";
