@@ -2,6 +2,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
+import bunnygreen from "@assets/easter-bunny-green-pearl.jpg";
+
+
 interface EasterProduct {
   id: string;
   name: string;
@@ -19,7 +22,7 @@ export const EasterSection = () => {
       id: 'easter-bunny-green-pearl',
       name: language === 'cs' ? 'Zelený zajíček s perličkou' : 'Green Bunny with Pearl',
       price: 185,
-      image: '/src/assets/easter-bunny-green-pearl.jpg',
+      image: bunnygreen,
       description: language === 'cs' ? 'Jarní zajíček v jemně zelené se zlatou mašličkou a perličkou – elegantní velikonoční dekorace' : 'Spring bunny in soft green with golden bow and pearl – elegant Easter decoration',
       badge: language === 'cs' ? 'Novinka' : 'New'
     },
