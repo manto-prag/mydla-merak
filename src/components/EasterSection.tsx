@@ -2,7 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
-import eastergreen from "@assets/easter-bunny-green-pearl.jpg";
+import eastergreen from "@/assets/easter-bunny-green-pearl.jpg";
 
 interface EasterProduct {
   id: string;
