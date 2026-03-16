@@ -3,6 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
 import eastergreen from "@/assets/easter-bunny-green-pearl.jpg";
+import easterwhite from "@/assets/easter-bunny-white-pearl.jpg";
+import easteryellow from "@/assets/easter-bunny-yellow-pearl.jpg";
+import bunniesset from "@/assets/easter-bunnies-colorful-set.jpg";
+
+import bunnyfloral from "@/assets/easter-bunny-blue-floral.jpg";
+import bunniespair from "@/assets/easter-bunnies-pink-peach-pair.jpg";
+import bunniestrio from "@/assets/easter-bunnies-trio.jpg";
+import bunnyears from "@/assets/easter-egg-bunny-ears-peach.jpg";
+
+import bunniespairblue from "@/src/assets/easter-bunnies-blue-pink.jpg";
+import bunniesgroup from "@/assets/easter-bunnies-pastel-group.jpg";
+import eggsgreen from "@/assets/easter-eggs-green-ornate.jpg";
+import bunnyheart from "@/assets/easter-heart-bunny-blue.jpg";
+
+import bunnysilhouette from "@/assets/easter-egg-bunny-silhouette-blue.jpg";
+import bunnymint from "@/assets/easter-egg-bunny-ears-mint.jpg";
+import eggzigzag from "@/assets/easter-egg-zigzag-pastel.jpg";
+import eggscollection from "@/assets/easter-eggs-collection-pastel.jpg";
 
 interface EasterProduct {
   id: string;
@@ -29,21 +47,21 @@ export const EasterSection = () => {
       id: 'easter-bunny-white-pearl',
       name: language === 'cs' ? 'Bílý zajíček s perličkou' : 'White Bunny with Pearl',
       price: 185,
-      image: '@/assets/easter-bunny-white-pearl.jpg',
+      image: easterwhite,
       description: language === 'cs' ? 'Čistě bílý zajíček se srdíčkem a zlatou mašlí – něžný dárek pro jarní radost' : 'Pure white bunny with heart and golden bow – a tender gift for spring joy'
     },
     {
       id: 'easter-bunny-yellow-pearl',
       name: language === 'cs' ? 'Žlutý zajíček s perličkou' : 'Yellow Bunny with Pearl',
       price: 185,
-      image: '/src/assets/easter-bunny-yellow-pearl.jpg',
+      image: easteryellow,
       description: language === 'cs' ? 'Slunečně žlutý zajíček se srdíčkem a perličkou – kousek jara u vás doma' : 'Sunny yellow bunny with heart and pearl – a piece of spring at your home'
     },
     {
       id: 'easter-bunnies-colorful-set',
       name: language === 'cs' ? 'Sada barevných zajíčků' : 'Colorful Bunny Set',
       price: 355,
-      image: '/src/assets/easter-bunnies-colorful-set.jpg',
+      image: bunniesset,
       description: language === 'cs' ? 'Čtyři roztomilí zajíčci s mašličkami a srdíčky v zářivých barvách – dárek, co okouzlí' : 'Four adorable bunnies with bows and hearts in vibrant colors – a gift that charms',
       badge: language === 'cs' ? 'Dárková sada' : 'Gift Set'
     },
@@ -51,7 +69,7 @@ export const EasterSection = () => {
       id: 'easter-bunny-blue-floral',
       name: language === 'cs' ? 'Tyrkysový zajíc s květinami' : 'Turquoise Bunny with Flowers',
       price: 195,
-      image: '/src/assets/easter-bunny-blue-floral.jpg',
+      image: bunnyfloral,
       description: language === 'cs' ? 'Majestátní tyrkysový zajíc s vyřezávanými květinami – unikátní umělecké dílo' : 'Majestic turquoise bunny with carved flowers – a unique work of art',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
@@ -59,14 +77,14 @@ export const EasterSection = () => {
       id: 'easter-bunnies-pink-peach-pair',
       name: language === 'cs' ? 'Dvojice zajíčků růžová a broskvová' : 'Pink & Peach Bunny Pair',
       price: 310,
-      image: '/src/assets/easter-bunnies-pink-peach-pair.jpg',
+      image: bunniespair,
       description: language === 'cs' ? 'Roztomilá dvojice s mašličkami v pastelových tónech – ideální jarní dárek' : 'Adorable pair with bows in pastel tones – the ideal spring gift'
     },
     {
       id: 'easter-bunnies-trio',
       name: language === 'cs' ? 'Trio zajíčků s mašlemi' : 'Bunny Trio with Bows',
       price: 420,
-      image: '/src/assets/easter-bunnies-trio.jpg',
+      image: bunniestrio,
       description: language === 'cs' ? 'Tři zajíčci v růžové, tyrkysové a broskvové – jarní harmonie barev' : 'Three bunnies in pink, turquoise and peach – spring color harmony',
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
     },
@@ -74,14 +92,14 @@ export const EasterSection = () => {
       id: 'easter-bunnies-blue-pink',
       name: language === 'cs' ? 'Dvojice zajíčků modrá a růžová' : 'Blue & Pink Bunny Pair',
       price: 310,
-      image: '/src/assets/easter-bunnies-blue-pink.jpg',
+      image: bunniespairblue,
       description: language === 'cs' ? 'Zářivě modrý a jemně růžový zajíček s mašlemi – perfektní pár pro Velikonoce' : 'Vibrant blue and soft pink bunny with bows – the perfect Easter pair'
     },
     {
       id: 'easter-bunnies-pastel-group',
       name: language === 'cs' ? 'Pastelová kolekce zajíčků' : 'Pastel Bunny Collection',
       price: 520,
-      image: '/src/assets/easter-bunnies-pastel-group.jpg',
+      image: bunniesgroup,
       description: language === 'cs' ? 'Šest zajíčků s perličkami v pastelové duze – nádherný velikonoční středobod' : 'Six bunnies with pearls in pastel rainbow – a stunning Easter centerpiece',
       badge: language === 'cs' ? 'Premium' : 'Premium'
     },
@@ -89,7 +107,7 @@ export const EasterSection = () => {
       id: 'easter-eggs-green-ornate',
       name: language === 'cs' ? 'Zdobená velikonoční vajíčka' : 'Ornate Easter Eggs',
       price: 290,
-      image: '/src/assets/easter-eggs-green-ornate.jpg',
+      image: eggsgreen,
       description: language === 'cs' ? 'Luxusní zelená vajíčka s reliéfními květinami a zajíčkem – tradiční krása v moderním provedení' : 'Luxury green eggs with relief flowers and bunny – traditional beauty in modern style',
       badge: language === 'cs' ? 'Luxus' : 'Luxury'
     },
@@ -97,7 +115,7 @@ export const EasterSection = () => {
       id: 'easter-heart-bunny-blue',
       name: language === 'cs' ? 'Srdce se zajíčkem' : 'Heart with Bunny',
       price: 220,
-      image: '/src/assets/easter-heart-bunny-blue.jpg',
+      image: bunnyheart,
       description: language === 'cs' ? 'Romantické srdce s květinovým rámečkem a roztomilým zajíčkem na tyrkysovém pozadí – okouzlující velikonoční dekorace' : 'Romantic heart with floral frame and adorable bunny on turquoise background – a charming Easter decoration',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
@@ -112,28 +130,28 @@ export const EasterSection = () => {
       id: 'easter-egg-bunny-silhouette-blue',
       name: language === 'cs' ? 'Vajíčko se zajíčkem – modré' : 'Egg with Bunny – Blue',
       price: 155,
-      image: '/src/assets/easter-egg-bunny-silhouette-blue.jpg',
+      image: bunnysilhouette,
       description: language === 'cs' ? 'Tyrkysové krajkové vajíčko se siluetou skákajícího zajíčka – hravý velikonoční závěs' : 'Turquoise scalloped egg with jumping bunny silhouette – a playful Easter hanging'
     },
     {
       id: 'easter-egg-bunny-ears-mint',
       name: language === 'cs' ? 'Vajíčko s oušky – mentolové' : 'Egg with Ears – Mint',
       price: 155,
-      image: '/src/assets/easter-egg-bunny-ears-mint.jpg',
+      image: bunnymint,
       description: language === 'cs' ? 'Mentolovo-růžové vajíčko s vyčuhujícími oušky – něžná pastelová dekorace pro jarní atmosféru' : 'Mint-pink egg with peeking ears – a tender pastel decoration for spring atmosphere'
     },
     {
       id: 'easter-egg-zigzag-pastel',
       name: language === 'cs' ? 'Pastelové vajíčko cik-cak' : 'Pastel Zigzag Egg',
       price: 145,
-      image: '/src/assets/easter-egg-zigzag-pastel.jpg',
+      image: eggzigzag,
       description: language === 'cs' ? 'Tříbarevné vajíčko v žluté, růžové a mentolové s cik-cak vzorem – veselá jarní dekorace' : 'Three-color egg in yellow, pink and mint with zigzag pattern – a cheerful spring decoration'
     },
     {
       id: 'easter-eggs-collection-pastel',
       name: language === 'cs' ? 'Kolekce pastelových vajíček' : 'Pastel Eggs Collection',
       price: 690,
-      image: '/src/assets/easter-eggs-collection-pastel.jpg',
+      image: eggscollection,
       description: language === 'cs' ? 'Bohatá kolekce ručně vyráběných vajíček a zajíčků v pastelových barvách se saténovými mašlemi – dokonalý velikonoční set' : 'Rich collection of handmade eggs and bunnies in pastel colors with satin ribbons – the perfect Easter set',
       badge: language === 'cs' ? 'Premium sada' : 'Premium Set'
     },
