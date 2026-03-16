@@ -3,7 +3,8 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductSection } from "@/components/ProductSection";
-import { WinterSection } from "@/components/WinterSection";
+import { EasterSection } from "@/components/EasterSection";
+/*import { WinterSection } from "@/components/WinterSection";*/
 /*import { ValentinesSection } from "@/components/ValentinesSection";*/
 /*import { ChristmasSection } from "@/components/ChristmasSection";*/
 import { GiftSection } from "@/components/GiftSection";
@@ -25,7 +26,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
-          <WinterSection />
+          <EasterSection />
           <ProductSection />
           <GallerySection />
           <GiftSection />          
