@@ -10,12 +10,12 @@ import bunniesset from "@/assets/easter-bunnies-colorful-set.jpg";
 import bunnyfloral from "@/assets/easter-bunny-blue-floral.jpg";
 import bunniespair from "@/assets/easter-bunnies-pink-peach-pair.jpg";
 import bunniestrio from "@/assets/easter-bunnies-trio.jpg";
-import bunnyears from "@/assets/easter-egg-bunny-ears-peach.jpg";
-
 import bunniespairblue from "@/assets/easter-bunnies-blue-pink.jpg";
+
 import bunniesgroup from "@/assets/easter-bunnies-pastel-group.jpg";
 import eggsgreen from "@/assets/easter-eggs-green-ornate.jpg";
 import bunnyheart from "@/assets/easter-heart-bunny-blue.jpg";
+import bunnypeachears from "@/assets/easter-egg-bunny-ears-peach.jpg";
 
 import bunnysilhouette from "@/assets/easter-egg-bunny-silhouette-blue.jpg";
 import bunnymint from "@/assets/easter-egg-bunny-ears-mint.jpg";
@@ -123,7 +123,7 @@ export const EasterSection = () => {
       id: 'easter-egg-bunny-ears-peach',
       name: language === 'cs' ? 'Vajíčko s oušky – broskvové' : 'Egg with Ears – Peach',
       price: 155,
-      image: '/src/assets/easter-egg-bunny-ears-peach.jpg',
+      image: bunnypeachears,
       description: language === 'cs' ? 'Jemně broskvové vajíčko s vyčnívajícími zaječími oušky a saténovou mašlí – rozkošná jarní ozdoba' : 'Soft peach egg with peeking bunny ears and satin ribbon – a delightful spring ornament'
     },
     {
