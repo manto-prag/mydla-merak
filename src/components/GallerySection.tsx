@@ -33,6 +33,8 @@ import valentineHeartScallopedPink from "@/assets/valentine-heart-scalloped-pink
 import valentineLuxuryBouquetArrangement from "@/assets/valentine-luxury-bouquet-arrangement.jpg";
 import valentineBearHeartValentine from "@/assets/valentine-bear-heart-valentine.jpg";
 
+import blueginko from "@/assets/gallery-blue-ginkgo-soap.jpg";
+
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'individual' | 'gift-set' | 'seasonal' | 'valentine'>('all');
@@ -58,6 +60,13 @@ export const GallerySection = () => {
       src: dentalSoap,
       alt: language === 'cs' ? "Mýdlo ve tvaru zubu" : "Tooth shaped soap",
       description: language === 'cs' ? "Hit mezi zubaři! Veselý zoubek, který rozsvítí každou ordinaci." : "A hit among dentists! Cheerful little tooth that lights up any office.",
+      category: 'individual',
+      badge: language === 'cs' ? 'Unikát' : 'Unique'
+    },
+    {
+      src: blueginko,
+      alt: language === 'cs' ? "Tyrkysové mýdlo s listy ginkga" : "Turquoise ginkgo leaf soap",
+      description: language === 'cs' ? "Nádherný tyrkysový reliéf listů ginkga – unikátní umělecké dílo inspirované přírodou." : "Stunning turquoise ginkgo leaf relief – a unique work of art inspired by nature.",
       category: 'individual',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
