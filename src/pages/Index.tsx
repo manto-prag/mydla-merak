@@ -3,13 +3,19 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductSection } from "@/components/ProductSection";
-import { EasterSection } from "@/components/EasterSection";
+
+/* NEW */
+import { SpringSection } from "@/components/SpringSection";
+
+/* OLD */
+/*import { EasterSection } from "@/components/EasterSection";*/
 /*import { WinterSection } from "@/components/WinterSection";*/
 /*import { ValentinesSection } from "@/components/ValentinesSection";*/
 /*import { ChristmasSection } from "@/components/ChristmasSection";*/
+/*import { VideoSection } from "@/components/VideoSection"; */
+
 import { GiftSection } from "@/components/GiftSection";
 import { GallerySection } from "@/components/GallerySection";
-/*import { VideoSection } from "@/components/VideoSection"; */
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { OrderSection } from "@/components/OrderSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -26,7 +32,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
-          <EasterSection />
+          <SpringSection />
           <ProductSection />
           <GallerySection />
           <GiftSection />          
