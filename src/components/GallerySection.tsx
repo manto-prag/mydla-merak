@@ -7,8 +7,8 @@ import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
-import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.jpg";
-import dentalSoap from "@/assets/dental-soap.jpg";
+
+import dentalSoap from "@/assets/dental-soap.png";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
@@ -33,15 +33,14 @@ import valentineHeartScallopedPink from "@/assets/valentine-heart-scalloped-pink
 import valentineLuxuryBouquetArrangement from "@/assets/valentine-luxury-bouquet-arrangement.jpg";
 import valentineBearHeartValentine from "@/assets/valentine-bear-heart-valentine.jpg";
 
-import blueginko from "@/assets/gallery-blue-ginkgo-soap.jpg";
-
 export const GallerySection = () => {
   const { translations, language } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'individual' | 'gift-set' | 'seasonal' | 'valentine'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'individual' | 'gift-set' | 'seasonal' | 'valentine' | 'winter'>('all');
   
   const categories = [
     { id: 'all', label: language === 'cs' ? 'Vše' : 'All', icon: Sparkles },
     { id: 'valentine', label: language === 'cs' ? 'Romantická kolekce' : "Romantic Collection", icon: Heart },
+    
     { id: 'individual', label: language === 'cs' ? 'Jednotlivá mýdla' : 'Individual Soaps', icon: Heart },
     { id: 'gift-set', label: language === 'cs' ? 'Dárkové sety' : 'Gift Sets', icon: Gift },
     { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal Collections', icon: ShoppingBag }
@@ -64,11 +63,18 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: blueginko,
+      src: "/lovable-uploads/gallery-blue-ginkgo-soap.jpg",
       alt: language === 'cs' ? "Tyrkysové mýdlo s listy ginkga" : "Turquoise ginkgo leaf soap",
       description: language === 'cs' ? "Nádherný tyrkysový reliéf listů ginkga – unikátní umělecké dílo inspirované přírodou." : "Stunning turquoise ginkgo leaf relief – a unique work of art inspired by nature.",
       category: 'individual',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
+    },
+    {
+      src: "/lovable-uploads/gallery-i-love-prague-hearts.jpg",
+      alt: language === 'cs' ? "Srdíčka I Love Prague v organzových sáčcích" : "I Love Prague heart soaps in organza bags",
+      description: language === 'cs' ? "Barevn\u00e1 srd\u00ed\u010dka s n\u00e1pisem I Love Prague \u2013 origin\u00e1ln\u00ed pra\u017esk\u00fd suven\u00fdr v elegantn\u00edm balen\u00ed." : "Colorful heart soaps with 'I Love Prague' inscription \u2013 an original Prague souvenir in elegant packaging.",
+      category: 'gift-set',
+      badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
@@ -96,24 +102,6 @@ export const GallerySection = () => {
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/168539e3-0182-418b-b4dc-1496bcec65fc.png",
-      alt: language === 'cs' ? "Růžová dahlia" : "Pink dahlia",
-      description: language === 'cs' ? "Ručně tvarovaná dahlie – každý lístek je malé umělecké dílo." : "Hand-shaped dahlia – every petal is a small work of art.",
-      category: 'individual'
-    },
-    {
-      src: "/lovable-uploads/9484dc8e-b707-4841-a8b2-ab69f427adb3.png",
-      alt: language === 'cs' ? "Růžová pivoňka" : "Pink peony",
-      description: language === 'cs' ? "Jemná pivoňka v pastelových tónech – romantika, která nikdy nezvadne." : "Delicate peony in pastel tones – romance that never wilts.",
-      category: 'individual'
-    },
-    {
-      src: "/lovable-uploads/01faf456-2de1-4c49-8e90-0019bf7ffac3.png",
-      alt: language === 'cs' ? "Růžová chryzantéma" : "Pink chrysanthemum",
-      description: language === 'cs' ? "Symbol štěstí a radosti! Okouzlující pastelová chryzantéma do každého interiéru." : "Symbol of happiness and joy! Enchanting pastel chrysanthemum for any interior.",
-      category: 'individual'
-    },
-    {
       src: "/lovable-uploads/aba33224-4ce2-4776-b8e1-6665cee2c613.png",
       alt: language === 'cs' ? "Třpytivé glamour mýdlo" : "Sparkling glamour soap",
       description: language === 'cs' ? "Třpytivý glamour, který zaručeně upoutá pozornost! Elegance v růžové." : "Sparkling glamour that's guaranteed to turn heads! Elegance in pink.",
@@ -136,20 +124,6 @@ export const GallerySection = () => {
       alt: language === 'cs' ? "Tyrkysové vírové mýdlo" : "Turquoise swirl soap",
       description: language === 'cs' ? "Hravý vír barev plný energie! Tyrkys a zlato v jednom originálním kousku." : "Playful swirl of colors full of energy! Turquoise and gold in one original piece.",
       category: 'individual'
-    },
-    {
-      src: "/lovable-uploads/022c6570-2e64-4175-9c81-eadf0f13716b.png",
-      alt: language === 'cs' ? "Oválné mýdlo s ibiškem" : "Oval soap with hibiscus",
-      description: language === 'cs' ? "Tropický ibišek na elegantním oválu – exotická krása, která zaujme." : "Tropical hibiscus on elegant oval – exotic beauty that captivates.",
-      category: 'seasonal'
-    },
-    // Gift sets
-    {
-      src: daisySoapsYellowPink,
-      alt: language === 'cs' ? "Kopretiny žluté a růžové" : "Daisies yellow and pink",
-      description: language === 'cs' ? "Slunečné kopretiny, které rozzáří každý den! Nejoblíbenější jarní dárek." : "Sunny daisies that brighten every day! The most popular spring gift.",
-      category: 'gift-set',
-      badge: language === 'cs' ? 'Oblíbené' : 'Popular'
     },
     {
       src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png",
@@ -197,19 +171,6 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Premium' : 'Premium'
     },
     // Seasonal
-    {
-      src: "/lovable-uploads/e836594d-8d7c-4fca-ad4b-5c63449d4d24.png",
-      alt: language === 'cs' ? "Růžové mýdlo s poupátky růží" : "Pink soap with rose buds",
-      description: language === 'cs' ? "Zdobené skutečnými poupátky růží – romantika, která okouzlí." : "Adorned with real rose buds – romance that enchants.",
-      category: 'seasonal',
-      badge: language === 'cs' ? 'Romantické' : 'Romantic'
-    },
-    {
-      src: "/lovable-uploads/f0d749cf-d742-427c-b839-2cec27ab2e45.png",
-      alt: language === 'cs' ? "Jarní mýdlo s kopretinami" : "Spring soap with daisies",
-      description: language === 'cs' ? "Rozkvetlé kopretiny na růžovém podkladu – jaro u vás celý rok!" : "Blooming daisies on pink base – spring at your place all year!",
-      category: 'seasonal'
-    },
     {
       src: "/lovable-uploads/fa8c4584-49bd-4414-89f9-2a2f9a4761a6.png",
       alt: language === 'cs' ? "Relaxační masážní mýdla" : "Relaxation massage soaps",
@@ -363,7 +324,8 @@ export const GallerySection = () => {
       alt: language === 'cs' ? "Medvídek Be My Valentine" : "Be My Valentine Bear",
       description: language === 'cs' ? "Medvídek z růžiček s kartičkou – darujte lásku stylově!" : "Rose bear with card – give love in style!",
       category: 'valentine'
-    }
+    },
+    // Winter/Christmas items moved to Christmas Collection section
   ];
 
   const filteredImages = selectedCategory === 'all' 

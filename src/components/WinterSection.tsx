@@ -4,35 +4,39 @@ import { Button } from "@/components/ui/button";
 import { Snowflake, Star, Gift, Sparkles } from "lucide-react";
 
 // Snowflakes
-import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.jpg";
-import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.jpg";
-import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg";
-import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.jpg";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
-import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
-import christmasBlueSnowflake from "@/assets/christmas-yellow-snowflake.jpg";
-import christmasGreenSnowflakeStar from "@/assets/Bells.jpg";
-import christmasWhiteSnowflakePearl from "@/assets/christmas-red-snowflake-pearl.jpg";
+import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.png";
+import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.png";
+import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-holly-green.png";
+import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.png";
+import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.png";
+import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.png";
+import christmasBlueSnowflake from "@/assets/christmas-blue-snowflake.png";
+import christmasGreenSnowflakeStar from "@/assets/christmas-green-snowflake-star.png";
+import christmasWhiteSnowflakePearl from "@/assets/christmas-white-snowflake-pearl.png";
 
 // Angels
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
-import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
+import christmasAngelSoaps from "@/assets/christmas-angel-soaps.png";
+import christmasAngelPink from "@/assets/christmas-angel-pink.png";
 
 
 // Winter trees & scenes
-import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
-import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
-import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
-import christmasGreenTreesPair from "@/assets/White-green snowflake.jpg";
+import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.png";
+import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.png";
+import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.png";
+import christmasGreenTreesPair from "@/assets/christmas-green-trees-pair.png";
+import christmasPinkTreePearls from "@/assets/christmas-pink-tree-pearls.png";
 
 // Stars & gifts
-import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
-import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
+import christmasStarPink from "@/assets/christmas-star-pink.png";
+import christmasPinkStarTree from "@/assets/christmas-pink-star-tree.png";
+import christmasWhiteStarOrnaments from "@/assets/christmas-white-star-ornaments.png";
+import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.png";
 
 // Characters
-import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
+import christmasSantaClaus from "@/assets/christmas-santa-claus.png";
 
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
 
 interface WinterProduct {
   id: string;
@@ -193,15 +197,41 @@ export const WinterSection = () => {
       description: language === 'cs' ? 'Elegantní bílá vločka se zeleným vzorem – čistá zimní krása, která zaujme.' : 'Elegant white snowflake with green pattern – pure winter beauty that impresses.',
       category: 'tree'
     },
+    {
+      id: 'winter-pink-tree-pearls',
+      name: language === 'cs' ? 'Zlatá vločka s ornamentem' : 'Golden Snowflake with Ornament',
+      price: 175,
+      image: christmasPinkTreePearls,
+      description: language === 'cs' ? 'Zářivě zlatá vločka s propracovaným ornamentem – luxusní zimní třpyt.' : 'Radiant golden snowflake with intricate ornament – luxury winter sparkle.',
+      badge: language === 'cs' ? 'Luxus' : 'Luxury',
+      category: 'tree'
+    },
+
 
 
     // Stars & gifts
+    {
+      id: 'winter-star-pink',
+      name: language === 'cs' ? 'Růžová zimní hvězda' : 'Pink Winter Star',
+      price: 145,
+      image: christmasStarPink,
+      description: language === 'cs' ? 'Zářivá hvězda v jemně růžové s ornamentem - rozsvítí každý zimní večer' : 'Radiant star in soft pink with ornament - lights up every winter evening',
+      category: 'star'
+    },
     {
       id: 'winter-star-tree',
       name: language === 'cs' ? 'Andělíčci – pár' : 'Angel Pair',
       price: 165,
       image: christmasPinkStarTree,
       description: language === 'cs' ? 'Nádherný pár andělíčků v bílé a růžové – ochránci vašeho domova.' : 'Beautiful angel pair in white and pink – guardians of your home.',
+      category: 'star'
+    },
+    {
+      id: 'winter-star-white-ornaments',
+      name: language === 'cs' ? 'Růžová hvězda s ornamenty' : 'Pink Star with Ornaments',
+      price: 155,
+      image: christmasWhiteStarOrnaments,
+      description: language === 'cs' ? 'Okouzlující růžová hvězda s bílými ornamenty – romantická zimní dekorace.' : 'Enchanting pink star with white ornaments – romantic winter decoration.',
       category: 'star'
     },
     {
@@ -231,6 +261,15 @@ export const WinterSection = () => {
       description: language === 'cs' ? 'Roztomilá sada sobů s mašlemi - magičtí průvodci zimní pohádkou' : 'Adorable reindeer set with bows - magical guides of winter fairy tale',
       badge: language === 'cs' ? 'Dárková sada' : 'Gift Set',
       category: 'character'
+    },
+    {
+      id: 'winter-daisy-yellow-pink',
+      name: language === 'cs' ? 'Kopretiny žluté a růžové' : 'Daisies Yellow & Pink',
+      price: 165,
+      image: daisySoapsYellowPink,
+      description: language === 'cs' ? 'Slunečné kopretiny v žluté a růžové – paprsek slunce v zimních dnech.' : 'Sunny daisies in yellow and pink – a ray of sunshine in winter days.',
+      badge: language === 'cs' ? 'Oblíbené' : 'Popular',
+      category: 'star'
     },
   ];
 
