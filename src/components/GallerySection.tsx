@@ -9,6 +9,8 @@ import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
 import dentalSoap from "@/assets/dental-soap.jpg";
+import iloveprague from "@/assets/gallery-i-love-prague-hearts.jpg";
+import blueginkgo from "@/assets/gallery-blue-ginkgo-soap.jpg";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
@@ -63,14 +65,14 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: "/lovable-uploads/gallery-blue-ginkgo-soap.jpg",
+      src: blue-ginkgo,
       alt: language === 'cs' ? "Tyrkysové mýdlo s listy ginkga" : "Turquoise ginkgo leaf soap",
       description: language === 'cs' ? "Nádherný tyrkysový reliéf listů ginkga – unikátní umělecké dílo inspirované přírodou." : "Stunning turquoise ginkgo leaf relief – a unique work of art inspired by nature.",
       category: 'individual',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: "/lovable-uploads/gallery-i-love-prague-hearts.jpg",
+      src: iloveprague,
       alt: language === 'cs' ? "Srdíčka I Love Prague v organzových sáčcích" : "I Love Prague heart soaps in organza bags",
       description: language === 'cs' ? "Barevn\u00e1 srd\u00ed\u010dka s n\u00e1pisem I Love Prague \u2013 origin\u00e1ln\u00ed pra\u017esk\u00fd suven\u00fdr v elegantn\u00edm balen\u00ed." : "Colorful heart soaps with 'I Love Prague' inscription \u2013 an original Prague souvenir in elegant packaging.",
       category: 'gift-set',
