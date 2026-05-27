@@ -7,7 +7,7 @@ export const ReviewsSection = () => {
     {
       name: "Anna K.",
       rating: 5,
-      text: "Absolutně úžasná mýdla! Vůně růžové vody je nádherná a pokožka je po použití hedvábně měkká.",
+      text: "Absolutně úžasná dekorativní mýdla! Vůně růžové vody krásně provoní celou koupelnu i obývací pokoj.",
       product: "Růžové mýdlo s medem"
     },
     {
@@ -32,7 +32,7 @@ export const ReviewsSection = () => {
     {
       name: "Anna K.",
       rating: 5,
-      text: "Absolutely amazing soaps! The rose water scent is beautiful and skin feels silky smooth after use.",
+      text: "Absolutely amazing decorative soaps! The rose water scent beautifully perfumes the entire bathroom and living room.",
       product: "Rose Honey Soap"
     },
     {

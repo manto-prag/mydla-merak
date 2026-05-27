@@ -5,11 +5,11 @@ export const TestimonialSection = () => {
 
   const testimonial = language === 'cs' 
     ? {
-        text: "Mýdla od Merak jsou hebká jako samet. Vůně růžové vody mi připomíná dětství u babičky. A co je nejlepší – žádná chemie!",
+        text: "Mýdla od Merak nádherně provoní celou koupelnu i obývací pokoj. Vůně růžové vody mi připomíná dětství u babičky. Krásná dekorace pro každý prostor!",
         author: "Jana K., Praha"
       }
     : {
-        text: "Merak soaps are soft as velvet. The rose water scent reminds me of childhood at grandma's. And best of all – no chemicals!",
+        text: "Merak soaps beautifully fragrance the entire bathroom and living room. The rose water scent reminds me of childhood at grandma's. A lovely decoration for any room!",
         author: "Jana K., Prague"
       };
 
