@@ -65,7 +65,7 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: blue-ginkgo,
+      src: blueginkgo,
       alt: language === 'cs' ? "Tyrkysové mýdlo s listy ginkga" : "Turquoise ginkgo leaf soap",
       description: language === 'cs' ? "Nádherný tyrkysový reliéf listů ginkga – unikátní umělecké dílo inspirované přírodou." : "Stunning turquoise ginkgo leaf relief – a unique work of art inspired by nature.",
       category: 'individual',
