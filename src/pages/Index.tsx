@@ -47,7 +47,7 @@ const Index = () => {
         <footer className="py-12 gradient-accent text-primary-foreground">
           <div className="container mx-auto px-6 text-center">
             <p className="text-sm text-primary-foreground/90 mb-2">
-              Mýdla MERAK
+              Mýdla
             </p>
             <p className="text-sm text-primary-foreground/80 mb-1">
               Adresa: Argentinská 194/12 Praha 7, 17000
