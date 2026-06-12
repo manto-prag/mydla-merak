@@ -11,28 +11,16 @@ export const ContactSection = () => {
   const contactInfo = [
     {
       icon: "📧",
-      label: translations.contact.email,
-      value: "",
+      title: translations.contact.email,
+      value: "mydla.merak@email.cz",
       href: "mailto:mydla.merak@email.cz"
     },
     {
       icon: "🏦",
-      label: translations.contact.account,
-      value: "",
+      title: translations.contact.account,
+      value: "6007850013 / 0800",
       href: null
-    },
-    {
-      icon: "📦",
-      label: translations.contact.delivery,
-      value: "",
-      href: null
-    },
-    {
-      icon: "📍",
-      label: translations.contact.location,
-      value: "",
-      href: null
-    },
+    }
   ];
 
   return (
@@ -54,17 +42,9 @@ export const ContactSection = () => {
               >
                 <div className="text-2xl">{item.icon}</div>
                 <div>
-                  <p className="font-semibold text-foreground mb-1">{item.label}</p>
-                  {item.href ? (
-                    <a 
-                      href={item.href}
-                      className="text-primary hover:text-primary-glow transition-smooth"
-                    >
-                      {item.value}
-                    </a>
-                  ) : (
-                    <p className="text-foreground/80">{item.value}</p>
-                  )}
+                  <p className="font-semibold text-foreground text-lg">
+                    {item.title}
+                  </p>
                 </div>
               </div>
             ))}
@@ -73,7 +53,7 @@ export const ContactSection = () => {
               <Button 
                 variant="hero" 
                 size="lg"
-                onClick={() => window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka mýdel Merak"}
+                onClick={() => window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka voňavých výrobků Merak"}
                 className="w-full"
               >
                 {translations.hero.cta}

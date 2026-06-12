@@ -7,8 +7,8 @@ export const ReviewsSection = () => {
     {
       name: "Anna K.",
       rating: 5,
-      text: "Absolutně úžasná dekorativní mýdla! Vůně růžové vody krásně provoní celou koupelnu i obývací pokoj.",
-      product: "Růžové mýdlo s medem"
+      text: "Absolutně úžasné dekorativní voňavé výrobky! Vůně růžové vody krásně provoní celou koupelnu i obývací pokoj.",
+      product: "Růžový voňavý výrobek s medem"
     },
     {
       name: "Tomáš H.",
@@ -19,21 +19,21 @@ export const ReviewsSection = () => {
     {
       name: "Marie S.",
       rating: 5,
-      text: "Pro náš hotel jsme objednali kolekci mýdel a hosté si je velmi chválí. Budeme určitě objednávat znovu.",
+      text: "Pro náš hotel jsme objednali kolekci voňavých výrobků a hosté si je velmi chválí. Budeme určitě objednávat znovu.",
       product: "Hotelová kolekce"
     },
     {
       name: "Pavel D.",
       rating: 5,
-      text: "Na svatbu jsme chtěli něco originálního pro hosty. Mýdla od MERAK byly perfektní volbou!",
+      text: "Na svatbu jsme chtěli něco originálního pro hosty. Voňavé výrobky od MERAK byly perfektní volbou!",
       product: "Svatební dárečky"
     }
   ] : [
     {
       name: "Anna K.",
       rating: 5,
-      text: "Absolutely amazing decorative soaps! The rose water scent beautifully perfumes the entire bathroom and living room.",
-      product: "Rose Honey Soap"
+      text: "Absolutely amazing decorative fragrance products! The rose water scent beautifully perfumes the entire bathroom and living room.",
+      product: "Rose Honey Fragrance product"
     },
     {
       name: "Tomáš H.",
@@ -44,13 +44,13 @@ export const ReviewsSection = () => {
     {
       name: "Marie S.",
       rating: 5,
-      text: "We ordered a soap collection for our hotel and guests praise them highly. We will definitely order again.",
+      text: "We ordered a fragrance product collection for our hotel and guests praise them highly. We will definitely order again.",
       product: "Hotel Collection"
     },
     {
       name: "Pavel D.",
       rating: 5,
-      text: "For our wedding we wanted something original for guests. MERAK soaps were the perfect choice!",
+      text: "For our wedding we wanted something original for guests. MERAK creations were the perfect choice!",
       product: "Wedding Favors"
     }
   ];

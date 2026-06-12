@@ -6,7 +6,7 @@ export const HeroSection = () => {
   const { translations, language } = useLanguage();
 
   const handleOrderClick = () => {
-    window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka mýdel Merak&body=Dobrý den,%0D%0A%0D%0ARád(a) bych si objednal(a) Vaše přírodní mýdla.%0D%0A%0D%0APočet kusů:%0D%0AVýdejní místo (Zásilkovna):%0D%0A%0D%0ADěkuji";
+    window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka voňavých výrobků Merak&body=Dobrý den,%0D%0A%0D%0ARád(a) bych si objednal(a) Vaše přírodní voňavé výrobky.%0D%0A%0D%0APočet kusů:%0D%0AVýdejní místo (Zásilkovna):%0D%0A%0D%0ADěkuji";
   };
 
   return (
@@ -35,9 +35,10 @@ export const HeroSection = () => {
             {translations.hero.subtitle}
           </p>
           
-          <p className="text-lg text-foreground/80 mb-6 font-medium">
+          <p className="text-lg text-foreground/80 mb-6 font-medium whitespace-pre-line">
             {translations.hero.description}
           </p>
+
           
           {/* Prominent Disclaimer - softer styling */}
           <div className="bg-accent/10 border border-accent/30 rounded-2xl p-4 mb-8 shadow-soft">

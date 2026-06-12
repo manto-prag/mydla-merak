@@ -21,8 +21,9 @@ export const AboutSection = () => {
             <div className="relative">
               <img 
                 src={soapDetailImage} 
-                alt={language === 'cs' ? "Ručně vyráběná přírodní mýdla z olivového oleje" : "Handmade natural soaps from olive oil"}
+                alt={language === 'cs' ? "Ručně vyráběné přírodní voňavé výrobky z olivového oleje" : "Handmade natural fragrance products from olive oil"}
                 className="rounded-3xl shadow-premium w-full h-[500px] object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-3xl"></div>
             </div>

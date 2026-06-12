@@ -27,10 +27,10 @@ export const VideoSection = () => {
                     <div className="w-0 h-0 border-l-[20px] border-l-primary border-y-[12px] border-y-transparent ml-2"></div>
                   </div>
                   <h3 className="font-heading text-2xl font-bold text-primary mb-2">
-                    Video přípravy mýdel
+                    Video přípravy voňavých výrobků
                   </h3>
                   <p className="text-foreground/70 text-lg">
-                    Brzy zde uvidíte proces výroby našich přírodních mýdel
+                    Brzy zde uvidíte proces výroby našich přírodních voňavých výrobků
                   </p>
                 </div>
                 
@@ -52,7 +52,7 @@ export const VideoSection = () => {
                 Mezitím se můžete podívat na naše fotografie v galerii nebo nás kontaktovat pro více informací o výrobě.
               </p>
               <a 
-                href="mailto:mydla.merak@email.cz?subject=Dotaz na výrobu mýdel"
+                href="mailto:mydla.merak@email.cz?subject=Dotaz na výrobu voňavých výrobků"
                 className="inline-flex items-center justify-center rounded-full bg-accent text-accent-foreground px-6 py-3 font-semibold shadow-elegant hover:shadow-glow transition-bounce hover:scale-105"
               >
                 Napište nám

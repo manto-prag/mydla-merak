@@ -142,7 +142,7 @@ export const EasterCollapsible = () => {
   const handleEasterOrder = (product: EasterProduct) => {
     const subject = encodeURIComponent(language === 'cs' ? `Velikonoční objednávka: ${product.name}` : `Easter order: ${product.name}`);
     const body = encodeURIComponent(language === 'cs'
-      ? `Dobrý den,\n\nráda bych si objednala velikonoční mýdlo:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
+      ? `Dobrý den,\n\nráda bych si objednala velikonoční voňavý výrobek:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
       : `Hello,\n\nI would like to order:\n\n${product.name}\nPrice: ${product.price} CZK\n\nThank you,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
@@ -202,14 +202,14 @@ export const EasterCollapsible = () => {
               🐣 {language === 'cs' ? 'Ideální velikonoční dárek!' : 'Perfect Easter Gift!'} 🐣
             </h3>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-6">
-              {language === 'cs' ? 'Překvapte své blízké originálním ručně vyráběným velikonočním mýdlem.' : 'Surprise your loved ones with original handmade Easter soap.'}
+              {language === 'cs' ? 'Překvapte své blízké originálním ručně vyráběným velikonočním voňavým výrobkem.' : 'Surprise your loved ones with original handmade Easter fragrance product.'}
             </p>
             <Button variant="secondary" size="lg" className="rounded-full bg-white text-green-600 hover:bg-gray-100 font-bold"
               onClick={() => {
                 const subject = encodeURIComponent(language === 'cs' ? 'Velikonoční objednávka - celá kolekce' : 'Easter order - full collection');
                 const body = encodeURIComponent(language === 'cs'
-                  ? 'Dobrý den,\n\nmám zájem o velikonoční kolekci mýdel.\n\nDěkuji,'
-                  : 'Hello,\n\nI am interested in the Easter soap collection.\n\nThank you,');
+                  ? 'Dobrý den,\n\nmám zájem o velikonoční kolekci voňavých výrobků.\n\nDěkuji,'
+                  : 'Hello,\n\nI am interested in the Easter fragrance product collection.\n\nThank you,');
                 window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
               }}>
               {language === 'cs' ? 'Objednat celou kolekci' : 'Order Full Collection'}
