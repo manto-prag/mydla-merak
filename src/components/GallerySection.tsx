@@ -8,9 +8,7 @@ import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
-import dentalSoap from "@/assets/dental-soap.jpg";
-import iloveprague from "@/assets/gallery-i-love-prague-hearts.jpg";
-import blueginkgo from "@/assets/gallery-blue-ginkgo-soap.jpg";
+import dentalSoap from "@/assets/dental-soap.png";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
@@ -43,40 +41,41 @@ export const GallerySection = () => {
     { id: 'all', label: language === 'cs' ? 'Vše' : 'All', icon: Sparkles },
     { id: 'valentine', label: language === 'cs' ? 'Romantická kolekce' : "Romantic Collection", icon: Heart },
     
-    { id: 'individual', label: language === 'cs' ? 'Jednotlivá mýdla' : 'Individual Soaps', icon: Heart },
+    { id: 'individual', label: language === 'cs' ? 'Jednotlivé voňavé výrobky' : 'Individual Fragrance Products', icon: Heart },
     { id: 'gift-set', label: language === 'cs' ? 'Dárkové sety' : 'Gift Sets', icon: Gift },
     { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal Collections', icon: ShoppingBag }
   ];
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    // Individual soaps - unique items
+    // Featured highlights
     {
-      src: coffeeBeanSoap,
-      alt: language === 'cs' ? "Kávové mýdlo ve tvaru zrna" : "Coffee bean shaped soap",
-      description: language === 'cs' ? "Dokonalý dárek pro milovníky kávy! Realistické zrno, které okouzlí každého." : "The perfect gift for coffee lovers! A realistic bean that charms everyone.",
-      category: 'individual'
-    },
-    {
-      src: dentalSoap,
-      alt: language === 'cs' ? "Mýdlo ve tvaru zubu" : "Tooth shaped soap",
-      description: language === 'cs' ? "Hit mezi zubaři! Veselý zoubek, který rozsvítí každou ordinaci." : "A hit among dentists! Cheerful little tooth that lights up any office.",
-      category: 'individual',
-      badge: language === 'cs' ? 'Unikát' : 'Unique'
-    },
-    {
-      src: blueginkgo,
-      alt: language === 'cs' ? "Tyrkysové mýdlo s listy ginkga" : "Turquoise ginkgo leaf soap",
+      src: "/lovable-uploads/gallery-blue-ginkgo-soap.jpg",
+      alt: language === 'cs' ? "Tyrkysový voňavý výrobek s listy ginkga" : "Turquoise ginkgo leaf fragrance product",
       description: language === 'cs' ? "Nádherný tyrkysový reliéf listů ginkga – unikátní umělecké dílo inspirované přírodou." : "Stunning turquoise ginkgo leaf relief – a unique work of art inspired by nature.",
       category: 'individual',
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: iloveprague,
-      alt: language === 'cs' ? "Srdíčka I Love Prague v organzových sáčcích" : "I Love Prague heart soaps in organza bags",
-      description: language === 'cs' ? "Barevn\u00e1 srd\u00ed\u010dka s n\u00e1pisem I Love Prague \u2013 origin\u00e1ln\u00ed pra\u017esk\u00fd suven\u00fdr v elegantn\u00edm balen\u00ed." : "Colorful heart soaps with 'I Love Prague' inscription \u2013 an original Prague souvenir in elegant packaging.",
+      src: "/lovable-uploads/gallery-i-love-prague-hearts.jpg",
+      alt: language === 'cs' ? "Srdíčka I Love Prague v organzových sáčcích" : "I Love Prague heart fragrance products in organza bags",
+      description: language === 'cs' ? "Barevná srdíčka s nápisem I Love Prague – originální pražský suvenýr v elegantním balení." : "Colorful heart fragrance products with 'I Love Prague' inscription – an original Prague souvenir in elegant packaging.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
+    },
+    // Individual fragrance products - unique items
+    {
+      src: coffeeBeanSoap,
+      alt: language === 'cs' ? "Kávový voňavý výrobek ve tvaru zrna" : "Coffee bean shaped fragrance product",
+      description: language === 'cs' ? "Dokonalý dárek pro milovníky kávy! Realistické zrno, které okouzlí každého." : "The perfect gift for coffee lovers! A realistic bean that charms everyone.",
+      category: 'individual'
+    },
+    {
+      src: dentalSoap,
+      alt: language === 'cs' ? "Voňavý výrobek ve tvaru zubu" : "Tooth shaped fragrance product",
+      description: language === 'cs' ? "Hit mezi zubaři! Veselý zoubek, který rozsvítí každou ordinaci." : "A hit among dentists! Cheerful little tooth that lights up any office.",
+      category: 'individual',
+      badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
       src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
@@ -86,50 +85,50 @@ export const GallerySection = () => {
     },
     {
       src: "/lovable-uploads/5f52e273-e3a4-44a6-80fd-13feac003cc3.png",
-      alt: language === 'cs' ? "Krémové mýdlo s olivovou větvičkou" : "Cream soap with olive branch",
+      alt: language === 'cs' ? "Krémový voňavý výrobek s olivovou větvičkou" : "Cream fragrance product with olive branch",
       description: language === 'cs' ? "Středomořská elegance, která uchvátí. Nádherný dárek plný harmonie." : "Mediterranean elegance that captivates. A gorgeous gift full of harmony.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/d12edb48-38b0-441a-91ba-a85548bcd09a.png",
-      alt: language === 'cs' ? "Medové mýdlo s královským ornamentem" : "Honey soap with royal ornament",
+      alt: language === 'cs' ? "Medový voňavý výrobek s královským ornamentem" : "Honey fragrance product with royal ornament",
       description: language === 'cs' ? "Královský luxus v každém detailu! Zlatý med a propracovaný ornament – dárek, který ohromí." : "Royal luxury in every detail! Golden honey and intricate ornament – a gift that impresses.",
       category: 'individual',
       badge: language === 'cs' ? 'Luxus' : 'Luxury'
     },
     {
       src: "/lovable-uploads/013a0911-ca75-4c22-8dfe-ab6e01d8dfc1.png",
-      alt: language === 'cs' ? "Zelené mýdlo s nosorožcem" : "Green soap with rhino",
+      alt: language === 'cs' ? "Zelený voňavý výrobek s nosorožcem" : "Green fragrance product with rhino",
       description: language === 'cs' ? "Exotika, která zaujme! Majestátní nosorožec – sběratelský unikát." : "Exotic charm! Majestic rhino – a true collector's piece.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/aba33224-4ce2-4776-b8e1-6665cee2c613.png",
-      alt: language === 'cs' ? "Třpytivé glamour mýdlo" : "Sparkling glamour soap",
+      alt: language === 'cs' ? "Třpytivé glamour voňavý výrobek" : "Sparkling glamour fragrance product",
       description: language === 'cs' ? "Třpytivý glamour, který zaručeně upoutá pozornost! Elegance v růžové." : "Sparkling glamour that's guaranteed to turn heads! Elegance in pink.",
       category: 'individual'
     },
     {
       src: greenLayeredSoap,
-      alt: language === 'cs' ? "Vrstvené zelené mýdlo s bylinkami" : "Layered green soap with herbs",
+      alt: language === 'cs' ? "Vrstvený zelený voňavý výrobek s bylinkami" : "Layered green fragrance product with herbs",
       description: language === 'cs' ? "Svěžest bylinné zahrady v krémových vrstvách – příroda u vás doma." : "Freshness of an herb garden in creamy layers – nature at your home.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/1691336c-8212-4afc-8d75-af6a3c0b123e.png",
-      alt: language === 'cs' ? "Bylinné zelené mýdlo" : "Green herbal soap",
+      alt: language === 'cs' ? "Bylinný zelený voňavý výrobek" : "Green herbal fragrance product",
       description: language === 'cs' ? "Harmonie lesa a louky v jednom kousku – přírodní zelená krása." : "Harmony of forest and meadow in one piece – natural green beauty.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/8f824295-51a2-49b5-9dd5-1d7230217060.png",
-      alt: language === 'cs' ? "Tyrkysové vírové mýdlo" : "Turquoise swirl soap",
+      alt: language === 'cs' ? "Tyrkysový vírový voňavý výrobek" : "Turquoise swirl fragrance product",
       description: language === 'cs' ? "Hravý vír barev plný energie! Tyrkys a zlato v jednom originálním kousku." : "Playful swirl of colors full of energy! Turquoise and gold in one original piece.",
       category: 'individual'
     },
     {
       src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png",
-      alt: language === 'cs' ? "Kolekce pěti reliéfních mýdel" : "Collection of five relief soaps",
+      alt: language === 'cs' ? "Kolekce pěti reliéfních voňavých výrobků" : "Collection of five relief fragrance products",
       description: language === 'cs' ? "Pět unikátních kousků v jedné sadě – wow efekt zaručen!" : "Five unique pieces in one set – wow effect guaranteed!",
       category: 'gift-set'
     },
@@ -175,14 +174,14 @@ export const GallerySection = () => {
     // Seasonal
     {
       src: "/lovable-uploads/fa8c4584-49bd-4414-89f9-2a2f9a4761a6.png",
-      alt: language === 'cs' ? "Relaxační masážní mýdla" : "Relaxation massage soaps",
+      alt: language === 'cs' ? "Relaxační masážní voňavé výrobky" : "Relaxation massage fragrance products",
       description: language === 'cs' ? "Masážní výstupky pro dokonalou relaxaci – wellness dárek číslo jedna." : "Massage nubs for perfect relaxation – the number one wellness gift.",
       category: 'seasonal'
     },
     // Craft showcase
     {
       src: soapMakingProcess,
-      alt: language === 'cs' ? "Ruční výroba mýdel" : "Handmade soap crafting",
+      alt: language === 'cs' ? "Ruční výroba voňavých výrobků" : "Handmade fragrance product crafting",
       description: language === 'cs' ? "Každý kousek vzniká s láskou a péčí – řemeslná kvalita z Prahy." : "Every piece is crafted with love and care – artisan quality from Prague.",
       category: 'individual'
     },
@@ -195,20 +194,20 @@ export const GallerySection = () => {
     // Valentine's Collection
     {
       src: valentineBouquet1,
-      alt: language === 'cs' ? "Mýdlová kytice - Růže a pivoňky" : "Soap Bouquet - Roses & Peonies",
+      alt: language === 'cs' ? "Voňavá kytice - Růže a pivoňky" : "Fragrance product Bouquet - Roses & Peonies",
       description: language === 'cs' ? "Růže a pivoňky v růžových tónech – náš nejprodávanější dárek!" : "Roses and peonies in pink tones – our best-selling gift!",
       category: 'valentine',
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller'
     },
     {
       src: valentineBouquet2,
-      alt: language === 'cs' ? "Mýdlová kytice se srdíčkem" : "Soap Bouquet with Heart",
+      alt: language === 'cs' ? "Voňavá kytice se srdíčkem" : "Fragrance product Bouquet with Heart",
       description: language === 'cs' ? "Kytice se srdíčkem – řekněte to květinami, které vydrží navždy!" : "Bouquet with heart – say it with flowers that last forever!",
       category: 'valentine'
     },
     {
       src: valentineHeartPink,
-      alt: language === 'cs' ? "Růžové srdíčko" : "Pink Heart Soap",
+      alt: language === 'cs' ? "Růžové srdíčko" : "Pink Heart Fragrance product",
       description: language === 'cs' ? "Roztomilé srdíčko v košíčku – malý dárek, velká radost!" : "Cute heart in a wrapper – small gift, big joy!",
       category: 'valentine'
     },
@@ -349,7 +348,7 @@ export const GallerySection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            {language === 'cs' ? 'Ručně vyráběná mýdla s láskou' : 'Handcrafted soaps with love'}
+            {language === 'cs' ? 'Ručně vyráběné voňavé výrobky s láskou' : 'Handcrafted fragrance products with love'}
           </div>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-6">
             {translations.gallery.title}
@@ -461,8 +460,8 @@ export const GallerySection = () => {
             </h3>
             <p className="text-foreground/70 max-w-md">
               {language === 'cs' 
-                ? 'Vyrobíme vám mýdla na míru pro vaši speciální příležitost - svatby, firemní akce, narozeniny a další!' 
-                : 'We create custom soaps for your special occasion - weddings, corporate events, birthdays and more!'}
+                ? 'Vyrobíme vám voňavé výrobky na míru pro vaši speciální příležitost - svatby, firemní akce, narozeniny a další!' 
+                : 'We create custom fragrance products for your special occasion - weddings, corporate events, birthdays and more!'}
             </p>
             <Button 
               size="lg"
