@@ -10,7 +10,7 @@ import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
 import dentalSoap from "@/assets/dental-soap.jpg";
 import loveprague from "@/assets/gallery-i-love-prague-hearts.jpg";
-import blueginkgo from "@/assets/gallery-blue-ginkgo-soap.jpg;
+import blueginkgo from "@/assets/gallery-blue-ginkgo-soap.jpg";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
