@@ -103,52 +103,53 @@ interface Translation {
 const translations: Record<Language, Translation> = {
   cs: {
     hero: {
-      title: "MÝDLA MERAK",
-      subtitle: "Přírodní dekorativní mýdla – voňavka prostoru a koupelen",
-      description: "Ručně vyráběná s láskou v Praze • Co kus to originál",
-      cta: "Objednat",
-      disclaimer: "Dekorativní mýdla určená pouze k provonění prostoru a koupelen. Nejsou kosmetickým výrobkem a nejsou určena k použití na pokožku.",
+      title: "MERAK – Voňavá řemeslná tvorba",
+      subtitle: "Originální ručně vyráběné produkty vytvářené s důrazem na detail, estetiku a jedinečnost.",
+      description: "Ručně vyráběno s láskou v Praze\nCo kus to originál",
+      cta: "Prohlédnout kolekci",
+      disclaimer: "Voňavá dekorace interiéru – voňavka koupelen a obytných prostor. Slouží výhradně jako vonná dekorace.",
       trustBadge: "Vyrobeno s láskou v Praze od roku 2020",
-      freeDelivery: "Doručení zdarma nad 30Ks",
+      freeDelivery: "Doručení zdarma nad 30 Ks",
       rating: "hodnocení",
-      natural: "přírodní",
+      natural: "přírodní materiály",
       handmade: "Ručně vyráběno"
     },
+
     about: {
       title: "Příběh značky MERAK",
-      description: "Každé dekorativní mýdlo Merak vzniká ručně v Praze. Slouží jako voňavá dekorace prostoru a koupelen – provoní váš interiér a vytvoří příjemnou atmosféru.",
+      description: "Každý dekorativní voňavý výrobek Merak vzniká ručně v Praze. Slouží jako voňavá dekorace prostoru a koupelen – provoní váš interiér a vytvoří příjemnou atmosféru.",
       brandStoryTitle: "Příběh značky MERAK",
       brandStorySubtitle: "Od vášně k řemeslu",
-      brandStory: "Značka MERAK vznikla z lásky k ručnímu řemeslu a touhy vytvářet něco jedinečného. Každé dekorativní mýdlo je vyráběno s pečlivostí a pozorností k detailům a slouží jako voňavá dekorace pro váš domov, koupelnu či pracovnu.",
-      brandNote: "Naša mýdla jsou nejen krásná na pohled, ale především krásně voní a vytváří atmosféru v interiéru.",
+      brandStory: "Značka MERAK vznikla z lásky k ručnímu řemeslu a touhy vytvářet něco jedinečného. Každý dekorativní voňavý výrobek je vyráběn s pečlivostí a pozorností k detailům a slouží jako voňavá dekorace pro váš domov, koupelnu či pracovnu.",
+      brandNote: "Naše voňavé výrobky jsou nejen krásná na pohled, ale především krásně voní a vytváří atmosféru v interiéru.",
       naturalBenefit: "100% přírodní",
       naturalDesc: "Pouze nejčistší ingredience",
       handmadeBenefit: "Ručně vyráběno",
       handmadeDesc: "S láskou a péčí v Praze",
       uniqueBenefit: "Unikátní design",
-      uniqueDesc: "Každé mýdlo je originál",
+      uniqueDesc: "Každý voňavý výrobek je originál",
       giftBenefit: "Ideální dárek",
       giftDesc: "Pro každou příležitost",
-      learnMore: "Zjistit více o našich mýdlech"
+      learnMore: "Zjistit více o našich voňavých výrobcích"
     },
     gift: {
-      title: "Mýdla pro různé příležitosti",
-      description: "Hledáte originální dárek? Připravím vám mýdla na míru pro:",
+      title: "Voňavé výrobky pro různé příležitosti",
+      description: "Hledáte originální dárek? Připravím vám voňavé výrobky na míru pro:",
       weddings: "Svatební hosty a oslavy",
       hotels: "Hotelové pokoje a penziony", 
       birthdays: "Narozeninové a výroční oslavy",
       corporate: "Firemní dárky a události",
-      ctaTitle: "Připravíme vám mýdla na míru",
+      ctaTitle: "Připravíme vám voňavé výrobky na míru",
       ctaDescription: "Každá příležitost si zaslouží originální dárek. Kontaktujte nás pro individuální nabídku.",
-      ctaButton: "Objednat dárková mýdla"
+      ctaButton: "Objednat dárkové voňavé výrobky"
     },
     order: {
       title: "Jak objednat",
       step1: "Napište mi e-mail na mydla.merak@email.cz",
       step2: "Uveďte počet kusů a výdejní místo Zásilkovny",
       step3: "Platba na účet 6007850013 / 0800",
-      step4: "Vaše mýdlo přijde v recyklované krabičce",
-      samples: "Nejste si jistí, které mýdlo je to pravé? Vyzkoušejte vzorky za 30 Kč"
+      step4: "Vaše voňavý výrobek přijde v recyklované krabičce",
+      samples: "Nejste si jistí, který voňavý výrobek je to pravé? Vyzkoušejte vzorky za 30 Kč"
     },
     contact: {
       title: "Spojte se se mnou",
@@ -159,7 +160,7 @@ const translations: Record<Language, Translation> = {
     },
     products: {
       title: "Naše kolekce",
-      description: "Objevte jedinečné ručně vyráběná mýdla s láskou",
+      description: "Objevte jedinečné ručně vyráběná voňavé výrobky s láskou",
       orderNow: "Objednat",
       newsletterTitle: "Získejte 10% slevu na první objednávku!",
       newsletterDesc: "Přihlaste se k odběru novinek a buďte první, kdo se dozví o nových kolekcích",
@@ -168,39 +169,39 @@ const translations: Record<Language, Translation> = {
     },
     faq: {
       title: "Často kladené otázky",
-      description: "Vše, co potřebujete vědět o našich přírodních mýdlech",
+      description: "Vše, co potřebujete vědět o našich přírodních voňavých výrobcích",
       questions: [
         {
-          question: "Jsou mýdla skutečně přírodní?",
-          answer: "Ano, všechna naša mýdla obsahují pouze přírodní ingredience: olivový olej, kozí mléko, med, růžovou vodu a přírodní barviva. Nepoužíváme žádné chemické přísady nebo konzervants."
+          question: "Jsou voňavé výrobky skutečně přírodní?",
+          answer: "Ano, všechna naše voňavé výrobky obsahují pouze přírodní ingredience: olivový olej, kozí mléko, med, růžovou vodu a přírodní barviva. Nepoužíváme žádné chemické přísady nebo konzervants."
         },
         {
-          question: "Jak dlouho mýdla vydrží?",
-          answer: "Při správném skladování v suché místnosti vydrží naše mýdla až 2 roky. Doporučujeme je uchovávat na suchém místě mimo dosah přímého slunečního světla."
+          question: "Jak dlouho voňavé výrobky vydrží?",
+          answer: "Při správném skladování v suché místnosti vydrží naše voňavé výrobky až 2 roky. Doporučujeme je uchovávat na suchém místě mimo dosah přímého slunečního světla."
         },
         {
-          question: "Můžu si objednat mýdla s vlastním designem?",
-          answer: "Samozřejmě! Nabízíme možnost vyrobit mýdla na míru pro svatby, firemní akce, hotely nebo jiné speciální příležitosti. Kontaktujte nás pro individuální nabídku."
+          question: "Můžu si objednat voňavé výrobky s vlastním designem?",
+          answer: "Samozřejmě! Nabízíme možnost vyrobit voňavé výrobky na míru pro svatby, firemní akce, hotely nebo jiné speciální příležitosti. Kontaktujte nás pro individuální nabídku."
         },
         {
-          question: "Jak rychle mi mýdla doručíte?",
+          question: "Jak rychle mi voňavé výrobky doručíte?",
           answer: "Standardní doba výroby je 3-5 pracovních dnů. Poté odesíláme přes Zásilkovnu, doručení trvá obvykle 1-2 pracovní dny. Celková doba je tedy 4-7 pracovních dnů."
         },
         {
           question: "Kolik stojí doručení?",
-          answer: "Doručení přes Zásilkovnu je zdarma při objednávce od 3 ks mýdel. Pro menší objednávky je poplatek 79 Kč."
+          answer: "Doručení přes Zásilkovnu je zdarma při objednávce od 3 ks voňavých výrobků. Pro menší objednávky je poplatek 79 Kč."
         }
       ],
       ctaTitle: "Máte další otázky?",
       ctaText: "Napište nám na mydla.merak@email.cz"
     },
     gallery: {
-      title: "Galerie našich mýdel",
-      description: "Prohlédněte si naši kolekci jedinečných dekorativních mýdel"
+      title: "Galerie našich voňavých výrobků",
+      description: "Prohlédněte si naši kolekci jedinečných dekorativních voňavých výrobků"
     },
     video: {
-      title: "Jak vznikají naše mýdla",
-      description: "Podívejte se na proces ručního výroby našich přírodních mýdel"
+      title: "Jak vznikají naše voňavé výrobky",
+      description: "Podívejte se na proces ručního výroby našich přírodních voňavých výrobků"
     },
     common: {
       toggleLanguage: "EN"
@@ -208,52 +209,53 @@ const translations: Record<Language, Translation> = {
   },
   en: {
     hero: {
-      title: "MERAK SOAPS",
-      subtitle: "Natural decorative soaps – a fragrance for rooms and bathrooms",
-      description: "Handcrafted with love in Prague • Each one unique",
-      cta: "Order",
-      disclaimer: "Decorative soaps intended only to fragrance rooms and bathrooms. They are not a cosmetic product and are not intended for use on skin.",
+      title: "MERAK – Fragrant Handcraft",
+      subtitle: "Original handcrafted creations made with attention to detail, aesthetics and uniqueness.",
+      description: "Handcrafted with love in Prague\nEach one unique",
+      cta: "Browse the collection",
+      disclaimer: "Fragrant interior decoration – a scent for bathrooms and living spaces. Intended solely as a fragrant decoration.",
       trustBadge: "Made with love in Prague since 2020",
       freeDelivery: "Free delivery over 30 pcs",
       rating: "rating",
-      natural: "natural",
+      natural: "natural materials",
       handmade: "Handcrafted"
     },
+
     about: {
       title: "The MERAK Brand Story",
-      description: "Each Merak decorative soap is handcrafted in Prague. It serves as a fragrant decoration for rooms and bathrooms – perfuming your interior and creating a pleasant atmosphere.",
+      description: "Each Merak decorative fragrance product is handcrafted in Prague. It serves as a fragrant decoration for rooms and bathrooms – perfuming your interior and creating a pleasant atmosphere.",
       brandStoryTitle: "The MERAK Brand Story",
       brandStorySubtitle: "From passion to craft",
-      brandStory: "The MERAK brand was born from a love of handmade craft and the desire to create something unique. Each decorative soap is made with care and attention to detail and serves as a fragrant decoration for your home, bathroom or office.",
-      brandNote: "Our soaps are not only beautiful to look at, but above all they smell wonderful and create atmosphere in your interior.",
+      brandStory: "The MERAK brand was born from a love of handmade craft and the desire to create something unique. Each decorative fragrance product is made with care and attention to detail and serves as a fragrant decoration for your home, bathroom or office.",
+      brandNote: "Our fragrance products are not only beautiful to look at, but above all they smell wonderful and create atmosphere in your interior.",
       naturalBenefit: "100% natural",
       naturalDesc: "Only the purest ingredients",
       handmadeBenefit: "Handcrafted",
       handmadeDesc: "With love and care in Prague",
       uniqueBenefit: "Unique design",
-      uniqueDesc: "Each soap is original",
+      uniqueDesc: "Each fragrance product is original",
       giftBenefit: "Perfect gift",
       giftDesc: "For any occasion",
-      learnMore: "Learn more about our soaps"
+      learnMore: "Learn more about our fragrance products"
     },
     gift: {
-      title: "Soaps for various occasions",
-      description: "Looking for an original gift? I'll prepare custom soaps for:",
+      title: "Fragrance Products for various occasions",
+      description: "Looking for an original gift? I'll prepare custom fragrance products for:",
       weddings: "Wedding guests and celebrations",
       hotels: "Hotel rooms and guesthouses",
       birthdays: "Birthday and anniversary celebrations", 
       corporate: "Corporate gifts and events",
-      ctaTitle: "We'll prepare custom soaps for you",
+      ctaTitle: "We'll prepare custom fragrance products for you",
       ctaDescription: "Every occasion deserves an original gift. Contact us for an individual quote.",
-      ctaButton: "Order gift soaps"
+      ctaButton: "Order gift fragrance products"
     },
     order: {
       title: "How to order",
       step1: "Send me an email at mydla.merak@email.cz",
       step2: "Specify quantity and pickup location at Zásilkovna",
       step3: "Payment to bank account 6007850013 / 0800",
-      step4: "Your soap arrives in recycled packaging",
-      samples: "Not sure which soap is right for you? Try samples for 30 CZK"
+      step4: "Your fragrance product arrives in recycled packaging",
+      samples: "Not sure which fragrance product is right for you? Try samples for 30 CZK"
     },
     contact: {
       title: "Get in touch",
@@ -264,7 +266,7 @@ const translations: Record<Language, Translation> = {
     },
     products: {
       title: "Our Collection",
-      description: "Discover unique handcrafted soaps made with love",
+      description: "Discover unique handcrafted fragrance products made with love",
       orderNow: "Order",
       newsletterTitle: "Get 10% off your first order!",
       newsletterDesc: "Subscribe to our newsletter and be the first to know about new collections",
@@ -273,39 +275,39 @@ const translations: Record<Language, Translation> = {
     },
     faq: {
       title: "Frequently Asked Questions",
-      description: "Everything you need to know about our natural soaps",
+      description: "Everything you need to know about our natural fragrance products",
       questions: [
         {
-          question: "Are the soaps truly natural?",
-          answer: "Yes, all our soaps contain only natural ingredients: olive oil, goat milk, honey, rose water, and natural colorants. We don't use any chemical additives or preservatives."
+          question: "Are the fragrance products truly natural?",
+          answer: "Yes, all our fragrance products contain only natural ingredients: olive oil, goat milk, honey, rose water, and natural colorants. We don't use any chemical additives or preservatives."
         },
         {
-          question: "How long do the soaps last?",
-          answer: "When stored properly in a dry place, our soaps last up to 2 years. We recommend keeping them in a dry place away from direct sunlight."
+          question: "How long do the fragrance products last?",
+          answer: "When stored properly in a dry place, our fragrance products last up to 2 years. We recommend keeping them in a dry place away from direct sunlight."
         },
         {
-          question: "Can I order soaps with custom design?",
-          answer: "Absolutely! We offer custom soap making for weddings, corporate events, hotels, or other special occasions. Contact us for an individual quote."
+          question: "Can I order fragrance products with custom design?",
+          answer: "Absolutely! We offer custom craft for weddings, corporate events, hotels, or other special occasions. Contact us for an individual quote."
         },
         {
-          question: "How quickly will you deliver the soaps?",
+          question: "How quickly will you deliver the fragrance products?",
           answer: "Standard production time is 3-5 working days. Then we ship via Zásilkovna, delivery usually takes 1-2 working days. Total time is 4-7 working days."
         },
         {
           question: "How much does delivery cost?",
-          answer: "Delivery via Zásilkovna is free for orders of 3+ soaps. For smaller orders, there's a 79 CZK fee."
+          answer: "Delivery via Zásilkovna is free for orders of 3+ fragrance products. For smaller orders, there's a 79 CZK fee."
         }
       ],
       ctaTitle: "Have more questions?",
       ctaText: "Write to us at mydla.merak@email.cz"
     },
     gallery: {
-      title: "Gallery of Our Soaps",
-      description: "Explore our collection of unique decorative soaps"
+      title: "Gallery of Our Fragrance Products",
+      description: "Explore our collection of unique decorative fragrance products"
     },
     video: {
-      title: "How Our Soaps Are Made",
-      description: "Watch the process of handcrafting our natural soaps"
+      title: "How Our Fragrance Products Are Made",
+      description: "Watch the process of handcrafting our natural fragrance products"
     },
     common: {
       toggleLanguage: "CZ"
