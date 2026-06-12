@@ -7,7 +7,6 @@ import birthdayGiftImage from "@/assets/birthday-gift-soaps.jpg";
 const corporateGiftImage = "/lovable-uploads/adc6072c-e734-47d0-b8a9-38c60933b12d.png";
 
 // Lazy load seasonal collapsible sections
-const ChristmasCollapsible = lazy(() => import("@/components/ChristmasCollapsible").then(m => ({ default: m.ChristmasCollapsible })));
 const EasterCollapsible = lazy(() => import("@/components/EasterCollapsible").then(m => ({ default: m.EasterCollapsible })));
 
 export const GiftSection = () => {
@@ -55,11 +54,6 @@ export const GiftSection = () => {
         {/* Easter Collection - Lazy loaded */}
         <Suspense fallback={<div className="py-8 flex justify-center"><div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" /></div>}>
           <EasterCollapsible />
-        </Suspense>
-
-        {/* Christmas Collection - Lazy loaded */}
-        <Suspense fallback={<div className="py-8 flex justify-center"><div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" /></div>}>
-          <ChristmasCollapsible />
         </Suspense>
 
         {/* Call to action */}
