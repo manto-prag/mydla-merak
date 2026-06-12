@@ -8,7 +8,7 @@ import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
-import dentalSoap from "@/assets/dental-soap.png";
+import dentalSoap from "@/assets/dental-soap.jpg";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
