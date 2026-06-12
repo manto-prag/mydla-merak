@@ -160,7 +160,7 @@ export const EasterSection = () => {
   const handleQuickOrder = (product: EasterProduct) => {
     const subject = encodeURIComponent(language === 'cs' ? `Velikonoční objednávka: ${product.name}` : `Easter order: ${product.name}`);
     const body = encodeURIComponent(language === 'cs'
-      ? `Dobrý den,\n\nráda bych si objednala velikonoční mýdlo:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
+      ? `Dobrý den,\n\nráda bych si objednala velikonoční voňavý výrobek:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
       : `Hello,\n\nI would like to order:\n\n${product.name}\nPrice: ${product.price} CZK\n\nThank you,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
@@ -251,8 +251,8 @@ export const EasterSection = () => {
           </h3>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-6">
             {language === 'cs'
-              ? 'Překvapte své blízké originálním ručně vyráběným velikonočním mýdlem. Každý zajíček a vajíčko jsou malé umělecké dílo.'
-              : 'Surprise your loved ones with original handmade Easter soap. Every bunny and egg is a small work of art.'}
+              ? 'Překvapte své blízké originálním ručně velikonočním voňavým výrobkem. Každý zajíček a vajíčko jsou malé umělecké dílo.'
+              : 'Surprise your loved ones with original handmade Easter fragrance product. Every bunny and egg is a small work of art.'}
           </p>
           <Button
             size="lg"
@@ -260,8 +260,8 @@ export const EasterSection = () => {
             onClick={() => {
               const subject = encodeURIComponent(language === 'cs' ? 'Velikonoční objednávka - celá kolekce' : 'Easter order - full collection');
               const body = encodeURIComponent(language === 'cs' 
-                ? 'Dobrý den,\n\nmám zájem o velikonoční kolekci mýdel.\n\nDěkuji,' 
-                : 'Hello,\n\nI am interested in the Easter soap collection.\n\nThank you,');
+                ? 'Dobrý den,\n\nmám zájem o velikonoční kolekci voňavých výrobků.\n\nDěkuji,' 
+                : 'Hello,\n\nI am interested in the Easter fragrance product collection collection.\n\nThank you,');
               window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
             }}
           >
