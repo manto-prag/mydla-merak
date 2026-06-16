@@ -2,14 +2,14 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
-import dahliaPink from "@/assets/spring/dahlia-pink.png";
-import peonyPink from "@/assets/spring/peony-pink.png";
-import chrysanthemumPink from "@/assets/spring/chrysanthemum-pink.png";
+import dahliaPink from "@/assets/spring/dahlia-pink.jpg";
+import peonyPink from "@/assets/spring/peony-pink.jpg";
+import chrysanthemumPink from "@/assets/spring/chrysanthemum-pink.jpg";
 import roseBouquet from "@/assets/spring/rose-bouquet.jpg";
 import rosesOrganza from "@/assets/spring/roses-organza.jpg";
 
-import roseBuds from "@/assets/spring/rose-buds.png";
-import hibiscusOval from "@/assets/spring/hibiscus-oval.png";
+import roseBuds from "@/assets/spring/rose-buds.jpg";
+import hibiscusOval from "@/assets/spring/hibiscus-oval.jpg";
 import diamondOrganza from "@/assets/spring/diamond-organza.jpg";
 import pastelRoseBouquet from "@/assets/spring/pastel-rose-bouquet.jpg";
 import peonyCollection from "@/assets/spring/peony-collection.jpg";
