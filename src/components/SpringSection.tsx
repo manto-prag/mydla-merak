@@ -2,14 +2,20 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
-import dahliaPink from "@/assets/spring/dahlia-pink.jpg";
-import peonyPink from "@/assets/spring/peony-pink.jpg";
-import chrysanthemumPink from "@/assets/spring/chrysanthemum-pink.jpg";
+import dahliaPink from "@/assets/spring/dahlia-pink.png";
+import peonyPink from "@/assets/spring/peony-pink.png";
+import chrysanthemumPink from "@/assets/spring/chrysanthemum-pink.png";
 import roseBouquet from "@/assets/spring/rose-bouquet.jpg";
 import rosesOrganza from "@/assets/spring/roses-organza.jpg";
-import daisiesPink from "@/assets/spring/daisies-pink.jpg";
-import roseBuds from "@/assets/spring/rose-buds.jpg";
-import hibiscusOval from "@/assets/spring/hibiscus-oval.jpg";
+
+import roseBuds from "@/assets/spring/rose-buds.png";
+import hibiscusOval from "@/assets/spring/hibiscus-oval.png";
+import diamondOrganza from "@/assets/spring/diamond-organza.jpg";
+import pastelRoseBouquet from "@/assets/spring/pastel-rose-bouquet.jpg";
+import peonyCollection from "@/assets/spring/peony-collection.jpg";
+import mandalaRoses from "@/assets/spring/mandala-roses.jpg";
+import lotusPinkRoses from "@/assets/spring/lotus-pink-roses.jpg";
+import yellowMandalaRoses from "@/assets/spring/yellow-mandala-roses.jpg";
 
 interface SpringProduct {
   id: string;
@@ -47,29 +53,24 @@ export const SpringSection = () => {
     },
     {
       id: 'spring-rose-bouquet',
-      name: language === 'cs' ? 'Mýdlová kytice růží' : 'Soap Rose Bouquet',
+      name: language === 'cs' ? 'Voňavá kytice růží' : 'Fragrance product Rose Bouquet',
       price: 450,
       image: roseBouquet,
-      description: language === 'cs' ? 'Luxusní kytice z ručně tvarovaných mýdlových růží a pivoněk – dárek, který nikdy neuvadne.' : 'Luxurious bouquet of hand-shaped soap roses and peonies – a gift that never wilts.',
+      description: language === 'cs' ? 'Luxusní kytice z ručně tvarovaných voňavých růží a pivoněk – dárek, který nikdy neuvadne.' : 'Luxurious bouquet of hand-shaped fragrance product roses and peonies – a gift that never wilts.',
       badge: language === 'cs' ? 'Luxus' : 'Luxury'
     },
     {
       id: 'spring-roses-organza',
-      name: language === 'cs' ? 'Mýdlové růže v organze' : 'Soap Roses in Organza',
+      name: language === 'cs' ? 'Voňavé růže v organze' : 'Fragrance product Roses in Organza',
       price: 95,
       image: rosesOrganza,
-      description: language === 'cs' ? 'Elegantní mýdlové růžičky v ozdobných organzových sáčcích – okouzlující drobný dárek.' : 'Elegant soap roses in decorative organza bags – a charming little gift.'
+      description: language === 'cs' ? 'Elegantní voňavé růžičky v ozdobných organzových sáčcích – okouzlující drobný dárek.' : 'Elegant fragrance product roses in decorative organza bags – a charming little gift.'
     },
-    {
-      id: 'spring-daisies-pink',
-      name: language === 'cs' ? 'Jarní kopretiny na růžovém' : 'Spring Daisies on Pink',
-      price: 155,
-      image: daisiesPink,
-      description: language === 'cs' ? 'Rozkvetlé kopretiny na růžovém podkladu – jaro u vás celý rok!' : 'Blooming daisies on pink base – spring at your place all year!'
-    },
+
+
     {
       id: 'spring-rose-buds',
-      name: language === 'cs' ? 'Mýdlo s poupátky růží' : 'Soap with Rose Buds',
+      name: language === 'cs' ? 'Voňavý výrobek s poupátky růží' : 'Fragrance product with Rose Buds',
       price: 185,
       image: roseBuds,
       description: language === 'cs' ? 'Zdobené skutečnými poupátky růží – romantika, která okouzlí.' : 'Adorned with real rose buds – romance that enchants.',
@@ -77,17 +78,62 @@ export const SpringSection = () => {
     },
     {
       id: 'spring-hibiscus',
-      name: language === 'cs' ? 'Oválné mýdlo s ibiškem' : 'Oval Soap with Hibiscus',
+      name: language === 'cs' ? 'Oválný voňavý výrobek s ibiškem' : 'Oval Fragrance product with Hibiscus',
       price: 155,
       image: hibiscusOval,
       description: language === 'cs' ? 'Tropický ibišek na elegantním oválu – exotická krása, která zaujme.' : 'Tropical hibiscus on elegant oval – exotic beauty that captivates.'
+    },
+    {
+      id: 'spring-diamond-organza',
+      name: language === 'cs' ? 'Srdíčka' : 'Hearts',
+      price: 75,
+      image: diamondOrganza,
+      description: language === 'cs' ? 'Pastelová srdíčka v jemných organzových sáčcích s červenou mašlí – elegantní drobnost pro každou příležitost.' : 'Pastel hearts in delicate organza pouches with a red bow – an elegant little touch for any occasion.',
+      badge: language === 'cs' ? 'Novinka' : 'New'
+    },
+    {
+      id: 'spring-pastel-rose-bouquet',
+      name: language === 'cs' ? 'Pastelová květinová kompozice' : 'Pastel Floral Composition',
+      price: 320,
+      image: pastelRoseBouquet,
+      description: language === 'cs' ? 'Bohatá kompozice ručně tvarovaných růží a pivoněk v pastelových odstínech – středobod každého interiéru.' : 'Lush composition of hand-shaped roses and peonies in pastel shades – a centerpiece for any interior.',
+      badge: language === 'cs' ? 'Luxus' : 'Luxury'
+    },
+    {
+      id: 'spring-peony-collection',
+      name: language === 'cs' ? 'Kolekce pivoněk' : 'Peony Collection',
+      price: 285,
+      image: peonyCollection,
+      description: language === 'cs' ? 'Devítidílná kolekce pastelových pivoněk a růží – něžné odstíny, které potěší oko i duši.' : 'Nine-piece collection of pastel peonies and roses – tender shades that delight the eye and soul.'
+    },
+    {
+      id: 'spring-mandala-roses',
+      name: language === 'cs' ? 'Lotos s růžemi' : 'Lotus with Roses',
+      price: 295,
+      image: mandalaRoses,
+      description: language === 'cs' ? 'Centrální lotos obklopený pastelovými růžemi a poupaty – harmonická kompozice plná detailů.' : 'Central lotus surrounded by pastel roses and buds – a harmonious composition full of detail.'
+    },
+    {
+      id: 'spring-lotus-pink-roses',
+      name: language === 'cs' ? 'Růžový lotos s růžemi' : 'Pink Lotus with Roses',
+      price: 295,
+      image: lotusPinkRoses,
+      description: language === 'cs' ? 'Růžový lotos jako střed kompozice doplněný pastelovými růžemi – romantický motiv plný harmonie.' : 'Pink lotus as the centerpiece complemented by pastel roses – a romantic motif full of harmony.',
+      badge: language === 'cs' ? 'Romantické' : 'Romantic'
+    },
+    {
+      id: 'spring-yellow-mandala-roses',
+      name: language === 'cs' ? 'Žlutý lotos s růžemi' : 'Yellow Lotus with Roses',
+      price: 295,
+      image: yellowMandalaRoses,
+      description: language === 'cs' ? 'Slunečný žlutý lotos obklopený růžovými a modrými růžemi – paprsek jara v každém detailu.' : 'Sunny yellow lotus surrounded by pink and blue roses – a ray of spring in every detail.'
     },
   ];
 
   const handleQuickOrder = (product: SpringProduct) => {
     const subject = encodeURIComponent(language === 'cs' ? `Jarní objednávka: ${product.name}` : `Spring order: ${product.name}`);
     const body = encodeURIComponent(language === 'cs'
-      ? `Dobrý den,\n\nráda bych si objednala jarní mýdlo:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
+      ? `Dobrý den,\n\nráda bych si objednala jarní voňavý výrobek:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
       : `Hello,\n\nI would like to order:\n\n${product.name}\nPrice: ${product.price} CZK\n\nThank you,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
@@ -115,8 +161,9 @@ export const SpringSection = () => {
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-secondary to-transparent mx-auto mb-8" />
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed mb-4 font-light">
             {language === 'cs'
-              ? 'Přivítejte jaro s naší květinovou kolekcí. Ručně tvarované růže, pivoňky, dahlie a kopretiny – každý květ je malé umělecké dílo plné jarních barev a vůní.'
-              : 'Welcome spring with our floral collection. Hand-shaped roses, peonies, dahlias and daisies – every flower is a small work of art full of spring colors and scents.'}
+              ? 'Přivítejte jaro s naší květinovou kolekcí. Ručně tvarované růže, pivoňky a dahlie – každý květ je malé umělecké dílo plné jarních barev a vůní.'
+              : 'Welcome spring with our floral collection. Hand-shaped roses, peonies and dahlias – every flower is a small work of art full of spring colors and scents.'}
+
           </p>
           <p className="text-base text-secondary font-medium italic">
             {language === 'cs'
@@ -178,8 +225,8 @@ export const SpringSection = () => {
           </h3>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-6">
             {language === 'cs'
-              ? 'Darujte krásu jarních květin v podobě luxusních ručně vyráběných mýdel. Každý kousek voní a potěší celé měsíce.'
-              : 'Give the beauty of spring flowers as luxury handmade soaps. Every piece smells wonderful and delights for months.'}
+              ? 'Darujte krásu jarních květin v podobě luxusních ručně vyráběných voňavých výrobků. Každý kousek voní a potěší celé měsíce.'
+              : 'Give the beauty of spring flowers as luxury handmade fragrance products. Every piece smells wonderful and delights for months.'}
           </p>
           <Button
             size="lg"
@@ -187,8 +234,8 @@ export const SpringSection = () => {
             onClick={() => {
               const subject = encodeURIComponent(language === 'cs' ? 'Jarní objednávka - květinová kolekce' : 'Spring order - floral collection');
               const body = encodeURIComponent(language === 'cs'
-                ? 'Dobrý den,\n\nmám zájem o jarní květinovou kolekci mýdel.\n\nDěkuji,'
-                : 'Hello,\n\nI am interested in the spring floral soap collection.\n\nThank you,');
+                ? 'Dobrý den,\n\nmám zájem o jarní květinovou kolekci voňavých výrobků.\n\nDěkuji,'
+                : 'Hello,\n\nI am interested in the spring floral fragrance product collection.\n\nThank you,');
               window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
             }}
           >
