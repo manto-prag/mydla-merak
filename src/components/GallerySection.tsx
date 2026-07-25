@@ -3,7 +3,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Heart, Sparkles, Gift } from "lucide-react";
 import heartSoapsPolka from "@/assets/heart-soaps-polka.jpg";
-import greenLayeredSoap from "@/assets/green-layered-soap.jpg";
 import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
@@ -17,18 +16,15 @@ import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
 import valentineBouquet2 from "@/assets/valentine-bouquet-2.jpg";
 import valentineHeartPink from "@/assets/valentine-heart-pink.jpg";
 import valentineHeartRedWhite from "@/assets/valentine-heart-red-white.jpg";
-import valentineHeartsCollection from "@/assets/valentine-hearts-collection.jpg";
 import valentineHeartLayered from "@/assets/valentine-heart-layered.jpg";
 import valentineHeartsDiamondPair from "@/assets/valentine-hearts-diamond-pair.jpg";
 import valentineHeartSaltSprinkle from "@/assets/valentine-heart-salt-sprinkle.jpg";
-import valentineDiamondHeartsSalt from "@/assets/valentine-diamond-hearts-salt.jpg";
 import valentineOrnateHeartBox from "@/assets/valentine-ornate-heart-box.jpg";
 import valentineBouquetPinkPeonies from "@/assets/valentine-bouquet-pink-peonies.jpg";
 import valentineBouquetVase from "@/assets/valentine-bouquet-vase.jpg";
 import valentineILovePrague from "@/assets/valentine-i-love-prague.jpg";
 import valentineFlowerHeart from "@/assets/valentine-flower-heart.jpg";
 import valentineBearHeart from "@/assets/valentine-bear-heart.jpg";
-import valentineHeartPetalPink from "@/assets/valentine-heart-petal-pink.jpg";
 import valentineHeartRibbedPink from "@/assets/valentine-heart-ribbed-pink.jpg";
 import valentineHeartWavyPink from "@/assets/valentine-heart-wavy-pink.jpg";
 import valentineHeartScallopedPink from "@/assets/valentine-heart-scalloped-pink.jpg";
@@ -41,11 +37,11 @@ export const GallerySection = () => {
   
   const categories = [
     { id: 'all', label: language === 'cs' ? 'Vše' : 'All', icon: Sparkles },
-    { id: 'valentine', label: language === 'cs' ? 'Romantická kolekce' : "Romantic Collection", icon: Heart },
+    { id: 'valentine', label: language === 'cs' ? 'Romantická kolekce' : "Romantic ", icon: Heart },
     
     { id: 'individual', label: language === 'cs' ? 'Jednotlivé voňavé výrobky' : 'Individual Fragrance Products', icon: Heart },
     { id: 'gift-set', label: language === 'cs' ? 'Dárkové sety' : 'Gift Sets', icon: Gift },
-    { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal Collections', icon: ShoppingBag }
+    { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal s', icon: ShoppingBag }
   ];
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -111,12 +107,6 @@ export const GallerySection = () => {
       category: 'individual'
     },
     {
-      src: greenLayeredSoap,
-      alt: language === 'cs' ? "Vrstvený zelený voňavý výrobek s bylinkami" : "Layered green fragrance product with herbs",
-      description: language === 'cs' ? "Svěžest bylinné zahrady v krémových vrstvách – příroda u vás doma." : "Freshness of an herb garden in creamy layers – nature at your home.",
-      category: 'individual'
-    },
-    {
       src: "/lovable-uploads/1691336c-8212-4afc-8d75-af6a3c0b123e.png",
       alt: language === 'cs' ? "Bylinný zelený voňavý výrobek" : "Green herbal fragrance product",
       description: language === 'cs' ? "Harmonie lesa a louky v jednom kousku – přírodní zelená krása." : "Harmony of forest and meadow in one piece – natural green beauty.",
@@ -130,13 +120,13 @@ export const GallerySection = () => {
     },
     {
       src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png",
-      alt: language === 'cs' ? "Kolekce pěti reliéfních voňavých výrobků" : "Collection of five relief fragrance products",
+      alt: language === 'cs' ? "Kolekce pěti reliéfních voňavých výrobků" : " of five relief fragrance products",
       description: language === 'cs' ? "Pět unikátních kousků v jedné sadě – wow efekt zaručen!" : "Five unique pieces in one set – wow effect guaranteed!",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.png",
-      alt: language === 'cs' ? "Levandulová kolekce" : "Lavender collection",
+      alt: language === 'cs' ? "Levandulová kolekce" : "Lavender ",
       description: language === 'cs' ? "Levandulová harmonie v modro-fialových tónech – klid a krása v jednom." : "Lavender harmony in blue-purple tones – calm and beauty in one.",
       category: 'gift-set'
     },
@@ -162,13 +152,13 @@ export const GallerySection = () => {
     },
     {
       src: "/lovable-uploads/701fba05-b384-4891-b658-5ebbd8060bf0.png",
-      alt: language === 'cs' ? "Pastelová kolekce s přírodními motivy" : "Pastel collection with natural motifs",
-      description: language === 'cs' ? "Pastelová kolekce plná přírodní elegance – krása do každého domova." : "Pastel collection full of natural elegance – beauty for every home.",
+      alt: language === 'cs' ? "Pastelová kolekce s přírodními motivy" : "Pastel  with natural motifs",
+      description: language === 'cs' ? "Pastelová kolekce plná přírodní elegance – krása do každého domova." : "Pastel  full of natural elegance – beauty for every home.",
       category: 'gift-set'
     },
     {
       src: "/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.png",
-      alt: language === 'cs' ? "Luxusní kolekce se sušenými květy" : "Luxury collection with dried flowers",
+      alt: language === 'cs' ? "Luxusní kolekce se sušenými květy" : "Luxury  with dried flowers",
       description: language === 'cs' ? "Sušené květy a levandule – prémiový dárek, který nadchne každého." : "Dried flowers and lavender – a premium gift that delights everyone.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Premium' : 'Premium'
@@ -193,7 +183,7 @@ export const GallerySection = () => {
       description: language === 'cs' ? "Olivový olej, kozí mléko, med a růže – přírodní luxus bez kompromisů." : "Olive oil, goat milk, honey and roses – natural luxury without compromise.",
       category: 'individual'
     },
-    // Valentine's Collection
+    // Valentine's 
     {
       src: valentineBouquet1,
       alt: language === 'cs' ? "Voňavá kytice - Růže a pivoňky" : "Fragrance product Bouquet - Roses & Peonies",
@@ -220,13 +210,6 @@ export const GallerySection = () => {
       category: 'valentine'
     },
     {
-      src: valentineHeartsCollection,
-      alt: language === 'cs' ? "Kolekce diamantových srdcí" : "Diamond Hearts Collection",
-      description: language === 'cs' ? "Sbírka třpytivých srdíček v růžové – dárkový hit!" : "Collection of sparkling pink hearts – a gift hit!",
-      category: 'valentine',
-      badge: language === 'cs' ? 'Dárková sada' : 'Gift Set'
-    },
-    {
       src: valentineHeartLayered,
       alt: language === 'cs' ? "Vrstvené červené srdce" : "Layered Red Heart",
       description: language === 'cs' ? "Sytě červené srdce s vrstvením – vášeň a elegance v jednom." : "Rich red layered heart – passion and elegance in one.",
@@ -243,12 +226,6 @@ export const GallerySection = () => {
       src: valentineHeartSaltSprinkle,
       alt: language === 'cs' ? "Srdce s krystaly soli" : "Heart with Salt Crystals",
       description: language === 'cs' ? "Červené srdce s třpytivými krystaly soli – okouzlí na první pohled!" : "Red heart with sparkling salt crystals – love at first sight!",
-      category: 'valentine'
-    },
-    {
-      src: valentineDiamondHeartsSalt,
-      alt: language === 'cs' ? "Diamantové srdce se srdíčky" : "Diamond Heart with Hearts",
-      description: language === 'cs' ? "Mramorové srdce se srdíčky na růžové soli – luxusní dekorace." : "Marble heart with hearts on pink salt – luxury decoration.",
       category: 'valentine'
     },
     {
@@ -290,12 +267,6 @@ export const GallerySection = () => {
       description: language === 'cs' ? "Medvídek z růžiček se srdíčkem – nejroztomilejší dárek vůbec!" : "Rose bear with heart – the most adorable gift ever!",
       category: 'valentine',
       badge: language === 'cs' ? 'Oblíbené' : 'Popular'
-    },
-    {
-      src: valentineHeartPetalPink,
-      alt: language === 'cs' ? "Srdce s květinovými lístky" : "Heart with Floral Petals",
-      description: language === 'cs' ? "Srdce posypané okvětními lístky – romantika v každém detailu." : "Heart sprinkled with petals – romance in every detail.",
-      category: 'valentine'
     },
     {
       src: valentineHeartRibbedPink,
