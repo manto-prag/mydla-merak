@@ -64,9 +64,9 @@ export const GiftSection = () => {
         </Suspense>
 
         {/* Christmas Collection - Lazy loaded */}
-        <Suspense fallback={<div className="py-8 flex justify-center"><div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" /></div>}>
-          <ChristmasCollapsible />
-        </Suspense>
+       // <Suspense fallback={<div className="py-8 flex justify-center"><div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" /></div>}>
+       //   <ChristmasCollapsible />
+       // </Suspense>
 
         {/* Call to action */}
         <div className="text-center">
