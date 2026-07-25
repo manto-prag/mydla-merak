@@ -130,13 +130,6 @@ export const GallerySection = () => {
       category: 'gift-set'
     },
     {
-      src: "/lovable-uploads/e51a7bd7-e07c-40e9-bf10-615691902e94.png",
-      alt: language === 'cs' ? "Čtyřlístky pro štěstí" : "Four-leaf clovers for luck",
-      description: language === 'cs' ? "Darujte štěstí! Čtyřlístky, které přinesou radost a úsměv." : "Gift happiness! Four-leaf clovers that bring joy and smiles.",
-      category: 'gift-set',
-      badge: language === 'cs' ? 'Pro štěstí' : 'Lucky charm'
-    },
-    {
       src: heartSoapsPolka,
       alt: language === 'cs' ? "Romantická srdíčka v puntíkovaném balení" : "Romantic hearts in polka-dot packaging",
       description: language === 'cs' ? "Něžná srdíčka v roztomilém balení – dokonalé vyznání lásky." : "Delicate hearts in adorable packaging – the perfect love confession.",
@@ -161,13 +154,6 @@ export const GallerySection = () => {
       description: language === 'cs' ? "Sušené květy a levandule – prémiový dárek, který nadchne každého." : "Dried flowers and lavender – a premium gift that delights everyone.",
       category: 'gift-set',
       badge: language === 'cs' ? 'Premium' : 'Premium'
-    },
-    // Seasonal
-    {
-      src: "/lovable-uploads/fa8c4584-49bd-4414-89f9-2a2f9a4761a6.png",
-      alt: language === 'cs' ? "Relaxační masážní voňavé výrobky" : "Relaxation massage fragrance products",
-      description: language === 'cs' ? "Masážní výstupky pro dokonalou relaxaci – wellness dárek číslo jedna." : "Massage nubs for perfect relaxation – the number one wellness gift.",
-      category: 'seasonal'
     },
     // Craft showcase
     {
