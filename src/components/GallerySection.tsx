@@ -8,7 +8,7 @@ import soapMakingProcess from "@/assets/soap-making-process.jpg";
 import naturalIngredients from "@/assets/natural-ingredients.jpg";
 import coffeeBeanSoap from "@/assets/coffee-bean-soap.jpg";
 
-import dentalSoap from "@/assets/dental-soap.png";
+import dentalSoap from "@/assets/dental-soap.jpg";
 
 // Valentine imports
 import valentineBouquet1 from "@/assets/valentine-bouquet-1.jpg";
@@ -76,56 +76,56 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Unikát' : 'Unique'
     },
     {
-      src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.png",
+      src: "/lovable-uploads/031d688f-14e1-4243-98cd-3c6509a45216.jpg",
       alt: language === 'cs' ? "Mořská hvězdice tyrkysová a žlutá" : "Starfish turquoise and yellow",
       description: language === 'cs' ? "Kousek moře u vás doma! Zářivé barvy léta, které nikdy neuvadnou." : "A piece of the ocean at home! Vibrant summer colors that never fade.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/5f52e273-e3a4-44a6-80fd-13feac003cc3.png",
+      src: "/lovable-uploads/5f52e273-e3a4-44a6-80fd-13feac003cc3.jpg",
       alt: language === 'cs' ? "Krémový voňavý výrobek s olivovou větvičkou" : "Cream fragrance product with olive branch",
       description: language === 'cs' ? "Středomořská elegance, která uchvátí. Nádherný dárek plný harmonie." : "Mediterranean elegance that captivates. A gorgeous gift full of harmony.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/d12edb48-38b0-441a-91ba-a85548bcd09a.png",
+      src: "/lovable-uploads/d12edb48-38b0-441a-91ba-a85548bcd09a.jpg",
       alt: language === 'cs' ? "Medový voňavý výrobek s královským ornamentem" : "Honey fragrance product with royal ornament",
       description: language === 'cs' ? "Královský luxus v každém detailu! Zlatý med a propracovaný ornament – dárek, který ohromí." : "Royal luxury in every detail! Golden honey and intricate ornament – a gift that impresses.",
       category: 'individual',
       badge: language === 'cs' ? 'Luxus' : 'Luxury'
     },
     {
-      src: "/lovable-uploads/013a0911-ca75-4c22-8dfe-ab6e01d8dfc1.png",
+      src: "/lovable-uploads/013a0911-ca75-4c22-8dfe-ab6e01d8dfc1.jpg",
       alt: language === 'cs' ? "Zelený voňavý výrobek s nosorožcem" : "Green fragrance product with rhino",
       description: language === 'cs' ? "Exotika, která zaujme! Majestátní nosorožec – sběratelský unikát." : "Exotic charm! Majestic rhino – a true collector's piece.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/aba33224-4ce2-4776-b8e1-6665cee2c613.png",
+      src: "/lovable-uploads/aba33224-4ce2-4776-b8e1-6665cee2c613.jpg",
       alt: language === 'cs' ? "Třpytivé glamour voňavý výrobek" : "Sparkling glamour fragrance product",
       description: language === 'cs' ? "Třpytivý glamour, který zaručeně upoutá pozornost! Elegance v růžové." : "Sparkling glamour that's guaranteed to turn heads! Elegance in pink.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/1691336c-8212-4afc-8d75-af6a3c0b123e.png",
+      src: "/lovable-uploads/1691336c-8212-4afc-8d75-af6a3c0b123e.jpg",
       alt: language === 'cs' ? "Bylinný zelený voňavý výrobek" : "Green herbal fragrance product",
       description: language === 'cs' ? "Harmonie lesa a louky v jednom kousku – přírodní zelená krása." : "Harmony of forest and meadow in one piece – natural green beauty.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/8f824295-51a2-49b5-9dd5-1d7230217060.png",
+      src: "/lovable-uploads/8f824295-51a2-49b5-9dd5-1d7230217060.jpg",
       alt: language === 'cs' ? "Tyrkysový vírový voňavý výrobek" : "Turquoise swirl fragrance product",
       description: language === 'cs' ? "Hravý vír barev plný energie! Tyrkys a zlato v jednom originálním kousku." : "Playful swirl of colors full of energy! Turquoise and gold in one original piece.",
       category: 'individual'
     },
     {
-      src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.png",
+      src: "/lovable-uploads/d5f3dd1a-4837-49a7-ae16-a25b354de774.jpg",
       alt: language === 'cs' ? "Kolekce pěti reliéfních voňavých výrobků" : "Collection of five relief fragrance products",
       description: language === 'cs' ? "Pět unikátních kousků v jedné sadě – wow efekt zaručen!" : "Five unique pieces in one set – wow effect guaranteed!",
       category: 'gift-set'
     },
     {
-      src: "/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.png",
+      src: "/lovable-uploads/acd8bdab-3c7e-4cf8-bb4b-f7fa9b3f1e25.jpg",
       alt: language === 'cs' ? "Levandulová kolekce" : "Lavender collection",
       description: language === 'cs' ? "Levandulová harmonie v modro-fialových tónech – klid a krása v jednom." : "Lavender harmony in blue-purple tones – calm and beauty in one.",
       category: 'gift-set'
@@ -138,19 +138,19 @@ export const GallerySection = () => {
       badge: language === 'cs' ? 'Romantické' : 'Romantic'
     },
     {
-      src: "/lovable-uploads/ec77542b-cdd2-436e-89d3-7e61c0a71cc8.png",
+      src: "/lovable-uploads/ec77542b-cdd2-436e-89d3-7e61c0a71cc8.jpg",
       alt: language === 'cs' ? "Sladká romantická sada" : "Sweet romantic set",
       description: language === 'cs' ? "Med, srdíčka a růže – sladká romantika, kterou musíte mít!" : "Honey, hearts and roses – sweet romance you simply must have!",
       category: 'gift-set'
     },
     {
-      src: "/lovable-uploads/701fba05-b384-4891-b658-5ebbd8060bf0.png",
+      src: "/lovable-uploads/701fba05-b384-4891-b658-5ebbd8060bf0.jpg",
       alt: language === 'cs' ? "Pastelová kolekce s přírodními motivy" : "Pastel collection with natural motifs",
       description: language === 'cs' ? "Pastelová kolekce plná přírodní elegance – krása do každého domova." : "Pastel collection full of natural elegance – beauty for every home.",
       category: 'gift-set'
     },
     {
-      src: "/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.png",
+      src: "/lovable-uploads/3d1b0364-edfe-4f56-b9bb-6732417ef74a.jpg",
       alt: language === 'cs' ? "Luxusní kolekce se sušenými květy" : "Luxury collection with dried flowers",
       description: language === 'cs' ? "Sušené květy a levandule – prémiový dárek, který nadchne každého." : "Dried flowers and lavender – a premium gift that delights everyone.",
       category: 'gift-set',
