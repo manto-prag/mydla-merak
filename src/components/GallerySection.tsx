@@ -27,7 +27,6 @@ import valentineFlowerHeart from "@/assets/valentine-flower-heart.jpg";
 import valentineBearHeart from "@/assets/valentine-bear-heart.jpg";
 import valentineHeartRibbedPink from "@/assets/valentine-heart-ribbed-pink.jpg";
 import valentineHeartWavyPink from "@/assets/valentine-heart-wavy-pink.jpg";
-import valentineHeartScallopedPink from "@/assets/valentine-heart-scalloped-pink.jpg";
 import valentineLuxuryBouquetArrangement from "@/assets/valentine-luxury-bouquet-arrangement.jpg";
 import valentineBearHeartValentine from "@/assets/valentine-bear-heart-valentine.jpg";
 
@@ -278,12 +277,6 @@ export const GallerySection = () => {
       src: valentineHeartWavyPink,
       alt: language === 'cs' ? "Srdce s vlnitým vzorem" : "Heart with Wavy Pattern",
       description: language === 'cs' ? "Vlnitý vzor plný pohybu – srdce, které zaujme na první pohled." : "Wavy pattern full of motion – a heart that catches every eye.",
-      category: 'valentine'
-    },
-    {
-      src: valentineHeartScallopedPink,
-      alt: language === 'cs' ? "Srdce s vlnkami" : "Heart with Scalloped Edges",
-      description: language === 'cs' ? "Srdíčko se zdobenými okraji – roztomilý detail, který potěší." : "Heart with scalloped edges – an adorable detail that delights.",
       category: 'valentine'
     },
     {
