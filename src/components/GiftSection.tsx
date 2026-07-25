@@ -7,7 +7,7 @@ import birthdayGiftImage from "@/assets/birthday-gift-soaps.jpg";
 const corporateGiftImage = "/lovable-uploads/adc6072c-e734-47d0-b8a9-38c60933b12d.png";
 
 // Lazy load seasonal collapsible sections
-const ChristmasCollapsible = lazy(() => import("@/components/ChristmasCollapsible").then(m => ({ default: m.ChristmasCollapsible })));
+//const ChristmasCollapsible = lazy(() => import("@/components/ChristmasCollapsible").then(m => ({ default: m.ChristmasCollapsible })));
 const EasterCollapsible = lazy(() => import("@/components/EasterCollapsible").then(m => ({ default: m.EasterCollapsible })));
 const ValentineCollapsible = lazy(() => import("@/components/ValentineCollapsible").then(m => ({ default: m.ValentineCollapsible })));
 
