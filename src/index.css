@@ -130,10 +130,16 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground font-body;
     font-feature-settings: "liga" 1, "kern" 1;
   }
+
 
   /* Beautiful typography */
   h1, h2, h3, h4, h5, h6 {
