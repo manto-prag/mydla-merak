@@ -107,9 +107,9 @@ const translations: Record<Language, Translation> = {
       subtitle: "Originální ručně vyráběné produkty vytvářené s důrazem na detail, estetiku a jedinečnost.",
       description: "Ručně vyráběno s láskou v Praze\nCo kus to originál",
       cta: "Prohlédnout kolekci",
-      disclaimer: "Voňavá dekorace interiéru – voňavka koupelen a obytných prostor. Slouží výhradně jako vonná dekorace.",
+      disclaimer: "Voňavá dekorace interiéru – provoní koupelny i obytné prostory. Slouží výhradně jako vonná dekorace.",
       trustBadge: "Vyrobeno s láskou v Praze od roku 2020",
-      freeDelivery: "Doručení zdarma nad 30 Ks",
+      freeDelivery: "Nad 30 ks – doprava zdarma",
       rating: "hodnocení",
       natural: "přírodní materiály",
       handmade: "Ručně vyráběno"
@@ -121,7 +121,7 @@ const translations: Record<Language, Translation> = {
       brandStoryTitle: "Příběh značky MERAK",
       brandStorySubtitle: "Od vášně k řemeslu",
       brandStory: "Značka MERAK vznikla z lásky k ručnímu řemeslu a touhy vytvářet něco jedinečného. Každý dekorativní voňavý výrobek je vyráběn s pečlivostí a pozorností k detailům a slouží jako voňavá dekorace pro váš domov, koupelnu či pracovnu.",
-      brandNote: "Naše voňavé výrobky jsou nejen krásná na pohled, ale především krásně voní a vytváří atmosféru v interiéru.",
+      brandNote: "Naše voňavé výrobky jsou nejen krásné na pohled, ale především krásně voní a vytvářejí atmosféru v interiéru.",
       naturalBenefit: "100% přírodní",
       naturalDesc: "Pouze nejčistší ingredience",
       handmadeBenefit: "Ručně vyráběno",
@@ -134,7 +134,7 @@ const translations: Record<Language, Translation> = {
     },
     gift: {
       title: "Voňavé výrobky pro různé příležitosti",
-      description: "Hledáte originální dárek? Připravím vám voňavé výrobky na míru pro:",
+      description: "Hledáte originální dárek? Připravíme vám voňavé výrobky na míru pro:",
       weddings: "Svatební hosty a oslavy",
       hotels: "Hotelové pokoje a penziony", 
       birthdays: "Narozeninové a výroční oslavy",
@@ -148,8 +148,8 @@ const translations: Record<Language, Translation> = {
       step1: "Napište mi e-mail na mydla.merak@email.cz",
       step2: "Uveďte počet kusů a výdejní místo Zásilkovny",
       step3: "Platba na účet 6007850013 / 0800",
-      step4: "Vaše voňavý výrobek přijde v recyklované krabičce",
-      samples: "Nejste si jistí, který voňavý výrobek je to pravé? Vyzkoušejte vzorky za 30 Kč"
+      step4: "Váš voňavý výrobek přijde v recyklované krabičce",
+      samples: "Nejste si jistí, který voňavý výrobek je pro vás ten pravý? Vyzkoušejte vzorky za 30 Kč"
     },
     contact: {
       title: "Spojte se se mnou",
@@ -160,7 +160,7 @@ const translations: Record<Language, Translation> = {
     },
     products: {
       title: "Naše kolekce",
-      description: "Objevte jedinečné ručně vyráběná voňavé výrobky s láskou",
+      description: "Objevte jedinečné ručně vyráběné voňavé výrobky plné lásky",
       orderNow: "Objednat",
       newsletterTitle: "Získejte 10% slevu na první objednávku!",
       newsletterDesc: "Přihlaste se k odběru novinek a buďte první, kdo se dozví o nových kolekcích",
@@ -173,7 +173,7 @@ const translations: Record<Language, Translation> = {
       questions: [
         {
           question: "Jsou voňavé výrobky skutečně přírodní?",
-          answer: "Ano, všechna naše voňavé výrobky obsahují pouze přírodní ingredience: olivový olej, kozí mléko, med, růžovou vodu a přírodní barviva. Nepoužíváme žádné chemické přísady nebo konzervants."
+          answer: "Ano, všechny naše voňavé výrobky obsahují pouze přírodní ingredience: olivový olej, kozí mléko, med, růžovou vodu a přírodní barviva. Nepoužíváme žádné chemické přísady ani konzervanty."
         },
         {
           question: "Jak dlouho voňavé výrobky vydrží?",
@@ -189,7 +189,7 @@ const translations: Record<Language, Translation> = {
         },
         {
           question: "Kolik stojí doručení?",
-          answer: "Doručení přes Zásilkovnu je zdarma při objednávce od 3 ks voňavých výrobků. Pro menší objednávky je poplatek 79 Kč."
+          answer: "Doručení přes Zásilkovnu je zdarma při objednávce nad 30 ks voňavých výrobků. Pro menší objednávky je poplatek 79 Kč."
         }
       ],
       ctaTitle: "Máte další otázky?",
@@ -201,7 +201,7 @@ const translations: Record<Language, Translation> = {
     },
     video: {
       title: "Jak vznikají naše voňavé výrobky",
-      description: "Podívejte se na proces ručního výroby našich přírodních voňavých výrobků"
+      description: "Podívejte se na proces ruční výroby našich přírodních voňavých výrobků"
     },
     common: {
       toggleLanguage: "EN"
@@ -215,7 +215,7 @@ const translations: Record<Language, Translation> = {
       cta: "Browse the collection",
       disclaimer: "Fragrant interior decoration – a scent for bathrooms and living spaces. Intended solely as a fragrant decoration.",
       trustBadge: "Made with love in Prague since 2020",
-      freeDelivery: "Free delivery over 30 pcs",
+      freeDelivery: "Over 30 pcs – free delivery",
       rating: "rating",
       natural: "natural materials",
       handmade: "Handcrafted"
@@ -295,7 +295,7 @@ const translations: Record<Language, Translation> = {
         },
         {
           question: "How much does delivery cost?",
-          answer: "Delivery via Zásilkovna is free for orders of 3+ fragrance products. For smaller orders, there's a 79 CZK fee."
+          answer: "Delivery via Zásilkovna is free for orders over 30 pcs of fragrance products. For smaller orders, there's a 79 CZK fee."
         }
       ],
       ctaTitle: "Have more questions?",
