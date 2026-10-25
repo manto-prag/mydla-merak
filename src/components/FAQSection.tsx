@@ -41,20 +41,6 @@ export const FAQSection = () => {
             </Accordion>
           </div>
           
-          {/* Additional CTA */}
-          <div className="text-center mt-12">
-            <div className="gradient-premium rounded-2xl p-6 shadow-elegant inline-block">
-              <p className="text-lg font-semibold text-primary mb-2">
-                {translations.faq.ctaTitle}
-              </p>
-              <a 
-                href="mailto:mydla.merak@email.cz"
-                className="text-accent hover:text-accent/80 font-medium underline"
-              >
-                {translations.faq.ctaText}
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
