@@ -4,6 +4,29 @@ import { Button } from "@/components/ui/button";
 import { Lightbox } from "@/components/Lightbox";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
+import eastergreen from "@/assets/easter-bunny-green-pearl.jpg";
+import easterwhite from "@/assets/easter-bunny-white-pearl.jpg";
+import easteryellow from "@/assets/easter-bunny-yellow-pearl.jpg";
+import bunniesset from "@/assets/easter-bunnies-colorful-set.jpg";
+
+import bunnyfloral from "@/assets/easter-bunny-blue-floral.jpg";
+import bunniespair from "@/assets/easter-bunnies-pink-peach-pair.jpg";
+import bunniestrio from "@/assets/easter-bunnies-trio.jpg";
+import bunniespairblue from "@/assets/easter-bunnies-blue-pink.jpg";
+
+import bunniesgroup from "@/assets/easter-bunnies-pastel-group.jpg";
+import eggsgreen from "@/assets/easter-eggs-green-ornate.jpg";
+import bunnyheart from "@/assets/easter-heart-bunny-blue.jpg";
+import bunnypeachears from "@/assets/easter-egg-bunny-ears-peach.jpg";
+
+import bunnysilhouette from "@/assets/easter-egg-bunny-silhouette-blue.jpg";
+import bunnymint from "@/assets/easter-egg-bunny-ears-mint.jpg";
+import eggzigzag from "@/assets/easter-egg-zigzag-pastel.jpg";
+import eggscollection from "@/assets/easter-eggs-collection-pastel.jpg";
+
+
+
+
 interface EasterProduct {
   id: string;
   name: string;
@@ -23,7 +46,7 @@ export const EasterCollapsible = () => {
       id: 'easter-bunny-green-pearl',
       name: language === 'cs' ? "Zelený zajíček" : "Green Bunny",
       price: 109,
-      image: "@/assets/easter-bunny-green-pearl.jpg",
+      image: eastergreen,
       description: language === 'cs' ? "Zelený zajíček se srdíčkovým otvorem, stužkou a perličkou. Milá jarní dekorace." : "A green bunny with a heart-shaped opening, ribbon and bead. A lovely spring decoration.",
       badge: language === 'cs' ? 'Novinka' : 'New'
     },
@@ -31,7 +54,7 @@ export const EasterCollapsible = () => {
       id: 'easter-bunny-white-pearl',
       name: language === 'cs' ? "Bílý zajíček" : "White Bunny",
       price: 109,
-      image: '/lovable-uploads/easter-bunny-white-pearl.jpg',
+      image: easterwhite,
       description: language === 'cs' ? "Bílý zajíček se zlatou stužkou a perličkou nad srdíčkem. Něžný velikonoční dárek." : "A white bunny with a golden ribbon and bead above a heart-shaped opening. A delicate Easter gift."
     },
     {
