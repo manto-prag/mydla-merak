@@ -23,7 +23,7 @@ export const EasterCollapsible = () => {
       id: 'easter-bunny-green-pearl',
       name: language === 'cs' ? "Zelený zajíček" : "Green Bunny",
       price: 109,
-      image: '@/assets/easter-bunny-green-pearl.jpg',
+      image: "@/assets/easter-bunny-green-pearl.jpg",
       description: language === 'cs' ? "Zelený zajíček se srdíčkovým otvorem, stužkou a perličkou. Milá jarní dekorace." : "A green bunny with a heart-shaped opening, ribbon and bead. A lovely spring decoration.",
       badge: language === 'cs' ? 'Novinka' : 'New'
     },
