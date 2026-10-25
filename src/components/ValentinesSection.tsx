@@ -40,57 +40,57 @@ export const ValentinesSection = () => {
   const valentineProducts: ValentineProduct[] = [
     {
       id: 'valentine-bouquet-1',
-      name: language === 'cs' ? 'Mýdlová kytice - Růže a pivoňky' : 'Soap Bouquet - Roses & Peonies',
-      price: 450,
+      name: language === 'cs' ? 'Voňavá kytice - Růže a pivoňky' : 'Fragrance product Bouquet - Roses & Peonies',
+      price: 109,
       image: valentineBouquet1,
-      description: language === 'cs' ? 'Nádherná kytice z ručně tvarovaných mýdlových růží a pivoněk v romantických růžových, korálových a mátových tónech - nezapomenutelný dárek lásky' : 'Gorgeous bouquet of hand-shaped soap roses and peonies in romantic pink, coral and mint tones - unforgettable gift of love'
+      description: language === 'cs' ? 'Nádherná kytice z ručně tvarovaných voňavých růží a pivoněk v romantických růžových, korálových a mátových tónech - nezapomenutelný dárek lásky' : 'Gorgeous bouquet of hand-shaped fragrance product roses and peonies in romantic pink, coral and mint tones - unforgettable gift of love'
     },
     {
       id: 'valentine-bouquet-2',
-      name: language === 'cs' ? 'Mýdlová kytice se srdíčkem' : 'Soap Bouquet with Heart',
-      price: 480,
+      name: language === 'cs' ? 'Voňavá kytice se srdíčkem' : 'Fragrance product Bouquet with Heart',
+      price: 109,
       image: valentineBouquet2,
-      description: language === 'cs' ? 'Romantická kytice mýdlových květin doplněná růžovým srdíčkem - dokonalé vyznání lásky ke Dni sv. Valentýna' : 'Romantic soap flower bouquet adorned with pink heart - perfect declaration of love for Valentine\'s Day'
+      description: language === 'cs' ? 'Romantická kytice voňavých květin doplněná růžovým srdíčkem - dokonalé vyznání lásky ke Dni sv. Valentýna' : 'Romantic fragrance product flower bouquet adorned with pink heart - perfect declaration of love for Valentine\'s Day'
     },
     {
       id: 'valentine-heart-pink',
-      name: language === 'cs' ? 'Růžové srdíčko' : 'Pink Heart Soap',
-      price: 89,
+      name: language === 'cs' ? 'Růžové srdíčko' : 'Pink Heart Fragrance product',
+      price: 49,
       image: valentineHeartPink,
       description: language === 'cs' ? 'Něžné růžové srdíčko v roztomilém košíčku - jemná krása plná lásky a romantiky' : 'Delicate pink heart in adorable cupcake wrapper - gentle beauty full of love and romance'
     },
     {
       id: 'valentine-heart-red-white',
       name: language === 'cs' ? 'Červeno-bílé srdíčko' : 'Red & White Heart',
-      price: 89,
+      price: 49,
       image: valentineHeartRedWhite,
       description: language === 'cs' ? 'Dvouvrstvé srdíčko s vášnivou červenou a čistou bílou - symbol věčné lásky v elegantním provedení' : 'Two-layered heart with passionate red and pure white - symbol of eternal love in elegant design'
     },
     {
       id: 'valentine-heart-diamond',
       name: language === 'cs' ? 'Diamantové srdce' : 'Diamond Heart',
-      price: 119,
+      price: 109,
       image: valentineHeartDiamond,
       description: language === 'cs' ? 'Luxusní fasetované srdce s mramorováním v růžové a červené - jako drahokam plný lásky a vášně' : 'Luxury faceted heart with pink and red marbling - like a gemstone full of love and passion'
     },
     {
       id: 'valentine-hearts-collection',
       name: language === 'cs' ? 'Kolekce diamantových srdcí' : 'Diamond Hearts Collection',
-      price: 350,
+      price: 109,
       image: valentineHeartsCollection,
       description: language === 'cs' ? 'Okouzlující sbírka fasetovaných srdíček v různých odstínech růžové - dokonalý valentýnský dárek pro vaši lásku' : 'Enchanting collection of faceted hearts in various shades of pink - perfect Valentine\'s gift for your love'
     },
     {
       id: 'valentine-heart-layered',
       name: language === 'cs' ? 'Vrstvené červené srdce' : 'Layered Red Heart',
-      price: 99,
+      price: 109,
       image: valentineHeartLayered,
-      description: language === 'cs' ? 'Sytě červené srdce s krásným vrstvením červené a bílé - vášnivá láska zachycená v mýdle' : 'Rich red heart with beautiful red and white layering - passionate love captured in soap'
+      description: language === 'cs' ? 'Sytě červené srdce s krásným vrstvením červené a bílé - vášnivá láska zachycená v voňavém výrobku' : 'Rich red heart with beautiful red and white layering - passionate love captured in fragrance product'
     },
     {
       id: 'valentine-hearts-duo',
       name: language === 'cs' ? 'Valentýnská sada srdíček' : 'Valentine Hearts Set',
-      price: 199,
+      price: 109,
       image: valentineHeartsDuo,
       description: language === 'cs' ? 'Romantická sada červených a růžových srdíček v dárkových košíčcích - potěšte svou polovičku' : 'Romantic set of red and pink hearts in gift wrappers - delight your sweetheart'
     },
@@ -104,56 +104,56 @@ export const ValentinesSection = () => {
     {
       id: 'valentine-hearts-diamond-pair',
       name: language === 'cs' ? 'Pár diamantových srdcí' : 'Diamond Hearts Pair',
-      price: 199,
+      price: 109,
       image: valentineHeartsDiamondPair,
       description: language === 'cs' ? 'Dva fasetované srdíčka na růžové soli jako symbol nerozlučné lásky - ideální dárek pro páry' : 'Two faceted hearts on pink salt as symbol of inseparable love - ideal gift for couples'
     },
     {
       id: 'valentine-heart-salt-sprinkle',
       name: language === 'cs' ? 'Srdce s krystaly soli' : 'Heart with Salt Crystals',
-      price: 119,
+      price: 109,
       image: valentineHeartSaltSprinkle,
       description: language === 'cs' ? 'Zářivě červené srdce posypané třpytivými krystaly himalájské soli - luxusní dekorativní kousek plný vášně a elegance' : 'Vibrant red heart sprinkled with sparkling Himalayan salt crystals - luxury decorative piece full of passion and elegance'
     },
     {
       id: 'valentine-diamond-hearts-salt',
       name: language === 'cs' ? 'Diamantové srdce se srdíčky' : 'Diamond Heart with Hearts',
-      price: 139,
+      price: 109,
       image: valentineDiamondHeartsSalt,
       description: language === 'cs' ? 'Fasetované mramorové srdce obklopené malými červenými srdíčky na růžové soli - romantická dekorace, která okouzlí každého' : 'Faceted marble heart surrounded by small red hearts on pink salt - romantic decoration that enchants everyone'
     },
     {
       id: 'valentine-cupcake-salt',
       name: language === 'cs' ? 'Valentýnské cupcaky' : 'Valentine Cupcakes',
-      price: 159,
+      price: 109,
       image: valentineCupcakeSalt,
-      description: language === 'cs' ? 'Roztomilé bílé mýdlové cupcaky zdobené růžovými krystaly soli a červenými srdíčky - sladká romantika pro vaši lásku' : 'Adorable white soap cupcakes decorated with pink salt crystals and red hearts - sweet romance for your love'
+      description: language === 'cs' ? 'Roztomilé bílé voňavé cupcaky zdobené růžovými krystaly soli a červenými srdíčky - sladká romantika pro vaši lásku' : 'Adorable white fragrance product cupcakes decorated with pink salt crystals and red hearts - sweet romance for your love'
     },
     {
       id: 'valentine-ornate-heart-box',
       name: language === 'cs' ? 'Ornamentální srdce v dárkové krabičce' : 'Ornamental Heart Gift Box',
-      price: 179,
+      price: 109,
       image: valentineOrnateHeartBox,
       description: language === 'cs' ? 'Nádherné růžové srdce s propracovanými barokními ornamenty v elegantní zlaté krabičce na vyřezávaném podstavci - luxusní dárek lásky' : 'Gorgeous pink heart with intricate baroque ornaments in elegant golden box on carved stand - luxury gift of love'
     },
     {
       id: 'valentine-bouquet-pink-peonies',
       name: language === 'cs' ? 'Kytice růžových pivoněk' : 'Pink Peony Bouquet',
-      price: 490,
+      price: 109,
       image: valentineBouquetPinkPeonies,
-      description: language === 'cs' ? 'Okouzlující kytice ručně tvarovaných mýdlových pivoněk a růží v jemných růžových a korálových tónech s mátovými akcenty - dechberoucí valentýnský dar' : 'Enchanting bouquet of hand-shaped soap peonies and roses in soft pink and coral tones with mint accents - breathtaking Valentine\'s gift'
+      description: language === 'cs' ? 'Okouzlující kytice ručně tvarovaných voňavých pivoněk a růží v jemných růžových a korálových tónech s mátovými akcenty - dechberoucí valentýnský dar' : 'Enchanting bouquet of hand-shaped fragrance product peonies and roses in soft pink and coral tones with mint accents - breathtaking Valentine\'s gift'
     },
     {
       id: 'valentine-bouquet-vase',
       name: language === 'cs' ? 'Kytice v dekorativní váze' : 'Bouquet in Decorative Vase',
-      price: 550,
+      price: 109,
       image: valentineBouquetVase,
-      description: language === 'cs' ? 'Luxusní mýdlová kytice růžových pivoněk v elegantní bílé váze s reliéfním vzorem - nádherná dekorace i romantický dárek v jednom' : 'Luxury soap bouquet of pink peonies in elegant white vase with embossed pattern - gorgeous decoration and romantic gift in one'
+      description: language === 'cs' ? 'Luxusní voňavá kytice růžových pivoněk v elegantní bílé váze s reliéfním vzorem - nádherná dekorace i romantický dárek v jednom' : 'Luxury fragrance product bouquet of pink peonies in elegant white vase with embossed pattern - gorgeous decoration and romantic gift in one'
     },
     {
       id: 'valentine-i-love-prague',
       name: language === 'cs' ? 'Srdce I ♥ Prague' : 'I ♥ Prague Heart',
-      price: 99,
+      price: 109,
       image: valentineILovePrague,
       description: language === 'cs' ? 'Romantické růžové srdce s vyraženým nápisem I ♥ Prague - ideální suvenýr a valentýnský dárek pro milovníky Prahy' : 'Romantic pink heart with embossed I ♥ Prague lettering - ideal souvenir and Valentine\'s gift for Prague lovers'
     },
@@ -167,57 +167,57 @@ export const ValentinesSection = () => {
     {
       id: 'valentine-bear-heart',
       name: language === 'cs' ? 'Medvídek se srdíčkem' : 'Bear with Heart',
-      price: 149,
+      price: 109,
       image: valentineBearHeart,
-      description: language === 'cs' ? 'Roztomilý růžový medvídek z mýdlových růžiček držící bílé pletené srdíčko s malými barevnými srdíčky - nejsladší valentýnské překvapení' : 'Adorable pink bear made of soap roses holding white knitted heart with small colorful hearts - the sweetest Valentine\'s surprise'
+      description: language === 'cs' ? 'Roztomilý růžový medvídek z voňavých růžiček držící bílé pletené srdíčko s malými barevnými srdíčky - nejsladší valentýnské překvapení' : 'Adorable pink bear made of fragrance product roses holding white knitted heart with small colorful hearts - the sweetest Valentine\'s surprise'
     },
     {
       id: 'valentine-heart-petal-pink',
       name: language === 'cs' ? 'Srdce s květinovými okvětními lístky' : 'Heart with Floral Petals',
-      price: 129,
+      price: 109,
       image: valentineHeartPetalPink,
       description: language === 'cs' ? 'Jemné růžové srdce pokryté drobnými květinovými okvětními lístky v bohaté textuře - romantická dekorace plná elegance a měkkosti' : 'Delicate pink heart covered with tiny floral petals in rich texture - romantic decoration full of elegance and softness'
     },
     {
       id: 'valentine-heart-ribbed-pink',
       name: language === 'cs' ? 'Srdce s jemnými žebrují' : 'Heart with Gentle Ribbed Texture',
-      price: 129,
+      price: 109,
       image: valentineHeartRibbedPink,
       description: language === 'cs' ? 'Elegantní růžové srdce s jemnými vertikálními žebrováním - dokonalá kombinace jednoduchosti a rafináace' : 'Elegant pink heart with gentle vertical ribbed pattern - perfect combination of simplicity and refinement'
     },
     {
       id: 'valentine-heart-wavy-pink',
       name: language === 'cs' ? 'Srdce s vlnravým vzorem' : 'Heart with Wavy Pattern',
-      price: 129,
+      price: 109,
       image: valentineHeartWavyPink,
       description: language === 'cs' ? 'Krásné růžové srdce s plynulým vlnravým vzorem - symbolizuje tok lásky a něhy mezi dvěma srdci' : 'Beautiful pink heart with flowing wavy pattern - symbolizes the flow of love and tenderness between two hearts'
     },
     {
       id: 'valentine-heart-scalloped-pink',
       name: language === 'cs' ? 'Srdce s vlnkami' : 'Heart with Scalloped Edges',
-      price: 129,
+      price: 109,
       image: valentineHeartScallopedPink,
       description: language === 'cs' ? 'Roztomilé růžové srdce se zdobenými vějířkovitými okraji - něžná a ženská forma pro ideální valentýnský dárek' : 'Adorable pink heart with decorative scalloped edges - delicate and feminine form for the perfect Valentine\'s gift'
     },
     {
       id: 'valentine-luxury-bouquet-arrangement',
       name: language === 'cs' ? 'Luxusní valentýnská kytice s dekoracemi' : 'Luxury Valentine\'s Bouquet with Decorations',
-      price: 650,
+      price: 109,
       image: valentineLuxuryBouquetArrangement,
-      description: language === 'cs' ? 'Nádherná luxusní kytice složená z ručně vyráběných mýdlových růží, pivoněk a srdcí v různých odstínech růžové a červené, doplněná dekorativními ozdobami, medvídky a valentýnskými tagy - nejexkluzivnější dárek lásky' : 'Gorgeous luxury bouquet composed of handmade soap roses, peonies and hearts in various shades of pink and red, adorned with decorative embellishments, teddy bears and Valentine\'s tags - the most exclusive gift of love'
+      description: language === 'cs' ? 'Nádherná luxusní kytice složená z ručně vyráběných voňavých růží, pivoněk a srdcí v různých odstínech růžové a červené, doplněná dekorativními ozdobami, medvídky a valentýnskými tagy - nejexkluzivnější dárek lásky' : 'Gorgeous luxury bouquet composed of handmade fragrance product roses, peonies and hearts in various shades of pink and red, adorned with decorative embellishments, teddy bears and Valentine\'s tags - the most exclusive gift of love'
     },
     {
       id: 'valentine-bear-heart-valentine',
       name: language === 'cs' ? 'Medvídek Be My Valentine' : 'Be My Valentine Bear',
-      price: 159,
+      price: 109,
       image: valentineBearHeartValentine,
-      description: language === 'cs' ? 'Roztomilý růžový medvídek z mýdlových růžiček s hladkým srdíčkem a valentýnskou kartičkou "Be my Valentine" - okouzlující dárek plný lásky a něhy' : 'Adorable pink bear made of soap roses with smooth heart and Valentine\'s card "Be my Valentine" - charming gift full of love and tenderness'
+      description: language === 'cs' ? 'Roztomilý růžový medvídek z voňavých růžiček s hladkým srdíčkem a valentýnskou kartičkou "Be my Valentine" - okouzlující dárek plný lásky a něhy' : 'Adorable pink bear made of fragrance product roses with smooth heart and Valentine\'s card "Be my Valentine" - charming gift full of love and tenderness'
     },
   ];
 
   const handleQuickOrder = (product: ValentineProduct) => {
     const subject = encodeURIComponent(`Valentýnská objednávka: ${product.name}`);
-    const body = encodeURIComponent(`Dobrý den,\n\nráda bych si objednala valentýnské mýdlo:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`);
+    const body = encodeURIComponent(`Dobrý den,\n\nráda bych si objednala valentýnské voňavý výrobek:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
 
@@ -233,8 +233,8 @@ export const ValentinesSection = () => {
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             {language === 'cs' 
-              ? 'Překvapte svou lásku ručně vyráběnými mýdly ve tvaru srdce. Každý kousek je vytvořen s láskou a péčí - dokonalý dárek ke Dni sv. Valentýna.'
-              : "Surprise your love with handmade heart-shaped soaps. Each piece is crafted with love and care - the perfect Valentine's Day gift."}
+              ? 'Překvapte svou lásku ručně vyráběnými voňavými výrobky ve tvaru srdce. Každý kousek je vytvořen s láskou a péčí - dokonalý dárek ke Dni sv. Valentýna.'
+              : "Surprise your love with handmade heart-shaped fragrance products. Each piece is crafted with love and care - the perfect Valentine's Day gift."}
           </p>
         </div>
 
@@ -293,7 +293,7 @@ export const ValentinesSection = () => {
             className="rounded-full bg-white text-pink-600 hover:bg-gray-100 font-bold"
             onClick={() => {
               const subject = encodeURIComponent('Valentýnská objednávka - celá kolekce');
-              const body = encodeURIComponent('Dobrý den,\n\nmám zájem o valentýnskou kolekci mýdel.\n\nProsím o více informací.\n\nDěkuji,');
+              const body = encodeURIComponent('Dobrý den,\n\nmám zájem o valentýnskou kolekci voňavých výrobků.\n\nProsím o více informací.\n\nDěkuji,');
               window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
             }}
           >

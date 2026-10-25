@@ -4,35 +4,39 @@ import { Button } from "@/components/ui/button";
 import { Snowflake, Star, Gift, Sparkles } from "lucide-react";
 
 // Snowflakes
-import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.jpg";
-import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.jpg";
-import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg";
-import christmasSnowflakePinkDetailed from "@/assets/christmas-pink-snowflake-detailed.jpg";
-import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.jpg";
-import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.jpg";
-import christmasBlueSnowflake from "@/assets/christmas-yellow-snowflake.jpg";
-import christmasGreenSnowflakeStar from "@/assets/Bells.jpg";
-import christmasWhiteSnowflakePearl from "@/assets/christmas-red-snowflake-pearl.jpg";
+import christmasSnowflakeBaroquePink from "@/assets/christmas-snowflake-baroque-pink.png";
+import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-flower.png";
+import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-lime-star.png";
+import christmasSnowflakePinkDetailed from "@/assets/christmas-snowflake-green-white-center.png";
+import christmasSnowflakeElaborate from "@/assets/christmas-snowflake-elaborate.png";
+import christmasSnowflakePinkNew from "@/assets/christmas-snowflake-pink-detailed.png";
+import christmasBlueSnowflake from "@/assets/christmas-snowflake-yellow.png";
+import christmasGreenSnowflakeStar from "@/assets/christmas-bells-pink-oval-green.png";
+import christmasWhiteSnowflakePearl from "@/assets/christmas-star-red.png";
 
 // Angels
-import christmasAngelSoaps from "@/assets/christmas-angel-soaps.jpg";
-import christmasAngelPink from "@/assets/christmas-angel-pink.jpg";
+import christmasAngelSoaps from "@/assets/christmas-angels-pink-mint.png";
+import christmasAngelPink from "@/assets/christmas-angel-pink.png";
 
 
 // Winter trees & scenes
-import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.jpg";
-import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.jpg";
-import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.jpg";
-import christmasGreenTreesPair from "@/assets/White-green snowflake.jpg";
+import christmasTreeDeerForest from "@/assets/christmas-tree-deer-forest.png";
+import christmasTreeDeerSnowflakesGreen from "@/assets/christmas-tree-deer-snowflakes-green.png";
+import christmasTreesPairGreenPink from "@/assets/christmas-trees-pair-green-pink.png";
+import christmasGreenTreesPair from "@/assets/christmas-snowflake-green-white.png";
+import christmasPinkTreePearls from "@/assets/christmas-snowflake-gold.png";
 
 // Stars & gifts
-import christmasPinkStarTree from "@/assets/christmas-baby-angels.jpg";
-import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.jpg";
+import christmasStarPink from "@/assets/christmas-star-pink.png";
+import christmasPinkStarTree from "@/assets/christmas-angel-plaques-pink-white.png";
+import christmasWhiteStarOrnaments from "@/assets/christmas-snowflake-pink-white.png";
+import christmasGiftBoxBow from "@/assets/christmas-gift-box-bow.png";
 
 // Characters
-import christmasSantaClaus from "@/assets/christmas-santa-claus.jpg";
+import christmasSantaClaus from "@/assets/christmas-santa-skiing-plaque.png";
 
-import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.jpg";
+import christmasReindeerSoaps from "@/assets/christmas-reindeer-soaps.png";
+import daisySoapsYellowPink from "@/assets/daisy-soaps-yellow-pink.png";
 
 interface WinterProduct {
   id: string;
@@ -64,7 +68,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-baroque',
       name: language === 'cs' ? 'Barokní růžová vločka' : 'Baroque Pink Snowflake',
-      price: 165,
+      price: 109,
       image: christmasSnowflakeBaroquePink,
       description: language === 'cs' ? 'Velkolepá barokní vločka v královské růžové s propracovanými ornamenty - zimní elegance pro váš domov' : 'Magnificent baroque snowflake in royal pink with intricate ornaments - winter elegance for your home',
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller',
@@ -73,7 +77,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-green-flower',
       name: language === 'cs' ? 'Vločka s květinovým vzorem' : 'Floral Pattern Snowflake',
-      price: 175,
+      price: 109,
       image: christmasSnowflakeGreenFlower,
       description: language === 'cs' ? 'Unikátní zelená vločka s bílým květinovým středem - dokonalé spojení zimní krásy a přírody' : 'Unique green snowflake with white floral center - perfect blend of winter beauty and nature',
       category: 'snowflake'
@@ -81,7 +85,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-holly',
       name: language === 'cs' ? 'Cesmínová vločka' : 'Holly Snowflake',
-      price: 165,
+      price: 109,
       image: christmasSnowflakeHollyGreen,
       description: language === 'cs' ? 'Majestátní zelená vločka s motivem cesmínových listů - tradiční zimní motiv plný kouzla' : 'Majestic green snowflake with holly leaf motif - traditional winter charm',
       badge: language === 'cs' ? 'Oblíbené' : 'Popular',
@@ -90,7 +94,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-pink-detailed',
       name: language === 'cs' ? 'Mentolová vločka' : 'Mint Green Snowflake',
-      price: 165,
+      price: 109,
       image: christmasSnowflakePinkDetailed,
       description: language === 'cs' ? 'Svěží mentolová vločka s jemným vzorem – elegantní zimní kouzlo, které okouzlí.' : 'Fresh mint green snowflake with delicate pattern – elegant winter charm that captivates.',
       category: 'snowflake'
@@ -98,7 +102,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-elaborate',
       name: language === 'cs' ? 'Velká sněhová vločka' : 'Grand Snowflake',
-      price: 185,
+      price: 109,
       image: christmasSnowflakeElaborate,
       description: language === 'cs' ? 'Impozantní velká vločka s detailním reliéfem - okouzlující středobod zimní dekorace' : 'Impressive grand snowflake with detailed relief - enchanting centerpiece of winter decoration',
       category: 'snowflake'
@@ -106,7 +110,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-pink-relief',
       name: language === 'cs' ? 'Růžová vločka s reliéfem' : 'Pink Relief Snowflake',
-      price: 155,
+      price: 109,
       image: christmasSnowflakePinkNew,
       description: language === 'cs' ? 'Nádherná růžová vločka s kontrastním bílým reliéfem - romantická zimní krása' : 'Gorgeous pink snowflake with contrasting white relief - romantic winter beauty',
       category: 'snowflake'
@@ -114,7 +118,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-blue',
       name: language === 'cs' ? 'Žlutá zimní vločka' : 'Yellow Winter Snowflake',
-      price: 155,
+      price: 109,
       image: christmasBlueSnowflake,
       description: language === 'cs' ? 'Zářivě žlutá vločka evokující teplo zimních svíček u krbu' : 'Radiant yellow snowflake evoking warmth of winter candles by the fireplace',
       category: 'snowflake'
@@ -122,7 +126,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-star-green',
       name: language === 'cs' ? 'Zelený ovál se zvonečkem' : 'Green Oval with Bell',
-      price: 155,
+      price: 109,
       image: christmasGreenSnowflakeStar,
       description: language === 'cs' ? 'Romantický zvoneček s cesmínou na zeleném oválu – nádherný zimní dárek.' : 'Romantic bell with holly on green oval – a gorgeous winter gift.',
       category: 'snowflake'
@@ -130,7 +134,7 @@ export const WinterSection = () => {
     {
       id: 'winter-snowflake-red-star',
       name: language === 'cs' ? 'Červená zimní hvězda' : 'Red Winter Star',
-      price: 165,
+      price: 109,
       image: christmasWhiteSnowflakePearl,
       description: language === 'cs' ? 'Zářivě červená hvězda symbolizující teplo a pohodu zimních večerů' : 'Radiant red star symbolizing warmth and coziness of winter evenings',
       category: 'snowflake'
@@ -140,7 +144,7 @@ export const WinterSection = () => {
     {
       id: 'winter-angels-set',
       name: language === 'cs' ? 'Sada zimních andělů' : 'Winter Angels Set',
-      price: 310,
+      price: 109,
       image: christmasAngelSoaps,
       description: language === 'cs' ? 'Nádherná andělská sada v pastelových zimních barvách - přinese klid a harmonii do vašeho domova' : 'Beautiful angel set in pastel winter colors - brings peace and harmony to your home',
       badge: language === 'cs' ? 'Dárková sada' : 'Gift Set',
@@ -149,7 +153,7 @@ export const WinterSection = () => {
     {
       id: 'winter-angel-pink',
       name: language === 'cs' ? 'Růžový andílek se srdíčkem' : 'Pink Angel with Heart',
-      price: 175,
+      price: 109,
       image: christmasAngelPink,
       description: language === 'cs' ? 'Jemný andílek se srdíčkem v něžně růžové - strážný anděl pro vaše blízké' : 'Delicate angel with heart in soft pink - guardian angel for your loved ones',
       badge: language === 'cs' ? 'Ruční práce' : 'Handmade',
@@ -162,7 +166,7 @@ export const WinterSection = () => {
     {
       id: 'winter-tree-deer-forest',
       name: language === 'cs' ? 'Stromeček s lesní scenérií' : 'Tree with Forest Scene',
-      price: 175,
+      price: 109,
       image: christmasTreeDeerForest,
       description: language === 'cs' ? 'Kouzelný stromeček se zimní scenérií s jeleny v zasněženém lese - magie zimní přírody' : 'Magical tree with winter scene and deer in snowy forest - magic of winter nature',
       badge: language === 'cs' ? 'Bestseller' : 'Bestseller',
@@ -171,7 +175,7 @@ export const WinterSection = () => {
     {
       id: 'winter-tree-deer-snowflakes-green',
       name: language === 'cs' ? 'Stromeček s jelenem a vločkami' : 'Tree with Deer & Snowflakes',
-      price: 175,
+      price: 109,
       image: christmasTreeDeerSnowflakesGreen,
       description: language === 'cs' ? 'Elegantní zelený stromeček s majestátním jelenem a vločkami - zimní pohádka' : 'Elegant green tree with majestic deer and snowflakes - winter fairy tale',
       category: 'tree'
@@ -179,7 +183,7 @@ export const WinterSection = () => {
     {
       id: 'winter-trees-pair',
       name: language === 'cs' ? 'Dvojice stromečků zelená a růžová' : 'Tree Pair Green & Pink',
-      price: 310,
+      price: 109,
       image: christmasTreesPairGreenPink,
       description: language === 'cs' ? 'Okouzlující duo stromečků v zelené a růžové - elegantní zimní dekorace' : 'Charming duo of trees in green and pink - elegant winter decoration',
       badge: language === 'cs' ? 'Dárková sada' : 'Gift Set',
@@ -188,26 +192,52 @@ export const WinterSection = () => {
     {
       id: 'winter-green-trees-pair',
       name: language === 'cs' ? 'Bílo-zelená vločka' : 'White-Green Snowflake',
-      price: 290,
+      price: 109,
       image: christmasGreenTreesPair,
       description: language === 'cs' ? 'Elegantní bílá vločka se zeleným vzorem – čistá zimní krása, která zaujme.' : 'Elegant white snowflake with green pattern – pure winter beauty that impresses.',
       category: 'tree'
     },
+    {
+      id: 'winter-pink-tree-pearls',
+      name: language === 'cs' ? 'Zlatá vločka s ornamentem' : 'Golden Snowflake with Ornament',
+      price: 109,
+      image: christmasPinkTreePearls,
+      description: language === 'cs' ? 'Zářivě zlatá vločka s propracovaným ornamentem – luxusní zimní třpyt.' : 'Radiant golden snowflake with intricate ornament – luxury winter sparkle.',
+      badge: language === 'cs' ? 'Luxus' : 'Luxury',
+      category: 'tree'
+    },
+
 
 
     // Stars & gifts
     {
+      id: 'winter-star-pink',
+      name: language === 'cs' ? 'Růžová zimní hvězda' : 'Pink Winter Star',
+      price: 109,
+      image: christmasStarPink,
+      description: language === 'cs' ? 'Zářivá hvězda v jemně růžové s ornamentem - rozsvítí každý zimní večer' : 'Radiant star in soft pink with ornament - lights up every winter evening',
+      category: 'star'
+    },
+    {
       id: 'winter-star-tree',
       name: language === 'cs' ? 'Andělíčci – pár' : 'Angel Pair',
-      price: 165,
+      price: 109,
       image: christmasPinkStarTree,
       description: language === 'cs' ? 'Nádherný pár andělíčků v bílé a růžové – ochránci vašeho domova.' : 'Beautiful angel pair in white and pink – guardians of your home.',
       category: 'star'
     },
     {
+      id: 'winter-star-white-ornaments',
+      name: language === 'cs' ? 'Růžová hvězda s ornamenty' : 'Pink Star with Ornaments',
+      price: 109,
+      image: christmasWhiteStarOrnaments,
+      description: language === 'cs' ? 'Okouzlující růžová hvězda s bílými ornamenty – romantická zimní dekorace.' : 'Enchanting pink star with white ornaments – romantic winter decoration.',
+      category: 'star'
+    },
+    {
       id: 'winter-gift-box',
       name: language === 'cs' ? 'Zimní dárek s mašlí' : 'Winter Gift with Bow',
-      price: 155,
+      price: 109,
       image: christmasGiftBoxBow,
       description: language === 'cs' ? 'Okouzlující dárkové balení v zelené s růžovou mašlí a srdíčkem - ideální dárek' : 'Charming gift package in green with pink bow and heart - ideal gift',
       category: 'star'
@@ -217,7 +247,7 @@ export const WinterSection = () => {
     {
       id: 'winter-santa-claus',
       name: language === 'cs' ? 'Roztomilý Santa Claus' : 'Adorable Santa Claus',
-      price: 165,
+      price: 109,
       image: christmasSantaClaus,
       description: language === 'cs' ? 'Okouzlující Santa Claus v tradičním červeném obleku - zimní radost pro celou rodinu' : 'Charming Santa Claus in traditional red suit - winter joy for the whole family',
       badge: language === 'cs' ? 'Oblíbené' : 'Popular',
@@ -226,11 +256,20 @@ export const WinterSection = () => {
     {
       id: 'winter-reindeer-set',
       name: language === 'cs' ? 'Sada zimních sobů' : 'Winter Reindeer Set',
-      price: 355,
+      price: 109,
       image: christmasReindeerSoaps,
       description: language === 'cs' ? 'Roztomilá sada sobů s mašlemi - magičtí průvodci zimní pohádkou' : 'Adorable reindeer set with bows - magical guides of winter fairy tale',
       badge: language === 'cs' ? 'Dárková sada' : 'Gift Set',
       category: 'character'
+    },
+    {
+      id: 'winter-daisy-yellow-pink',
+      name: language === 'cs' ? 'Kopretiny žluté a růžové' : 'Daisies Yellow & Pink',
+      price: 109,
+      image: daisySoapsYellowPink,
+      description: language === 'cs' ? 'Slunečné kopretiny v žluté a růžové – paprsek slunce v zimních dnech.' : 'Sunny daisies in yellow and pink – a ray of sunshine in winter days.',
+      badge: language === 'cs' ? 'Oblíbené' : 'Popular',
+      category: 'star'
     },
   ];
 
@@ -241,7 +280,7 @@ export const WinterSection = () => {
   const handleQuickOrder = (product: WinterProduct) => {
     const subject = encodeURIComponent(language === 'cs' ? `Zimní objednávka: ${product.name}` : `Winter order: ${product.name}`);
     const body = encodeURIComponent(language === 'cs'
-      ? `Dobrý den,\n\nráda bych si objednala zimní mýdlo:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
+      ? `Dobrý den,\n\nráda bych si objednala zimní voňavý výrobek:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
       : `Hello,\n\nI would like to order:\n\n${product.name}\nPrice: ${product.price} CZK\n\nThank you,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
@@ -269,8 +308,8 @@ export const WinterSection = () => {
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-secondary to-transparent mx-auto mb-8" />
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto leading-relaxed mb-4 font-light">
             {language === 'cs'
-              ? 'Objevte kouzlo zimy v ručně vyráběných dekorativních mýdlech. Vločky, andělé, zasněžené stromečky — každý kousek je unikátní umělecké dílo.'
-              : 'Discover winter magic in handmade decorative soaps. Snowflakes, angels, snowy trees — each piece is a unique work of art.'}
+              ? 'Objevte kouzlo zimy v ručně vyráběných dekorativních voňavých výrobcích. Vločky, andělé, zasněžené stromečky — každý kousek je unikátní umělecké dílo.'
+              : 'Discover winter magic in handmade decorative fragrance products. Snowflakes, angels, snowy trees — each piece is a unique work of art.'}
           </p>
           <p className="text-base text-secondary font-medium italic">
             {language === 'cs'
@@ -282,7 +321,7 @@ export const WinterSection = () => {
         {/* Refined offer banner */}
         <div className="mb-14 p-6 gradient-card rounded-2xl text-center border border-secondary/15 shadow-rose">
           <p className="text-base font-medium text-primary">
-            ✦ {language === 'cs' ? 'Doručení zdarma při objednávce nad 5 kusů' : 'Free delivery on orders over 5 pieces'} ✦
+            ✦ {language === 'cs' ? 'Nad 30 ks – doprava zdarma' : 'Over 30 pcs – free delivery'} ✦
           </p>
           <p className="text-sm text-muted-foreground mt-1 italic">
             {language === 'cs' ? 'Limitovaná zimní edice — každý kousek je originál' : 'Limited winter edition — every piece is an original'}
@@ -389,8 +428,8 @@ export const WinterSection = () => {
                 onClick={() => {
                   const subject = encodeURIComponent(language === 'cs' ? 'Zimní objednávka - celá kolekce' : 'Winter order - full collection');
                   const body = encodeURIComponent(language === 'cs'
-                    ? 'Dobrý den,\n\nmám zájem o zimní kolekci mýdel.\n\nProsím o více informací.\n\nDěkuji,'
-                    : 'Hello,\n\nI am interested in the winter soap collection.\n\nPlease provide more information.\n\nThank you,');
+                    ? 'Dobrý den,\n\nmám zájem o zimní kolekci voňavých výrobků.\n\nProsím o více informací.\n\nDěkuji,'
+                    : 'Hello,\n\nI am interested in the winter fragrance product collection.\n\nPlease provide more information.\n\nThank you,');
                   window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
                 }}
               >
@@ -403,8 +442,8 @@ export const WinterSection = () => {
                 onClick={() => {
                   const subject = encodeURIComponent(language === 'cs' ? 'Individuální zimní objednávka' : 'Custom winter order');
                   const body = encodeURIComponent(language === 'cs'
-                    ? 'Dobrý den,\n\nmám zájem o sestavení vlastní zimní kolekce mýdel.\n\nProsím o nabídku.\n\nDěkuji,'
-                    : 'Hello,\n\nI am interested in building my own winter soap collection.\n\nPlease provide an offer.\n\nThank you,');
+                    ? 'Dobrý den,\n\nmám zájem o sestavení vlastní zimní kolekce voňavých výrobků.\n\nProsím o nabídku.\n\nDěkuji,'
+                    : 'Hello,\n\nI am interested in building my own winter fragrance product collection.\n\nPlease provide an offer.\n\nThank you,');
                   window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
                 }}
               >

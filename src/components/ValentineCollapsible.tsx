@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
+import { Lightbox } from "@/components/Lightbox";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import valentineHeartPink from "@/assets/valentine-heart-pink.jpg";
 import valentineHeartRedWhite from "@/assets/valentine-heart-red-white.jpg";
@@ -33,34 +34,34 @@ interface ValentineProduct {
 
 export const ValentineCollapsible = () => {
   const { language } = useLanguage();
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
 
   const products: ValentineProduct[] = [
-    { id: 'v-heart-pink', name: language === 'cs' ? 'Růžové srdíčko' : 'Pink Heart', price: 89, image: valentineHeartPink, description: language === 'cs' ? 'Něžné růžové srdíčko v roztomilém košíčku' : 'Delicate pink heart in adorable cupcake wrapper' },
-    { id: 'v-heart-red-white', name: language === 'cs' ? 'Červeno-bílé srdíčko' : 'Red & White Heart', price: 89, image: valentineHeartRedWhite, description: language === 'cs' ? 'Dvouvrstvé srdíčko - symbol věčné lásky' : 'Two-layered heart - symbol of eternal love' },
-    { id: 'v-heart-diamond', name: language === 'cs' ? 'Diamantové srdce' : 'Diamond Heart', price: 119, image: valentineHeartDiamond, description: language === 'cs' ? 'Luxusní fasetované srdce s mramorováním' : 'Luxury faceted heart with marbling', badge: language === 'cs' ? 'Luxus' : 'Luxury' },
-    { id: 'v-hearts-collection', name: language === 'cs' ? 'Kolekce diamantových srdcí' : 'Diamond Hearts Collection', price: 350, image: valentineHeartsCollection, description: language === 'cs' ? 'Okouzlující sbírka fasetovaných srdíček' : 'Enchanting collection of faceted hearts', badge: language === 'cs' ? 'Sada' : 'Set' },
-    { id: 'v-heart-layered', name: language === 'cs' ? 'Vrstvené červené srdce' : 'Layered Red Heart', price: 99, image: valentineHeartLayered, description: language === 'cs' ? 'Sytě červené srdce s vrstvením' : 'Rich red heart with beautiful layering' },
-    { id: 'v-hearts-duo', name: language === 'cs' ? 'Valentýnská sada srdíček' : 'Valentine Hearts Set', price: 199, image: valentineHeartsDuo, description: language === 'cs' ? 'Romantická sada srdíček v košíčkách' : 'Romantic set of hearts in gift wrappers' },
-    { id: 'v-heart-red-salt', name: language === 'cs' ? 'Srdce na růžové soli' : 'Heart on Pink Salt', price: 109, image: valentineHeartRedSalt, description: language === 'cs' ? 'Červené srdce na himalájské soli' : 'Red heart on Himalayan pink salt' },
-    { id: 'v-hearts-diamond-pair', name: language === 'cs' ? 'Pár diamantových srdcí' : 'Diamond Hearts Pair', price: 199, image: valentineHeartsDiamondPair, description: language === 'cs' ? 'Dvě fasetované srdíčka pro páry' : 'Two faceted hearts for couples' },
-    { id: 'v-heart-salt-sprinkle', name: language === 'cs' ? 'Srdce s krystaly soli' : 'Heart with Salt Crystals', price: 119, image: valentineHeartSaltSprinkle, description: language === 'cs' ? 'Červené srdce s třpytivými krystaly' : 'Red heart with sparkling crystals' },
-    { id: 'v-diamond-hearts-salt', name: language === 'cs' ? 'Diamantové srdce se srdíčky' : 'Diamond Heart with Hearts', price: 139, image: valentineDiamondHeartsSalt, description: language === 'cs' ? 'Mramorové srdce s malými srdíčky' : 'Marble heart with small hearts' },
-    { id: 'v-ornate-heart-box', name: language === 'cs' ? 'Ornamentální srdce v krabičce' : 'Ornamental Heart Gift Box', price: 179, image: valentineOrnateHeartBox, description: language === 'cs' ? 'Barokní srdce v zlaté krabičce' : 'Baroque heart in golden box', badge: language === 'cs' ? 'Premium' : 'Premium' },
-    { id: 'v-i-love-prague', name: language === 'cs' ? 'Srdce I ♥ Prague' : 'I ♥ Prague Heart', price: 99, image: valentineILovePrague, description: language === 'cs' ? 'Růžové srdce s nápisem I ♥ Prague' : 'Pink heart with I ♥ Prague lettering' },
-    { id: 'v-flower-heart', name: language === 'cs' ? 'Květinové srdce' : 'Floral Heart', price: 109, image: valentineFlowerHeart, description: language === 'cs' ? 'Srdce pokryté drobnými pupínky' : 'Heart covered with tiny floral buds' },
-    { id: 'v-bear-heart', name: language === 'cs' ? 'Medvídek se srdíčkem' : 'Bear with Heart', price: 149, image: valentineBearHeart, description: language === 'cs' ? 'Růžový medvídek s pleteným srdíčkem' : 'Pink bear with knitted heart', badge: language === 'cs' ? 'Novinka' : 'New' },
-    { id: 'v-heart-petal-pink', name: language === 'cs' ? 'Srdce s okvětními lístky' : 'Heart with Floral Petals', price: 129, image: valentineHeartPetalPink, description: language === 'cs' ? 'Růžové srdce s texturou okvětních lístků' : 'Pink heart with floral petal texture' },
-    { id: 'v-heart-ribbed-pink', name: language === 'cs' ? 'Srdce s jemným žebrováním' : 'Ribbed Heart', price: 129, image: valentineHeartRibbedPink, description: language === 'cs' ? 'Elegantní růžové srdce s žebrováním' : 'Elegant pink heart with ribbed pattern' },
-    { id: 'v-heart-wavy-pink', name: language === 'cs' ? 'Srdce s vlnitým vzorem' : 'Wavy Heart', price: 129, image: valentineHeartWavyPink, description: language === 'cs' ? 'Růžové srdce s plynulým vzorem' : 'Pink heart with flowing wavy pattern' },
-    { id: 'v-heart-scalloped-pink', name: language === 'cs' ? 'Srdce s vlnkami' : 'Scalloped Heart', price: 129, image: valentineHeartScallopedPink, description: language === 'cs' ? 'Srdce se zdobenými okraji' : 'Heart with decorative scalloped edges' },
-    { id: 'v-bear-heart-valentine', name: language === 'cs' ? 'Medvídek Be My Valentine' : 'Be My Valentine Bear', price: 159, image: valentineBearHeartValentine, description: language === 'cs' ? 'Medvídek se srdíčkem a kartičkou' : 'Bear with heart and Valentine card', badge: language === 'cs' ? 'Bestseller' : 'Bestseller' },
+    { id: 'v-heart-pink', name: language === 'cs' ? "Růžové srdíčko" : "Pink Heart", price: 49, image: valentineHeartPink, description: language === 'cs' ? "Růžové srdíčko s jemným mramorováním a vroubkovanými boky. Něžná pozornost z lásky." : "A pink heart with soft marbling and fluted sides. A delicate token of love." },
+    { id: 'v-heart-red-white', name: language === 'cs' ? "Červené srdíčko" : "Red Heart", price: 49, image: valentineHeartRedWhite, description: language === 'cs' ? "Červené srdce na světlém podkladu s vroubkovanými boky. Malý dárek s velkým gestem." : "A red heart on a pale base with fluted sides. A small gift with a heartfelt message." },
+    { id: 'v-heart-diamond', name: language === 'cs' ? "Fasetované srdce" : "Faceted Heart", price: 109, image: valentineHeartDiamond, description: language === 'cs' ? "Růžovo-bílé srdce s červenými akcenty a hranatými plochami. Výrazná romantická dekorace." : "A pink and white heart with red accents and angular facets. A striking romantic decoration.", badge: language === 'cs' ? 'Luxus' : 'Luxury' },
+    { id: 'v-hearts-collection', name: language === 'cs' ? "Fasetovaná srdce – sada" : "Faceted Hearts – Set", price: 549, image: valentineHeartsCollection, description: language === 'cs' ? "Růžová a červená srdíčka v pestré společné kompozici. Sada pro romantické obdarování." : "Pink and red hearts in a colourful arrangement. A set for a romantic gift.", badge: language === 'cs' ? 'Sada' : 'Set' },
+    { id: 'v-heart-layered', name: language === 'cs' ? "Srdce v červené" : "Heart in Red", price: 109, image: valentineHeartLayered, description: language === 'cs' ? "Červené srdce s bílo-růžovým vrstvením a zvlněnými boky. Elegantní pozornost pro vaše blízké." : "A red heart with white and pink layers and fluted sides. An elegant gift for someone special." },
+    { id: 'v-hearts-duo', name: language === 'cs' ? "Romantická srdíčka – sada" : "Romantic Hearts – Set", price: 200, image: valentineHeartsDuo, description: language === 'cs' ? "Růžová a červená srdíčka ve zdobených košíčcích. Milá sada pro společnou radost." : "Pink and red hearts in decorative wrappers. A charming set to share." },
+    { id: 'v-heart-red-salt', name: language === 'cs' ? "Červené vrstvené srdce" : "Red Layered Heart", price: 109, image: valentineHeartRedSalt, description: language === 'cs' ? "Sytě červené srdce se světlým proužkem na růžových kamíncích. Romantický barevný akcent." : "A rich red heart with a pale stripe on pink crystals. A romantic splash of colour." },
+    { id: 'v-hearts-diamond-pair', name: language === 'cs' ? "Dvojice fasetovaných srdcí" : "Faceted Heart Pair", price: 200, image: valentineHeartsDiamondPair, description: language === 'cs' ? "Dvě růžovo-bílá srdce s červenými akcenty a hranatými plochami. Romantická dárková dvojice." : "Two pink and white hearts with red accents and angular facets. A romantic gift pair." },
+    { id: 'v-heart-salt-sprinkle', name: language === 'cs' ? "Srdce s růžovým zdobením" : "Heart with Pink Details", price: 109, image: valentineHeartSaltSprinkle, description: language === 'cs' ? "Červené srdce se světlou vrstvou a drobným růžovým zdobením. Detail, který upoutá." : "A red heart with a pale layer and small pink details. A decoration that catches the eye." },
+    { id: 'v-diamond-hearts-salt', name: language === 'cs' ? "Srdce s červenými akcenty" : "Heart with Red Accents", price: 549, image: valentineDiamondHeartsSalt, description: language === 'cs' ? "Růžovo-bílé fasetované srdce obklopené drobnými červenými srdíčky. Romantická dárková kompozice." : "A pink and white faceted heart surrounded by little red hearts. A romantic gift arrangement." },
+    { id: 'v-i-love-prague', name: language === 'cs' ? "Srdce I ♥ Prague" : "I ♥ Prague Heart", price: 109, image: valentineILovePrague, description: language === 'cs' ? "Růžové srdce s reliéfním nápisem I ♥ Prague. Milá vzpomínka na Prahu." : "A pink heart with raised I ♥ Prague lettering. A lovely keepsake from Prague." },
+    { id: 'v-flower-heart', name: language === 'cs' ? "Lístkové srdce" : "Petal Heart", price: 109, image: valentineFlowerHeart, description: language === 'cs' ? "Srdce s drobnými lístky v růžových a zelených tónech. Něžná dekorace pro romantické chvíle." : "A heart with tiny petals in pink and green tones. A delicate romantic decoration." },
+    { id: 'v-bear-heart', name: language === 'cs' ? "Medvídek se srdíčkem" : "Bear with Heart", price: 109, image: valentineBearHeart, description: language === 'cs' ? "Růžový medvídek s květinovým reliéfem a bílým srdcem nad hlavou. Hravý dárek z lásky." : "A pink bear with floral relief and a white heart above its head. A playful gift of love.", badge: language === 'cs' ? 'Novinka' : 'New' },
+    { id: 'v-heart-petal-pink', name: language === 'cs' ? "Růžičkové srdce" : "Rose Relief Heart", price: 109, image: valentineHeartPetalPink, description: language === 'cs' ? "Růžové srdce pokryté drobnými růžičkami. Jemný romantický detail k darování." : "A pink heart covered in tiny rose shapes. A delicate romantic gift." },
+    { id: 'v-heart-ribbed-pink', name: language === 'cs' ? "Žebrované srdce" : "Ribbed Heart", price: 109, image: valentineHeartRibbedPink, description: language === 'cs' ? "Pastelově růžové srdce s pravidelně žebrovanými boky. Střídmá a vkusná pozornost." : "A pastel pink heart with evenly ribbed sides. A simple, tasteful gift." },
+    { id: 'v-heart-wavy-pink', name: language === 'cs' ? "Srdce s vlnkami" : "Wavy Heart", price: 109, image: valentineHeartWavyPink, description: language === 'cs' ? "Růžové srdce s jemně zvlněnými boky. Malá dekorace s něžným výrazem." : "A pink heart with gently waved sides. A small, delicate decoration." },
+    { id: 'v-heart-scalloped-pink', name: language === 'cs' ? "Srdce se zdobeným okrajem" : "Scalloped Heart", price: 109, image: valentineHeartScallopedPink, description: language === 'cs' ? "Růžové srdíčko s vroubkovaným obrysem. Půvabný detail pro vaše blízké." : "A pink heart with a scalloped outline. A charming gift for someone special." },
+    { id: 'v-bear-heart-valentine', name: language === 'cs' ? "Valentýnský medvídek" : "Valentine Bear", price: 109, image: valentineBearHeartValentine, description: language === 'cs' ? "Růžový medvídek se srdcem nad hlavou a valentýnskou kartičkou. Dárek, který řekne vše za vás." : "A pink bear with a heart above its head and a Valentine card. A gift that says it all.", badge: language === 'cs' ? 'Bestseller' : 'Bestseller' },
   ];
 
   const handleOrder = (product: ValentineProduct) => {
     const subject = encodeURIComponent(language === 'cs' ? `Valentýnská objednávka: ${product.name}` : `Valentine order: ${product.name}`);
     const body = encodeURIComponent(language === 'cs'
-      ? `Dobrý den,\n\nráda bych si objednala:\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
+      ? `Dobrý den,\n\nrád(a) bych si objednal(a):\n\n${product.name}\nCena: ${product.price} Kč\n\nDěkuji,`
       : `Hello,\n\nI would like to order:\n\n${product.name}\nPrice: ${product.price} CZK\n\nThank you,`);
     window.location.href = `mailto:mydla.merak@email.cz?subject=${subject}&body=${body}`;
   };
@@ -91,9 +92,9 @@ export const ValentineCollapsible = () => {
       {open && (
         <div className="mt-6 animate-in slide-in-from-top-2 duration-300">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((product) => (
+            {products.map((product, idx) => (
               <div key={product.id} className="bg-white dark:bg-card rounded-3xl overflow-hidden shadow-elegant hover:shadow-premium transition-bounce border-2 border-pink-100 dark:border-pink-900/30 group">
-                <div className="aspect-square relative overflow-hidden">
+                <div className="aspect-square relative overflow-hidden cursor-zoom-in" onClick={() => setLightboxIndex(idx)} role="button" tabIndex={0} onKeyDown={(e) => { if (e.key === "Enter") setLightboxIndex(idx); }}>
                   <img src={product.image} alt={product.name} className="w-full h-full object-contain bg-white group-hover:scale-105 transition-smooth" loading="lazy" />
                   {product.badge && (
                     <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold shadow-lg">{product.badge}</div>
@@ -134,6 +135,12 @@ export const ValentineCollapsible = () => {
           </div>
         </div>
       )}
+      <Lightbox
+        items={products.map((p) => ({ src: p.image, alt: p.name, caption: p.description }))}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onIndexChange={setLightboxIndex}
+      />
     </div>
   );
 };
