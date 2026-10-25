@@ -71,10 +71,12 @@ export const AboutSection = () => {
             <Button 
               variant="premium" 
               size="premium"
+              className="w-full sm:w-auto whitespace-normal text-center h-auto py-4"
               onClick={() => window.location.href = "mailto:mydla.merak@email.cz"}
             >
               {translations.about.learnMore}
             </Button>
+
           </div>
         </div>
       </div>
