@@ -4,20 +4,19 @@ import { useReveal } from "@/hooks/useReveal";
 interface RevealProps {
   children: ReactNode;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: "div" | "section" | "article" | "main" | "aside" | "header" | "footer" | "nav";
   id?: string;
 }
 
 export const Reveal = ({ children, className = "", as: Tag = "div", id }: RevealProps) => {
-  const { ref, visible } = useReveal();
-  const Component = Tag as any;
+  const { ref, visible } = useReveal<HTMLElement>();
   return (
-    <Component
-      ref={ref}
+    <Tag
+      ref={(node: HTMLElement | null) => { ref.current = node; }}
       id={id}
       className={`reveal ${visible ? "is-visible" : ""} ${className}`}
     >
       {children}
-    </Component>
+    </Tag>
   );
 };
