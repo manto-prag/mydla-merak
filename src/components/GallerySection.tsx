@@ -41,7 +41,7 @@ export const GallerySection = () => {
     { id: 'individual', label: language === 'cs' ? 'Jednotlivé voňavé výrobky' : 'Individual Fragrance Products', icon: Heart },
     { id: 'gift-set', label: language === 'cs' ? 'Dárkové sety' : 'Gift Sets', icon: Gift },
     { id: 'seasonal', label: language === 'cs' ? 'Sezónní kolekce' : 'Seasonal s', icon: ShoppingBag }
-  ];
+  ] as const;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
@@ -267,7 +267,7 @@ export const GallerySection = () => {
     },
     {
       src: valentineLuxuryBouquetArrangement,
-      alt: language === 'cs' ? "Luxusní valentýnská kytice" : "Luxury Valentine's Bouquet",
+      alt: language === 'cs' ? "Valentýnská kytice" : "Valentine's Bouquet",
       description: language === 'cs' ? "Luxusní kytice růží, pivoněk a srdcí – ten nejlepší dárek!" : "Luxury bouquet of roses, peonies and hearts – the ultimate gift!",
       category: 'valentine',
       badge: language === 'cs' ? 'Premium' : 'Premium'
@@ -315,7 +315,7 @@ export const GallerySection = () => {
               <Button
                 key={category.id}
                 variant={selectedCategory === category.id ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category.id as any)}
+                onClick={() => setSelectedCategory(category.id)}
                 className={`rounded-full gap-2 transition-all ${
                   selectedCategory === category.id 
                     ? 'shadow-lg scale-105' 
