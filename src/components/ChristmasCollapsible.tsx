@@ -17,6 +17,7 @@ import christmasTreeGreenOrnaments from "@/assets/christmas-tree-green-ornaments
 import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-ornate.jpg";
 import christmasBlueSnowflake from "@/assets/christmas-yellow-snowflake.jpg";
 import christmasWhiteSnowflakePearl from "@/assets/christmas-star-red.png";
+import christmasGreenSnowflakeStar from "@/assets/Green snowflake.jpg";
 import christmasSnowflakeHollyGreen from "@/assets/christmas-snowflake-green.jpg";
 import christmasSantaSkiing from "@/assets/christmas-santa-skiing-plaque.png";
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
