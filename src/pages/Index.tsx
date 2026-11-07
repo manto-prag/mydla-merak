@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Link } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { lazyRetry } from "@/lib/lazyRetry";
 
@@ -91,12 +92,12 @@ const Index = () => {
               IČO: 17645018
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-              <a href="/obchodni-podminky" className="text-primary-foreground/80 hover:text-primary-foreground underline">
+              <Link to="/obchodni-podminky" className="text-primary-foreground/80 hover:text-primary-foreground underline">
                 Obchodní podmínky
-              </a>
-              <a href="/ochrana-osobnich-udaju" className="text-primary-foreground/80 hover:text-primary-foreground underline">
+              </Link>
+              <Link to="/ochrana-osobnich-udaju" className="text-primary-foreground/80 hover:text-primary-foreground underline">
                 Ochrana osobních údajů
-              </a>
+              </Link>
             </div>
           </div>
         </footer>
