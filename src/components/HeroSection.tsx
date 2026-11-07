@@ -1,37 +1,36 @@
-import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Sparkles, Truck, Star, Leaf, Hand } from "lucide-react";
-import heroImage from "@/assets/hero-soap.jpg";
+import heroImage from "@/assets/hero-soap-new.jpg";
 
 export const HeroSection = () => {
   const { translations, language } = useLanguage();
 
-  const handleOrderClick = () => {
-    window.location.href = "mailto:mydla.merak@email.cz?subject=Objednávka voňavých výrobků Merak&body=Dobrý den,%0D%0A%0D%0ARád(a) bych si objednal(a) Vaše přírodní voňavé výrobky.%0D%0A%0D%0APočet kusů:%0D%0AVýdejní místo (Zásilkovna):%0D%0A%0D%0ADěkuji";
-  };
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/50"></div>
+    <section className="relative pt-16 overflow-hidden">
+      {/* Photo on top */}
+      <div className="relative w-full h-[45vh] min-h-[260px] md:h-[60vh] overflow-hidden">
+        <img
+          src={heroImage}
+          alt={language === "cs" ? "Ručně vyráběné voňavé výrobky MERAK" : "Handmade fragrance creations MERAK"}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-3xl mx-auto px-6 animate-fade-in">
-        <div className="gradient-card backdrop-blur-xl rounded-[2rem] p-8 md:p-14 shadow-premium border border-accent/20">
+      {/* Content below photo */}
+      <div className="relative z-10 text-center max-w-3xl mx-auto px-4 md:px-6 -mt-10 md:-mt-16 pb-16 animate-fade-in">
+        <div className="gradient-card backdrop-blur-xl rounded-[2rem] p-6 md:p-14 shadow-premium border border-accent/20">
           {/* Trust Badge */}
+
           <div className="inline-flex items-center gap-2 bg-accent/15 text-primary font-medium px-4 py-2 rounded-full text-xs tracking-[0.2em] uppercase mb-8 border border-accent/30">
             <Sparkles className="w-3.5 h-3.5" />
             {translations.hero.trustBadge}
           </div>
 
-          <h1 className="font-heading text-5xl md:text-7xl font-bold text-primary mb-6 tracking-tight leading-[1.05]">
+          <h1 className="font-heading text-3xl sm:text-4xl md:text-7xl font-bold text-primary mb-6 tracking-tight leading-[1.1] break-words">
             {translations.hero.title}
           </h1>
+
 
           <div className="divider-elegant mb-6" />
 
@@ -63,11 +62,6 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <Button variant="luxury" size="hero" onClick={handleOrderClick} className="mb-10">
-            {translations.hero.cta} →
-          </Button>
-
           {/* Social Proof */}
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-xs md:text-sm text-foreground/70">
             <div className="flex items-center gap-1.5">
@@ -86,12 +80,6 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border border-white/60 rounded-full backdrop-blur-sm">
-          <div className="w-1 h-2.5 bg-white/80 rounded-full mx-auto mt-2 animate-pulse"></div>
-        </div>
-      </div>
     </section>
   );
 };
