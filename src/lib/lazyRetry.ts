@@ -7,7 +7,7 @@ const RELOAD_KEY = "lazy-chunk-reload";
  * fails to load (e.g. after a new deploy invalidated old chunk hashes),
  * reload the page once to fetch fresh assets instead of crashing React.
  */
-export function lazyRetry<T extends ComponentType<any>>(
+export function lazyRetry<T extends ComponentType>(
   factory: () => Promise<{ default: T }>
 ) {
   return lazy(() =>
