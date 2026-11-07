@@ -19,15 +19,15 @@ import christmasSnowflakeGreenFlower from "@/assets/christmas-snowflake-green-fl
 import christmasSnowflakeLimeStar from "@/assets/christmas-snowflake-lime-star.png";
 
 import christmasStarPink from "@/assets/christmas-star-pink.jpg";
-import christmasSnowflakeYellow from "@/assets/christmas-snowflake-yellow.jpg";
-import christmasStarRed from "@/assets/christmas-star-red.jpg";
-import christmasBellsPinkOval from "@/assets/christmas-bells-pink-oval-green.jpg";
-import christmasSnowflakeGold from "@/assets/christmas-snowflake-gold.jpg";
-import christmasSantaSkiingPlaque from "@/assets/christmas-santa-skiing-plaque.jpg";
-import christmasSnowflakeGreenWhite from "@/assets/christmas-snowflake-green-white.jpg";
-import christmasSnowflakePinkWhite from "@/assets/christmas-snowflake-pink-white.jpg";
-import christmasAngelPlaques from "@/assets/christmas-angel-plaques-pink-white.jpg";
-import christmasSnowflakeGreenWhiteCenter from "@/assets/christmas-snowflake-green-white-center.jpg";
+import christmasSnowflakeYellow from "@/assets/christmas-snowflake-yellow.png";
+import christmasStarRed from "@/assets/christmas-star-red.png";
+import christmasBellsPinkOval from "@/assets/christmas-bells-pink-oval-green.png";
+import christmasSnowflakeGold from "@/assets/christmas-snowflake-gold.png";
+import christmasSantaSkiingPlaque from "@/assets/christmas-santa-skiing-plaque.png";
+import christmasSnowflakeGreenWhite from "@/assets/christmas-snowflake-green-white.png";
+import christmasSnowflakePinkWhite from "@/assets/christmas-snowflake-pink-white.png";
+import christmasAngelPlaques from "@/assets/christmas-angel-plaques-pink-white.png";
+import christmasSnowflakeGreenWhiteCenter from "@/assets/christmas-snowflake-green-white-center.png";
 
 interface ChristmasProduct {
   id: string;
